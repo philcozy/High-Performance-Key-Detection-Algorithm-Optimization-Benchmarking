@@ -3,7 +3,7 @@ import scipy.signal
 import numpy as np
 import matplotlib.pyplot as plt
 
-sample_rate, audio_data = wavfile.read("example_Gm.wav")
+sample_rate, audio_data = wavfile.read("audio_io.wav")
 
 if(len(audio_data.shape) > 1):
     audio_data = audio_data[:, 0]
