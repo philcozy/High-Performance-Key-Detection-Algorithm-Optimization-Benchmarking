@@ -25,8 +25,3 @@ freq = fft.rfftfreq(fs, d=1/sr)
 plt.plot(freq, mag, color='b')
 plt.grid(True)
 plt.show()
-
-
-
- 
-        
