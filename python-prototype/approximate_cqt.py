@@ -22,17 +22,20 @@ def build_kernal(bands, framesize, sample_rate):
     for i in range(bands):
         center_freq = band_freq(i)
         center_bin = center_freq * framesize / sample_rate
-        bin_width = center_freq / Q
+        bin_width = center_bin / Q
 
         begin = np.ceil(center_bin - bin_width/2)
         end = np.floor(center_bin + bin_width/2)
+
+        if end - begin < 2:
+            center = int(np.round(center_bin))
+            begin, end = center - 1, center + 1
         
         bins_in_window = np.arange(begin, end+1)
-
         n = bins_in_window - begin
-        coeffs = 1.0 - np.cos(2 * np.pi * n / bin_width)
 
-        coeffs = coeffs / coeffs.sum() * center_freq
+        coeffs = 1.0 - np.cos(2 * np.pi * n / bins_in_window)
+        coeffs = coeffs / coeffs.sum()
 
         offsets.append(int(begin))
         kernels.append(coeffs)

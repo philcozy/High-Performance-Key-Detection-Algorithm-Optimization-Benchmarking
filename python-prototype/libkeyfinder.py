@@ -34,5 +34,3 @@ cqt_72 = cqt.apply_kernel(mag, offsets, kernels)
 # fold to chroma
 chroma = cqt_72.reshape(6, 12).sum(axis=0)
 print(chroma)
-
-
