@@ -1,11 +1,13 @@
 import numpy as np
 
 def band_freq(band_index):
-    # A1(hz) * 2 ^ (i / semitones)
-    return 55.0 * (2 ** (band_index / 12)) 
+    A1_hz = 55.0
+    semitones = 12
+    return A1_hz * (2 ** (band_index / semitones)) 
 
 def build_kernal(bands, framesize, sample_rate):
-    Q = 1 / (2 ** (1.0 / 12) - 1) 
+    # Q = center / bandwidth ≥ 1 / 0.0595
+    Q =  1.2 * 1 / (2 ** (1.0 / 12) - 1) 
     
     """
     band 0  (A1, 55 Hz):
@@ -13,6 +15,7 @@ def build_kernal(bands, framesize, sample_rate):
     kernels[0] = [0.3, 0.8, 1.2, 0.8, 0.3]   ← 5 weights, one per bin
     """
 
+    # init lookup table
     offsets = []
     kernels = []
 
@@ -24,7 +27,7 @@ def build_kernal(bands, framesize, sample_rate):
         begin = np.ceil(center_bin - bin_width/2)
         end = np.floor(center_bin + bin_width/2)
         
-        bins_in_window = np.arage(begin, end+1)
+        bins_in_window = np.arange(begin, end+1)
 
         n = bins_in_window - begin
         coeffs = 1.0 - np.cos(2 * np.pi * n / bin_width)
