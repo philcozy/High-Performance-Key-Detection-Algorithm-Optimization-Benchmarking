@@ -8,10 +8,11 @@ sr = 11025
 fs = 4096
 hp = fs / 4
 
-# A440 sin wave
-fq = 440
+# A major chord tones
 t = np.linspace(0, 2.0, int(sr * 2.0), endpoint=False)
-audio = np.sin(2 * np.pi * fq * t)
+freqs = [440.00, 554.37, 659.25]   # A, C#, E
+audio = sum(np.sin(2 * np.pi * f * t) for f in freqs)
+audio /= np.max(np.abs(audio))
 
 # pick a frame
 start = 3 * fs
