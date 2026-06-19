@@ -3,6 +3,7 @@ from scipy import signal
 from scipy import fft
 import numpy as np
 import approximate_cqt as cqt
+import keyprofile as kp
 import matplotlib.pyplot as plt
 
 # param
@@ -15,9 +16,11 @@ hopsize = framesize / 4
 bands = 72
 offsets, kernels = cqt.build_kernal(bands, framesize, sample_rate)
 
-# A440 sin wave
+# A major chord tones
 t = np.linspace(0, 2.0, int(sample_rate * 2.0), endpoint=False)
-audio_data = np.sin(2 * np.pi * 440 * t)
+freqs = [440.00, 554.37, 659.25]   # A, C#, E
+audio_data = sum(np.sin(2 * np.pi * f * t) for f in freqs)
+audio_data /= np.max(np.abs(audio_data))
 
 # pick a frame
 start = 3 * framesize
@@ -33,4 +36,8 @@ cqt_72 = cqt.apply_kernel(mag, offsets, kernels)
 
 # fold to chroma
 chroma = cqt_72.reshape(6, 12).sum(axis=0)
-print(chroma)
+
+# find best score from key profile
+key, tone = kp.get_key(chroma)
+
+print(key, tone)
