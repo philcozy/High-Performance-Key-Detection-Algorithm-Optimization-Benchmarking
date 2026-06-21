@@ -1,43 +1,47 @@
+# python files
+import approx_cqt as cqt
+import keyprofile as kp
+
+# lib
 from scipy.io import wavfile
-from scipy import signal
+from scipy.signal import windows, butter, filtfilt
 from scipy import fft
 import numpy as np
-import approximate_cqt as cqt
-import keyprofile as kp
 import matplotlib.pyplot as plt
 
-# param
-# fft
-sample_rate = 11025
-framesize = 4096
-hopsize = framesize / 4
+# audio io
+sample_rate, audio_data = wavfile.read("audio_b_major.wav")
 
-# cqt
+# mono reduction
+if(len(audio_data.shape) > 1):
+    audio_data = np.mean(audio_data, axis=1)
+
+# down sample : increase frequecy resolution -> 11025 / 16384 = 0.673, sufficient for lower octave notes (A1 -> A#1 = 3.27hz), around 7 bins
+# param
+framesize = 16384
+hopsize = framesize // 4
+hamming = windows.hamming(framesize)
+
+#fft
+num_frames = ( (len(audio_data) - framesize) // hopsize ) + 1
+sum_mag = np.zeros( (framesize // 2) + 1 )
+
+for i in range(num_frames):
+    start = i * hopsize     
+    end = start + framesize
+
+    frame = audio_data[start:end] * hamming
+    mag = np.abs( fft.rfft(frame) )
+    sum_mag += mag / sum(mag)
+
+# approximate cqt -> mapping fft to 72 bins with different bin width
 bands = 72
 offsets, kernels = cqt.build_kernal(bands, framesize, sample_rate)
-
-# A major chord tones
-t = np.linspace(0, 2.0, int(sample_rate * 2.0), endpoint=False)
-freqs = [440.00, 554.37, 659.25]   # A, C#, E
-audio_data = sum(np.sin(2 * np.pi * f * t) for f in freqs)
-audio_data /= np.max(np.abs(audio_data))
-
-# pick a frame
-start = 3 * framesize
-end = start + framesize
-hamming = signal.windows.hamming(framesize)
-frame = audio_data[start:end] * hamming
-
-# fft
-mag = np.abs( fft.rfft(frame) )
-
-# approximate cqt
-cqt_72 = cqt.apply_kernel(mag, offsets, kernels)
+cqt_72 = cqt.apply_kernel(sum_mag, offsets, kernels)
 
 # fold to chroma
 chroma = cqt_72.reshape(6, 12).sum(axis=0)
 
 # find best score from key profile
 key, tone = kp.get_key(chroma)
-
 print(key, tone)
