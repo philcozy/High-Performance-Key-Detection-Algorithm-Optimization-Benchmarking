@@ -4,7 +4,7 @@ import keyprofile as kp
 
 # lib
 from scipy.io import wavfile
-from scipy.signal import windows, butter, filtfilt
+from scipy.signal import windows, resample_poly
 from scipy import fft
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,6 +17,10 @@ if(len(audio_data.shape) > 1):
     audio_data = np.mean(audio_data, axis=1)
 
 # down sample : increase frequecy resolution -> 11025 / 16384 = 0.673, sufficient for lower octave notes (A1 -> A#1 = 3.27hz), around 7 bins
+target_sr = 11025
+audio_data = resample_poly(audio_data, target_sr, sample_rate)
+sample_rate = target_sr
+
 # param
 framesize = 16384
 hopsize = framesize // 4
