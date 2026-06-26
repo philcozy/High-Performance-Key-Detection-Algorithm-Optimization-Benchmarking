@@ -59,18 +59,24 @@ def main():
             'category': category,
         })
 
-        if i % 20 == 0:
-            print(f'  {i}/{len(wavs)}  running mean: {total_score / i:.3f}')
+    n = len(rows)
+    final_score = total_score / n if n else 0.0
 
     with out_csv.open('w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=['track', 'true', 'pred', 'score', 'category'])
         w.writeheader()
         w.writerows(rows)
+        w.writerow({
+            'track': 'SUMMARY',
+            'true': f'n={n}',
+            'pred': '',
+            'score': round(final_score, 4),
+            'category': '/'.join(f'{cat}={categories[cat]}' for cat in ['correct','fifth','relative','parallel','wrong']),
+        })
 
-    n = len(rows)
     print()
     print(f'Total tracks evaluated: {n}')
-    print(f'MIREX weighted score:   {total_score / n:.3f}')
+    print(f'MIREX weighted score:   {final_score:.3f}')
     print()
     for cat in ['correct', 'fifth', 'relative', 'parallel', 'wrong']:
         c = categories[cat]
