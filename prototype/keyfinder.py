@@ -7,7 +7,7 @@ TARGET_SR = 11025
 FRAMESIZE = 16384
 HOPSIZE = FRAMESIZE // 4
 BANDS = 72
-DIRECTSKSTRETCH = 1.0
+DIRECTSKSTRETCH = 1.2
 
 # ---------- approx CQT ----------
 
@@ -41,7 +41,8 @@ def apply_cqt_kernel(mag, offsets, kernels):
     return cqt
 
 # ---------- key profiles ----------
-
+_ks_major = [6.35, 2.23, 3.48, 2.33, 4.38, 4.09, 2.52, 5.19, 2.39, 3.66, 2.29, 2.88]
+_ks_minor = [6.33, 2.68, 3.52, 5.38, 2.60, 3.53, 2.54, 4.75, 3.98, 2.69, 3.34, 3.17]
 _bb_major    = [16.8, 0.86, 12.95, 1.41, 13.49, 11.93, 1.25, 20.28, 1.8, 8.04, 0.62, 10.57]
 _bb_minor    = [18.16, 0.69, 12.99, 13.34, 1.07, 11.15, 1.38, 21.07, 7.49, 1.53, 0.92, 10.21]
 _shaath_major = [7.239, 3.504, 3.584, 2.845, 5.819, 4.559, 2.448, 6.995, 3.391, 4.556, 4.074, 4.459]
@@ -53,6 +54,7 @@ PROFILES = {
     'temperley': (_temperley_major, _temperley_minor),
     'bellman_budge': (_bb_major, _bb_minor),
     'shaath': (_shaath_major, _shaath_minor),
+    'krumhansl_schmuckler': (_ks_major, _ks_minor),
 }
 
 STATES = ('C','Db','D','Eb','E','F','F#','G','Ab','A','Bb','B',
@@ -62,9 +64,9 @@ def _get_profile(idx, major, minor):
     r = -(idx % 12)
     return (major[r:] + major[:r]) if idx < 12 else (minor[r:] + minor[:r])
 
-def get_all_scores(chroma, major=_temperley_major, minor=_temperley_minor):
+def get_all_scores(chroma, major, minor):
     """Return correlation scores for all 24 keys."""
-    return [np.dot(chroma, _get_profile(i, major, minor)) for i in range(24)]
+    return [np.corrcoef(chroma, _get_profile(i, major, minor))[0, 1] for i in range(24)]
 
 def get_key(chroma, major, minor):
     """Return (tonic_str, mode_str) for best-matching key"""
