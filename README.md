@@ -33,7 +33,7 @@ WAV file
  ├─ 72-band approximate constant-Q projection
  │      (Hann-shaped kernel per band, Q ≈ 20.2, centres A1 … G#6)
  ├─ Octave fold → 12-bin chroma vector
- └─ Dot product against 24 rotated Bellman-Budge templates → predicted key
+ └─ Pearson Correlation against 24 rotated Bellman-Budge templates → predicted key
 ```
 
 ---
