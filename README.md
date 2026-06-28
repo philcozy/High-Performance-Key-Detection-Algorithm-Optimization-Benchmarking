@@ -56,7 +56,7 @@ WAV file
 
 | Configuration          | MIREX score | Date       |
 | ---------------------- | ----------- | ---------- |
-| Bellman-Budge baseline | **0.52**    | 2026-06-23 |
+| Sha'ash baseline       | **0.63**    | 2026-06-28 |
 
 Reference points for context:
 
@@ -83,7 +83,7 @@ Each item is implemented in isolation, benchmarked, and committed with its own d
 - [ ] **Tuning compensation** — estimate global pitch offset (many EDM tracks deviate from A=440), shift chroma bins. Expected gain +2–4 %.
 - [ ] **Spectral compression** — `log(1 + |X|)` or `sqrt` to reduce bass dominance.
 - [ ] **Octave weighting** — replace equal-weight octave sum with mid-octave-emphasized weights (libkeyfinder approach).
-- [ ] **Pearson correlation** instead of raw dot product for scale invariance.
+- [O] **Pearson correlation** instead of raw dot product for scale invariance.
 - [ ] **Profile comparison** — Krumhansl-Schmuckler, Temperley, Albrecht-Shanahan benchmarked side-by-side with bellman's
 - [ ] **Q-factor sweep** — kernel-width experiment, A/B against current Q.
 - [ ] **Harmonic-percussive separation** — median-filter-based HPSS for percussion-heavy tracks.
