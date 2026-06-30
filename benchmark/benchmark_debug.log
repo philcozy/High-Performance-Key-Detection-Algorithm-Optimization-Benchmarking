@@ -1,0 +1,2 @@
+2026-06-30 15:26:24,990 [WARNING] === benchmark run 2026-06-30_1526: 604 wav files found ===
+2026-06-30 15:28:23,242 [WARNING] run complete: found=604 no_annot=0 bad_annot=0 fail_detect=0 fail_parse=0 evaluated=604 score=0.6228
