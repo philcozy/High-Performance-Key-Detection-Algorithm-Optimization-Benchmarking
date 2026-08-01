@@ -1,11 +1,24 @@
+"""Parse key strings and score key-finding predictions using the MIREX scheme."""
+
 PITCH_CLASS = {
     'C': 0, 'C#': 1, 'Db': 1, 'D': 2, 'D#': 3, 'Eb': 3,
     'E': 4, 'F': 5, 'F#': 6, 'Gb': 6, 'G': 7, 'G#': 8,
     'Ab': 8, 'A': 9, 'A#': 10, 'Bb': 10, 'B': 11,
 }
 
+# MIREX score awarded per prediction category
+SCORE_CORRECT = 1.0
+SCORE_FIFTH = 0.5
+SCORE_RELATIVE = 0.3
+SCORE_PARALLEL = 0.2
+SCORE_WRONG = 0.0
 
-def parse_key(key_str: str):
+FIFTH_INTERVALS = (5, 7)          # semitone offsets a perfect fifth away
+RELATIVE_MAJOR_OFFSET = 9         # major tonic -> its relative minor, in semitones up
+RELATIVE_MINOR_OFFSET = 3         # minor tonic -> its relative major, in semitones up
+
+
+def parse_key(key_str):
     """
     Parse a key string into (tonic_idx, mode).
 
@@ -80,20 +93,20 @@ def mirex_score(true_key, pred_key):
     diff = (t_pred - t_true) % 12
 
     if t_true == t_pred and m_true == m_pred:
-        return 1.0, 'correct'
+        return SCORE_CORRECT, 'correct'
 
-    if m_true == m_pred and diff in (5, 7):
-        return 0.5, 'fifth'
+    if m_true == m_pred and diff in FIFTH_INTERVALS:
+        return SCORE_FIFTH, 'fifth'
 
-    # Relative: major predicted as its relative minor (down a minor third = 9 semitones up)
-    if m_true == 'major' and m_pred == 'minor' and diff == 9:
-        return 0.3, 'relative'
+    # Relative: major predicted as its relative minor
+    if m_true == 'major' and m_pred == 'minor' and diff == RELATIVE_MAJOR_OFFSET:
+        return SCORE_RELATIVE, 'relative'
 
-    # Relative: minor predicted as its relative major (up a minor third = 3 semitones up)
-    if m_true == 'minor' and m_pred == 'major' and diff == 3:
-        return 0.3, 'relative'
+    # Relative: minor predicted as its relative major
+    if m_true == 'minor' and m_pred == 'major' and diff == RELATIVE_MINOR_OFFSET:
+        return SCORE_RELATIVE, 'relative'
 
     if t_true == t_pred and m_true != m_pred:
-        return 0.2, 'parallel'
+        return SCORE_PARALLEL, 'parallel'
 
-    return 0.0, 'wrong'
+    return SCORE_WRONG, 'wrong'
