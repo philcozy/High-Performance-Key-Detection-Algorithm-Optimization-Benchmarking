@@ -4,13 +4,15 @@ from scipy.signal import windows, resample_poly, stft
 
 # ---------- constants ----------
 
-TARGET_SR = 11025          # sample rate audio is resampled to before analysis
-FRAME_SIZE = 16384         # STFT window length, in samples
-HOP_SIZE = FRAME_SIZE // 4 # STFT hop length, in samples
-NUM_BANDS = 72             # number of CQT bins (6 octaves x 12 semitones)
-NUM_CHROMA = 12            # number of pitch classes after folding
-Q_STRETCH = 1.2            # multiplier applied to the CQT quality factor
-REFERENCE_FREQ = 32.70     # Hz, frequency of CQT band 0 (C1)
+TARGET_SR = 4410                        # sample rate audio is resampled to before analysis
+FRAME_SIZE = 16384                      # STFT window length, in samples
+HOP_SIZE = FRAME_SIZE // 4              # STFT hop length, in samples
+OVERLAP_SIZE = FRAME_SIZE - HOP_SIZE    #
+NUM_BANDS = 72                          # number of CQT bins (6 octaves x 12 semitones)
+NUM_CHROMA = 12                         # number of pitch classes after folding
+Q_STRETCH = 1.2                         # multiplier applied to the CQT quality factor
+REFERENCE_FREQ = 32.70                  # Hz, frequency of CQT band 0 (C1)
+OCTAVE_WEIGHTS = np.array([0.6, 1, 1, 1, 0.8, 0.6])
 
 STATES = (
     "C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B",
@@ -64,7 +66,7 @@ def preprocess(audio_path):
 def spectrum(audio, sr):
     """Compute the STFT of audio and sum magnitudes across time into one spectrum."""
     _, _, stft_matrix = stft(
-        audio, fs=sr, window="hamming", nperseg=FRAME_SIZE, noverlap=HOP_SIZE
+        audio, fs=sr, window="hamming", nperseg=FRAME_SIZE, noverlap=OVERLAP_SIZE
     )
     return np.abs(stft_matrix).sum(axis=1)
 
@@ -115,10 +117,12 @@ def cqt(magnitude):
 
 # ---------- stage 4: fold CQT into chroma ----------
 
-def fold(cqt_bins, num_chroma=NUM_CHROMA):
+def fold(cqt_bins, num_chroma=NUM_CHROMA, weights=OCTAVE_WEIGHTS):
     """Fold a multi-octave CQT into a single NUM_CHROMA-bin chroma vector."""
     num_octaves = len(cqt_bins) // num_chroma
-    return cqt_bins.reshape(num_octaves, num_chroma).sum(axis=0)
+
+    reshaped_cqt = cqt_bins.reshape(num_octaves, num_chroma)
+    return ( reshaped_cqt * weights[:, np.newaxis] ).sum(axis=0)
 
 
 # ---------- stage 5: key classification ----------
