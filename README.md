@@ -1,4 +1,4 @@
-# High-Performance Key Detection — Algorithm Optimization & Benchmarking
+# Key Detection — Algorithm Optimization & Benchmarking
 
 A Python reimplementation of musical key detection structured after [libkeyfinder](https://github.com/mixxxdj/libkeyfinder), with a benchmark harness for measuring modern improvements. Built as the foundation for a future real-time C++/JUCE plugin.
 
@@ -54,9 +54,9 @@ WAV file
 
 ### Current results
 
-| Configuration          | MIREX score | Date       |
-| ---------------------- | ----------- | ---------- |
-| Sha'ash baseline       | **0.63**    | 2026-06-28 |
+| Configuration    | MIREX score | Date       |
+| ---------------- | ----------- | ---------- |
+| Sha'ash baseline | **0.64**    | 2026-08-02 |
 
 Reference points for context:
 
@@ -98,9 +98,8 @@ Each item is implemented in isolation, benchmarked, and committed with its own d
 
 ```
 .
-├── python-prototype/      # detect_key() + CQT kernel + key profiles
+├── prototype/      # detect_key() + CQT kernel + key profiles
 ├── benchmark/             # GiantSteps evaluation, MIREX scoring, results/
-├── notes/                 # libkeyfinder walkthrough + design notes
 └── README.md
 ```
 
