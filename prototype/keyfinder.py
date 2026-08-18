@@ -10,9 +10,9 @@ HOP_SIZE = FRAME_SIZE // 4              # STFT hop length, in samples
 OVERLAP_SIZE = FRAME_SIZE - HOP_SIZE    #
 NUM_BANDS = 72                          # number of CQT bins (6 octaves x 12 semitones)
 NUM_CHROMA = 12                         # number of pitch classes after folding
-Q_STRETCH = 1.2                         # multiplier applied to the CQT quality factor
+Q_STRETCH = 0.9                         # scaling factor for CQT filter quality factor (Q)
 REFERENCE_FREQ = 32.70                  # Hz, frequency of CQT band 0 (C1)
-OCTAVE_WEIGHTS = np.array([0.6, 1, 1, 1, 0.8, 0.6])
+OCTAVE_WEIGHTS = np.array([1, 1, 1, 1, 1, 1]) # weighting factors for each of the 6 octaves
 
 STATES = (
     "C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B",
@@ -80,22 +80,24 @@ def _band_center_freq(band_index, reference_freq=REFERENCE_FREQ):
 
 def build_cqt_kernel(num_bands=NUM_BANDS, frame_size=FRAME_SIZE, sample_rate=TARGET_SR):
     """Build per-band (start_bin, hann_window) kernels approximating a CQT."""
-    quality_factor = Q_STRETCH / (2 ** (1.0 / 12) - 1)
+    Q = Q_STRETCH * (2 ** (1.0 / 12) - 1)
 
-    offsets = []
-    kernels = []
+    offsets, kernels = [], []
     for band_index in range(num_bands):
         center_freq = _band_center_freq(band_index)
         center_bin = center_freq * (frame_size / sample_rate)
 
-        bin_width_hz = center_freq / quality_factor
+        bin_width_hz = center_freq * Q
         bins_needed = bin_width_hz / (sample_rate / frame_size)
 
         begin = int(np.ceil(center_bin - bins_needed / 2))
         end = int(np.floor(center_bin + bins_needed / 2))
 
+        raw_window = windows.hann(end - begin + 1)
+        kernel = raw_window / raw_window.sum() * center_freq
+
         offsets.append(begin)
-        kernels.append(windows.hann(end - begin + 1))
+        kernels.append(kernel)
 
     return offsets, kernels
 
@@ -103,9 +105,9 @@ def build_cqt_kernel(num_bands=NUM_BANDS, frame_size=FRAME_SIZE, sample_rate=TAR
 def apply_cqt_kernel(magnitude, offsets, kernels):
     """Project an FFT magnitude spectrum onto the CQT kernels, one value per band."""
     cqt_values = np.zeros(len(kernels))
-    for i, (offset, window) in enumerate(zip(offsets, kernels)):
-        bins = magnitude[offset : offset + len(window)]
-        cqt_values[i] = np.dot(bins, window)
+    for i, (offset, kernel) in enumerate(zip(offsets, kernels)):
+        bins = magnitude[offset : offset + len(kernel)]
+        cqt_values[i] = np.dot(bins, kernel)
     return cqt_values
 
 
@@ -133,13 +135,17 @@ def get_profile(key_index, major, minor):
     profile = major if key_index < 12 else minor
     return np.roll(profile, root)
 
-def get_all_scores(chroma, major, minor):
-    """Return the Pearson correlation between chroma and each of the 24 key profiles."""
-    return [
-        float(np.corrcoef(chroma, get_profile(i, major, minor))[0, 1])
-        for i in range(24)
-    ]
+def cosine_similarity(x, y):
+    return float(np.dot(x, y) / (np.linalg.norm(x) * np.linalg.norm(y)))
 
+def get_all_scores(chroma, major, minor):
+    """Calculate cosine similarity scores between the input chroma vector and all 24 major/minor key profiles."""
+    scores = []
+    for i in range(24):
+        profile = get_profile(i, major, minor)
+        score = cosine_similarity(chroma, profile)
+        scores.append(score)
+    return scores
 
 def classify(chroma, major, minor):
     """Return (tonic, mode) for the best-matching key profile."""
