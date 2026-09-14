@@ -1,6 +1,5 @@
 # Key Detection — Prototype, Optimization & Benchmarking
-
-An API-free Python reimplementation of musical key detection structured after [libkeyfinder](https://github.com/mixxxdj/libkeyfinder) (Catchmar, 2011), evaluated using standard **MIREX key accuracy metrics** against [GiantSteps](https://github.com/GiantSteps/giantsteps-key-dataset).
+"Pure Python key detection based on [libkeyfinder](https://github.com/mixxxdj/libkeyfinder), benchmarked on GiantSteps](https://github.com/GiantSteps/giantsteps-key-dataset) using MIREX metrics."
 ---
 
 ## Motivation
@@ -54,6 +53,8 @@ Raw Audio Input
 | non-deep-learning| 0.75        | ---------- |
 | deep-learning    | 0.80        | ---------- |
 
+---
+
 ## Repository Structure
 ```text
 ├── prototpye/            
@@ -63,7 +64,7 @@ Raw Audio Input
 
 ## Installation
 ```text
-git clone [https://github.com/philcozy/High-Performance-Key-Detection-Algorithm-Optimization-Benchmarking.git](https://github.com/philcozy/High-Performance-Key-Detection-Algorithm-Optimization-Benchmarking.git)
+git clone https://github.com/philcozy/High-Performance-Key-Detection-Algorithm-Optimization-Benchmarking.git
 cd High-Performance-Key-Detection-Algorithm-Optimization-Benchmarking
 pip install -r requirements.txt
 ```
