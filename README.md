@@ -1,5 +1,5 @@
 # Key Detection — Prototype, Optimization & Benchmarking
-"Pure Python key detection based on [libkeyfinder](https://github.com/mixxxdj/libkeyfinder), benchmarked on GiantSteps](https://github.com/GiantSteps/giantsteps-key-dataset) using MIREX metrics."
+"Pure Python key detection based on [libkeyfinder](https://github.com/mixxxdj/libkeyfinder), benchmarked on [GiantSteps](https://github.com/GiantSteps/giantsteps-key-dataset) using MIREX metrics."
 ---
 
 ## Motivation
