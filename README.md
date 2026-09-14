@@ -20,7 +20,7 @@ The goal is not to beat deep-learning systems — those need ML infrastructure a
 
 ```
 Raw Audio Input
- ├─ Downmixing & Resampling ── (4410h Hz/ Mono)
+ ├─ Downmixing & Resampling ── (4410 Hz/ Mono)
  ├─ Real STFT ── (via Numpy)
  ├─ Approximate constant-Q projection ── (72 bins)
  ├─ Octave fold ── (12-bin chroma vector)
