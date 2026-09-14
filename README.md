@@ -1,5 +1,5 @@
 # Key Detection — Prototype, Optimization & Benchmarking
-"Pure Python key detection based on [libkeyfinder](https://github.com/mixxxdj/libkeyfinder), benchmarked on [GiantSteps](https://github.com/GiantSteps/giantsteps-key-dataset) using MIREX metrics."
+Pure Python key detection based on [libkeyfinder](https://github.com/mixxxdj/libkeyfinder), benchmarked on [GiantSteps](https://github.com/GiantSteps/giantsteps-key-dataset) using MIREX metrics.
 ---
 
 ## Motivation
@@ -9,8 +9,8 @@ libkeyfinder is the de-facto open-source key detector — it ships inside Mixxx 
 This project:
 
 1. **Rebuilds the libkeyfinder pipeline from scratch in Python**, so every stage is inspectable and every parameter has a documented reason.
-2. **Establishes a transparent benchmark** against the [GiantSteps-Key-Dataset](https://github.com/GiantSteps/giantsteps-key-dataset) with MIREX-weighted scoring. Every change is attributable to a number.
-3. **Tests modern improvements** (better profiles, tuning compensation, spectral compression, kernel tuning) one at a time against a fixed baseline.
+2. **Establishes a transparent benchmark** against the [GiantSteps-Key-Dataset](https://github.com/GiantSteps/giantsteps-key-dataset) with MIREX-weighted scoring.
+3. **Tests improvements** (switching profiles, adjust parameters etc...) one at a time against a fixed baseline.
 
 The goal is not to beat deep-learning systems — those need ML infrastructure and labelled training data, and that is a different project. The goal is to push a hand-engineered DSP pipeline as far as it goes while keeping every design choice measurable.
 
@@ -20,21 +20,23 @@ The goal is not to beat deep-learning systems — those need ML infrastructure a
 
 ```
 Raw Audio Input
- ├─ Downmixing & Resampling (4410hz/Mono)
- ├─ Real STFT (via Numpy)
- ├─ Approximate constant-Q projection (72 bins)
- ├─ Octave fold (12-bin chroma vector)
+ ├─ Downmixing & Resampling ── (4410h Hz/ Mono)
+ ├─ Real STFT ── (via Numpy)
+ ├─ Approximate constant-Q projection ── (72 bins)
+ ├─ Octave fold ── (12-bin chroma vector)
  ├─ Cosine correlation against 24 rotated templates
- └─ MIREX Score Evaluation ── (Compared against GIANTSTEP Ground Truth)
+ └─ MIREX Score Evaluation ── (Compared against GiantSteps Ground Truth)
 ```
 
 ---
 
 ## Benchmark
 
-**Dataset.** [GiantSteps Key Dataset](https://github.com/GiantSteps/giantsteps-key-dataset) — 604 electronic-music tracks with single-key annotations. EDM is harder than average for chroma-based detectors because of distortion, heavy bass, and percussion.
+### Datasets
+[GiantSteps Key Dataset](https://github.com/GiantSteps/giantsteps-key-dataset) — 604 electronic-music tracks with single-key annotations. EDM is harder than average for chroma-based detectors because of distortion, heavy bass, and percussion.
 
-**Scoring.** MIREX weighted scheme:
+### Scoring
+MIREX weighted scheme:
 
 | Result               | Score |
 | -------------------- | ----- |
@@ -53,14 +55,16 @@ Raw Audio Input
 | non-deep-learning| 0.75        | ---------- |
 | deep-learning    | 0.80        | ---------- |
 
+### Key Improvements
 ---
 
 ## Repository Structure
 ```text
-├── prototpye/            
-├── benchmark/         # GiantSteps dataset annotations & resuls
+├── prototype/            
+├── benchmark/         # GiantSteps dataset annotations & results
 └── README.md
 ```
+---
 
 ## Installation
 ```text
@@ -73,9 +77,12 @@ pip install -r requirements.txt
 ```text
 python main.py --dataset giantstep --eval mirex
 ```
+
+---
+
 ## References
 - Catchmar, I. (2011). An Autonomous System for Key Detection in Polyphonic Music.
 
-- Knees, P., et al. (2015). Two datasets for key detection in electronic dance music. (GIANTSTEP Dataset)
+- Knees, P., et al. (2015). Two datasets for key detection in electronic dance music. (GiantSteps Dataset)
 
 - MIREX Key Detection Evaluation Task Specifications.
