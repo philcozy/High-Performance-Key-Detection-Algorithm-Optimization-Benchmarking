@@ -67,7 +67,7 @@ MIREX weighted scheme:
 ---
 
 ## Installation
-```text
+```bash
 git clone https://github.com/philcozy/High-Performance-Key-Detection-Algorithm-Optimization-Benchmarking.git
 cd High-Performance-Key-Detection-Algorithm-Optimization-Benchmarking
 pip install -r requirements.txt
@@ -81,7 +81,7 @@ python main.py --dataset giantstep --eval mirex
 ---
 
 ## References
-- Catchmar, I. (2011). An Autonomous System for Key Detection in Polyphonic Music.
+- Catchmar, I. (2011). An Autonomous System for Key Detection in Polyphonic Music. Master's thesis, University of Southampton.
 
 - Knees, P., et al. (2015). Two datasets for key detection in electronic dance music. (GiantSteps Dataset)
 
