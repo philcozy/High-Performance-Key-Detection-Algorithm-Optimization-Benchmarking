@@ -1,29 +1,57 @@
-"""Benchmark the prototype key-finder against the GiantSteps annotations using MIREX scoring."""
+"""
+Benchmark the prototype key-finder on the GiantSteps datasets using MIREX scoring,
+and record how long every pipeline stage takes.
 
-import csv
+Usage (from the benchmark/ folder):
+    python run_benchmark.py                              # all datasets, 4 workers
+    python run_benchmark.py --datasets giantsteps-key    # one dataset
+    python run_benchmark.py --workers 1                  # no worker processes (easy to debug)
+    python run_benchmark.py --label cosine-v2            # name the run in results/runs.csv
+"""
+
+import os
+
+# Each worker process handles one track at a time. Stop numpy/scipy from starting
+# extra threads inside every worker, or the workers would compete for the same cores
+# and the timings would get noisy. Must be set before numpy is imported.
+for _var in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS'):
+    os.environ.setdefault(_var, '1')
+
+import argparse
 import logging
-import sys
 import time
-from collections import Counter
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'prototype'))
-from keyfinder import detect_key
-from mirex import parse_key, mirex_score
+from evaluate import init_worker, evaluate_track
+from report import (
+    summarize_accuracy, summarize_performance,
+    print_report, write_track_csv, append_run_history,
+)
+from tracks import DATASET_NAMES, scan_dataset
 
 BASE_DIR = Path(__file__).parent
-AUDIO_DIR = BASE_DIR / 'data' / 'audio'
-ANNOT_DIR = BASE_DIR / 'data' / 'annotations' / 'key'
 RESULTS_DIR = BASE_DIR / 'results'
-RESULTS_DIR.mkdir(exist_ok=True)
+RUN_HISTORY_CSV = RESULTS_DIR / 'runs.csv'
 LOG_FILE = BASE_DIR / 'benchmark_debug.log'
 
-MIREX_CATEGORIES = ['correct', 'fifth', 'relative', 'parallel', 'wrong']
-PROGRESS_INTERVAL = 50   # print a running score every N tracks
-BAR_WIDTH = 30           # width of the ASCII bar in the final report
+DEFAULT_WORKERS = 4           # = performance cores on this Mac; efficiency cores are slower and would blur the timings
+DEFAULT_LABEL = 'prototype'
+PROGRESS_INTERVAL = 200       # print a running score every N tracks
 
 
 # ---------- setup ----------
+
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('--datasets', nargs='+', choices=DATASET_NAMES, default=list(DATASET_NAMES),
+                        help='datasets to evaluate (default: all)')
+    parser.add_argument('--workers', type=int, default=DEFAULT_WORKERS,
+                        help=f'worker processes (default: {DEFAULT_WORKERS}); 1 runs everything in this process')
+    parser.add_argument('--label', default=DEFAULT_LABEL,
+                        help=f'name for this run in the file names and runs.csv (default: {DEFAULT_LABEL})')
+    return parser.parse_args()
+
 
 def configure_logging():
     """Configure warning-level logging to LOG_FILE, overwriting any previous run."""
@@ -36,178 +64,104 @@ def configure_logging():
     )
 
 
-# ---------- per-track evaluation ----------
+# ---------- step 1: collect tracks ----------
 
-def normalize_tonic(tonic):
-    """Normalize a tonic string to standard capitalization, e.g. 'eb' -> 'Eb'."""
-    if not tonic:
-        return 'Unknown'
-    t = tonic.strip()
-    return (t[0].upper() + t[1:].lower()) if len(t) > 1 else t.upper()
-
-
-def find_annotation(wav):
-    """Return the annotation file matching wav's stem, or None if there isn't one."""
-    return next(ANNOT_DIR.glob(f'{wav.stem}.*'), None)
+def collect_tracks(dataset_names):
+    """Return the tracks of every requested dataset."""
+    tracks = []
+    for name in dataset_names:
+        dataset_tracks = scan_dataset(name)
+        print(f'  {name:22s} {len(dataset_tracks):5d} tracks')
+        tracks += dataset_tracks
+    return tracks
 
 
-def load_true_key(annot_path):
-    """Read and parse an annotation file, returning (true_key, true_key_str)."""
-    true_str = annot_path.read_text().strip()
-    return parse_key(true_str), true_str
+# ---------- step 2: evaluate tracks ----------
+
+def handle_result(result, done, total, results):
+    """Store one finished result, report failures, and print progress now and then."""
+    results.append(result)
+
+    if result.status != 'ok':
+        print(f'  [{result.status}] {result.dataset}/{result.track}')
+        logging.error('%s: %s/%s\n%s', result.status, result.dataset, result.track, result.error)
+
+    if done % PROGRESS_INTERVAL == 0 or done == total:
+        mean_score = sum(r.score for r in results) / len(results)
+        print(f'  [{done:4d}/{total}] score so far: {mean_score:.4f}')
 
 
-def score_prediction(true_key, pred_tonic, pred_mode):
-    """Normalize a raw (tonic, mode) prediction and score it against true_key."""
-    tonic_norm = normalize_tonic(pred_tonic)
-    mode_norm = pred_mode.strip().lower()
-    pred_key = parse_key(f'{tonic_norm} {mode_norm}')
-    score, category = mirex_score(true_key, pred_key)
-    return f'{tonic_norm} {mode_norm}', score, category
+def evaluate_in_this_process(tracks):
+    """Evaluate tracks one after another. Slow, but breakpoints and print() just work."""
+    init_worker()
+    results = []
+    for done, track in enumerate(tracks, 1):
+        handle_result(evaluate_track(track), done, len(tracks), results)
+    return results
 
 
-def evaluate_track(wav):
+def evaluate_in_parallel(tracks, workers):
     """
-    Evaluate one WAV file against its annotation.
+    Evaluate tracks in `workers` separate processes at the same time.
 
-    Returns (status, row):
-      status is one of 'no_annot', 'bad_annot', 'fail_detect', 'fail_parse', 'ok'.
-      row is a result dict (or None if there was no usable annotation).
+    Each process gets its own copy of Python and runs init_worker() once.
+    Tracks finish in any order, so the results are sorted afterwards.
     """
-    annot = find_annotation(wav)
-    if annot is None:
-        logging.warning('no annotation for %s', wav.name)
-        return 'no_annot', None
+    results = []
+    with ProcessPoolExecutor(max_workers=workers, initializer=init_worker) as pool:
+        futures = [pool.submit(evaluate_track, track) for track in tracks]
+        for done, future in enumerate(as_completed(futures), 1):
+            handle_result(future.result(), done, len(tracks), results)
+    return results
 
-    try:
-        true_key, true_str = load_true_key(annot)
-    except Exception:
-        print(f'  [skip-bad-annot]  {annot.name}')
-        logging.exception('bad annotation: %s', annot.name)
-        return 'bad_annot', None
 
-    pred_str, score, category = 'FAILED', 0.0, 'wrong'
-
-    try:
-        pred_tonic, pred_mode = detect_key(wav)
-    except Exception:
-        print(f'  [fail-detect]     {wav.name}')
-        logging.exception('detect failed: %s', wav.name)
-        status = 'fail_detect'
+def evaluate_all(tracks, workers):
+    """Evaluate every track; return (results in dataset/track order, wall-clock seconds)."""
+    start = time.perf_counter()
+    if workers == 1:
+        results = evaluate_in_this_process(tracks)
     else:
-        try:
-            pred_str, score, category = score_prediction(true_key, pred_tonic, pred_mode)
-            status = 'ok'
-        except Exception:
-            print(f'  [fail-parse-pred] {wav.name}: {pred_tonic!r} {pred_mode!r}')
-            logging.exception(
-                'parse pred failed: %s (%r %r)', wav.name, pred_tonic, pred_mode
-            )
-            status = 'fail_parse'
+        results = evaluate_in_parallel(tracks, workers)
+    wall_s = time.perf_counter() - start
 
-    row = {
-        'track': wav.name,
-        'true': true_str,
-        'pred': pred_str,
-        'score': score,
-        'category': category,
-    }
-    return status, row
-
-
-# ---------- reporting ----------
-
-def write_csv(rows, out_csv, final_score, categories):
-    """Write per-track results plus a summary row to out_csv."""
-    with out_csv.open('w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['track', 'true', 'pred', 'score', 'category'])
-        writer.writeheader()
-        writer.writerows(rows)
-        writer.writerow({
-            'track': 'SUMMARY',
-            'true': f'n={len(rows)}',
-            'pred': '',
-            'score': round(final_score, 4),
-            'category': '/'.join(f'{cat}={categories[cat]}' for cat in MIREX_CATEGORIES),
-        })
-
-
-def print_report(num_wavs, counts, rows, final_score, categories, out_csv):
-    """Print a human-readable summary of a benchmark run."""
-    n = len(rows)
-    print()
-    print('─' * 50)
-    print(f'  WAV files found:        {num_wavs}')
-    print(f'  skipped (no annot):     {counts["no_annot"]}')
-    print(f'  skipped (bad annot):    {counts["bad_annot"]}')
-    print(f'  failed  (detect):       {counts["fail_detect"]}')
-    print(f'  failed  (parse pred):   {counts["fail_parse"]}')
-    print(f'  evaluated:              {n}')
-    print(f'  MIREX weighted score:   {final_score:.4f}')
-    print()
-    for cat in MIREX_CATEGORIES:
-        c = categories[cat]
-        bar = '█' * int(BAR_WIDTH * c / n) if n else ''
-        print(f'  {cat:9s}  {c:4d}  ({100*c/n:5.1f}%)  {bar}')
-    print('─' * 50)
-    print(f'  Results: {out_csv}')
+    results.sort(key=lambda r: (r.dataset, r.track))
+    return results, wall_s
 
 
 # ---------- orchestration ----------
 
-def run_benchmark(wavs, timestamp):
-    """Evaluate every WAV file, write a results CSV, print a report, and return the mean score."""
-    out_csv = RESULTS_DIR / f'{timestamp}_prototype.csv'
-
-    rows = []
-    categories = Counter()
-    counts = Counter()
-    total_score = 0.0
-
-    print(f'\nevaluating {len(wavs)} files...')
-    logging.warning('=== run %s: %d wav files ===', timestamp, len(wavs))
-
-    for i, wav in enumerate(wavs, 1):
-        status, row = evaluate_track(wav)
-        counts[status] += 1
-
-        if row is not None:
-            rows.append(row)
-            total_score += row['score']
-            categories[row['category']] += 1
-
-        if i % PROGRESS_INTERVAL == 0 and rows:
-            n_so_far = len(rows)
-            print(f'  [{i}/{len(wavs)}] score so far: {total_score/n_so_far:.4f}  '
-                  f'correct: {categories["correct"]}/{n_so_far}')
-
-    final_score = total_score / len(rows) if rows else 0.0
-
-    write_csv(rows, out_csv, final_score, categories)
-    print_report(len(wavs), counts, rows, final_score, categories, out_csv)
-
-    logging.warning(
-        'done: found=%d no_annot=%d bad_annot=%d fail_detect=%d '
-        'fail_parse=%d evaluated=%d score=%.4f',
-        len(wavs), counts['no_annot'], counts['bad_annot'],
-        counts['fail_detect'], counts['fail_parse'], len(rows), final_score,
-    )
-
-    return final_score
-
-
 def main():
-    """Run the key-finder benchmark over all annotated WAV files in AUDIO_DIR."""
+    args = parse_args()
     configure_logging()
+    RESULTS_DIR.mkdir(exist_ok=True)
+    timestamp = time.strftime('%Y-%m-%d_%H%M')
 
-    wavs = sorted(AUDIO_DIR.glob('*.wav'))
-    if not wavs:
-        print(f'No WAVs found in {AUDIO_DIR}')
-        logging.error('no WAVs found in %s', AUDIO_DIR)
+    # 1. collect tracks
+    print('\ncollecting tracks...')
+    tracks = collect_tracks(args.datasets)
+    if not tracks:
+        print('No usable tracks found.')
+        logging.error('no usable tracks in %s', args.datasets)
         return
 
-    timestamp = time.strftime('%Y-%m-%d_%H%M')
-    run_benchmark(wavs, timestamp)
+    # 2. evaluate
+    print(f'\nevaluating {len(tracks)} tracks with {args.workers} workers...')
+    logging.warning('=== run %s (%s): %d tracks ===', timestamp, args.label, len(tracks))
+    results, wall_s = evaluate_all(tracks, args.workers)
+
+    # 3. summarize
+    by_dataset = {name: summarize_accuracy([r for r in results if r.dataset == name])
+                  for name in args.datasets}
+    overall = summarize_accuracy(results)
+    perf = summarize_performance(results, wall_s)
+
+    # 4. save and report
+    out_csv = RESULTS_DIR / f'{timestamp}_{args.label}.csv'
+    write_track_csv(results, out_csv)
+    append_run_history(RUN_HISTORY_CSV, timestamp, args.label, args.workers, by_dataset, overall, perf)
+    print_report(by_dataset, overall, perf, args.workers, results, out_csv)
+
+    logging.warning('done: evaluated=%d score=%.4f wall=%.1fs', overall.n, overall.score, wall_s)
 
 
 if __name__ == '__main__':

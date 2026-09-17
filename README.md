@@ -33,7 +33,10 @@ Raw Audio Input
 ## Benchmark
 
 ### Datasets
-[GiantSteps Key Dataset](https://github.com/GiantSteps/giantsteps-key-dataset) — 604 electronic-music tracks with single-key annotations. EDM is harder than average for chroma-based detectors because of distortion, heavy bass, and percussion.
+- [GiantSteps Key Dataset](https://github.com/GiantSteps/giantsteps-key-dataset) — 604 electronic-music tracks with single-key annotations.
+- [GiantSteps MTG Key Dataset](https://github.com/GiantSteps/giantsteps-mtg-key-dataset) — 1159 tracks, keeping only annotations with confidence 2.
+
+EDM is harder than average for chroma-based detectors because of distortion, heavy bass, and percussion.
 
 ### Scoring
 MIREX weighted scheme:
@@ -74,9 +77,13 @@ pip install -r requirements.txt
 ```
 
 ## Run Benchmark
-```text
-python main.py --dataset giantstep --eval mirex
+```bash
+cd benchmark
+python run_benchmark.py                              # all datasets, 4 worker processes
+python run_benchmark.py --datasets giantsteps-key    # one dataset
+python run_benchmark.py --workers 1 --label my-idea  # single process, named run
 ```
+Each run prints MIREX accuracy and per-stage timing, writes a per-track CSV to `benchmark/results/`, and appends one summary line to `benchmark/results/runs.csv`.
 
 ---
 

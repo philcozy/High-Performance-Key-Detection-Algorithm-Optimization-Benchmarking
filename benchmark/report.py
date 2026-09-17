@@ -1,0 +1,170 @@
+"""Summarize TrackResults: terminal report, per-track CSV, and a one-line-per-run history CSV."""
+
+import csv
+from collections import Counter
+from dataclasses import dataclass
+
+import numpy as np
+
+from evaluate import PIPELINE_STAGES
+from tracks import DATASET_NAMES
+
+MIREX_CATEGORIES = ['correct', 'fifth', 'relative', 'parallel', 'wrong']
+BAR_WIDTH = 30                # width of the longest ASCII bar
+LINE_WIDTH = 56               # width of the ─── separators
+TAIL_PERCENTILE = 95          # "slow track" time reported next to the median
+
+
+# ---------- summary numbers ----------
+
+@dataclass
+class Accuracy:
+    n: int
+    score: float              # mean MIREX score
+    categories: Counter       # category -> number of tracks
+
+
+@dataclass
+class Performance:
+    n: int                    # tracks that ran successfully
+    wall_s: float             # time the whole run took
+    tracks_per_s: float
+    median_ms: float          # median detect_key() time per track
+    tail_ms: float            # TAIL_PERCENTILE detect_key() time per track
+    stage_median_ms: dict     # {stage: median ms}
+    stage_share: dict         # {stage: fraction of all detect_key() time}
+    peak_mb: float            # largest memory use of any worker
+
+
+def summarize_accuracy(results):
+    """Mean MIREX score and category counts over results."""
+    n = len(results)
+    score = sum(r.score for r in results) / n if n else 0.0
+    return Accuracy(n, score, Counter(r.category for r in results))
+
+
+def summarize_performance(results, wall_s):
+    """Timing statistics over the tracks that ran successfully."""
+    timed = [r for r in results if r.status == 'ok']
+    if not timed:
+        return None
+
+    totals = np.array([r.total_ms for r in timed])
+    stage_median_ms = {}
+    stage_share = {}
+    for stage in PIPELINE_STAGES:
+        stage_times = np.array([r.stage_ms[stage] for r in timed])
+        stage_median_ms[stage] = float(np.median(stage_times))
+        stage_share[stage] = float(stage_times.sum() / totals.sum())
+
+    return Performance(
+        n=len(timed),
+        wall_s=wall_s,
+        tracks_per_s=len(results) / wall_s,
+        median_ms=float(np.median(totals)),
+        tail_ms=float(np.percentile(totals, TAIL_PERCENTILE)),
+        stage_median_ms=stage_median_ms,
+        stage_share=stage_share,
+        peak_mb=max(r.peak_mb for r in timed),
+    )
+
+
+# ---------- terminal report ----------
+
+def bar(fraction):
+    """ASCII bar for a 0-1 fraction."""
+    return '█' * int(BAR_WIDTH * fraction)
+
+
+def print_accuracy(by_dataset, overall):
+    print('  ACCURACY')
+    print(f'  {"dataset":22s} {"tracks":>6s}   MIREX')
+    for name, acc in by_dataset.items():
+        print(f'  {name:22s} {acc.n:6d}   {acc.score:.4f}')
+    print(f'  {"all":22s} {overall.n:6d}   {overall.score:.4f}')
+    print()
+    for cat in MIREX_CATEGORIES:
+        count = overall.categories[cat]
+        fraction = count / overall.n if overall.n else 0.0
+        print(f'  {cat:9s}  {count:4d}  ({100 * fraction:5.1f}%)  {bar(fraction)}')
+
+
+def print_performance(perf, workers):
+    print(f'  PERFORMANCE   ({workers} workers)')
+    if perf is None:
+        print('  no track ran successfully')
+        return
+    print(f'  wall time:     {perf.wall_s:7.1f} s   ({perf.tracks_per_s:.1f} tracks/s)')
+    print(f'  per track:     {perf.median_ms:7.1f} ms median, '
+          f'{perf.tail_ms:.1f} ms p{TAIL_PERCENTILE}')
+    print(f'  peak memory:   {perf.peak_mb:7.0f} MB per worker')
+    print()
+    print(f'  {"stage":12s} {"median ms":>9s}   share of time')
+    for stage in PIPELINE_STAGES:
+        share = perf.stage_share[stage]
+        print(f'  {stage:12s} {perf.stage_median_ms[stage]:9.2f}   '
+              f'{100 * share:5.1f}%  {bar(share)}')
+
+
+def print_failures(results):
+    """Count tracks whose pipeline run failed; print nothing if there are none."""
+    failures = Counter(r.status for r in results if r.status != 'ok')
+    if failures:
+        print('  FAILED')
+        for status, count in failures.items():
+            print(f'  {status:12s} {count:5d}   (tracebacks in benchmark_debug.log)')
+        print('─' * LINE_WIDTH)
+
+
+def print_report(by_dataset, overall, perf, workers, results, out_csv):
+    """Print the full human-readable summary of a run."""
+    print()
+    print('─' * LINE_WIDTH)
+    print_accuracy(by_dataset, overall)
+    print('─' * LINE_WIDTH)
+    print_performance(perf, workers)
+    print('─' * LINE_WIDTH)
+    print_failures(results)
+    print(f'  Results: {out_csv}')
+
+
+# ---------- CSV files ----------
+
+def write_track_csv(results, out_csv):
+    """One row per track: prediction, score and timing."""
+    stage_columns = [f'{stage}_ms' for stage in PIPELINE_STAGES]
+    fieldnames = ['dataset', 'track', 'true', 'pred', 'score', 'category',
+                  'status', 'total_ms', *stage_columns]
+
+    with out_csv.open('w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for r in results:
+            row = {
+                'dataset': r.dataset, 'track': r.track, 'true': r.true,
+                'pred': r.pred, 'score': r.score, 'category': r.category,
+                'status': r.status, 'total_ms': round(r.total_ms, 2),
+            }
+            for stage in PIPELINE_STAGES:
+                row[f'{stage}_ms'] = round(r.stage_ms.get(stage, 0.0), 3)
+            writer.writerow(row)
+
+
+def append_run_history(history_csv, timestamp, label, workers, by_dataset, overall, perf):
+    """Add one summary line for this run, so runs can be compared side by side."""
+    row = {'timestamp': timestamp, 'label': label, 'workers': workers,
+           'tracks': overall.n, 'mirex_all': round(overall.score, 4)}
+    for name in DATASET_NAMES:
+        acc = by_dataset.get(name)
+        row[f'mirex_{name}'] = round(acc.score, 4) if acc else ''
+    row['wall_s'] = round(perf.wall_s, 1) if perf else ''
+    row['median_ms'] = round(perf.median_ms, 2) if perf else ''
+    for stage in PIPELINE_STAGES:
+        row[f'{stage}_ms'] = round(perf.stage_median_ms[stage], 3) if perf else ''
+
+    is_new_file = not history_csv.exists()
+    with history_csv.open('a', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=list(row))
+        if is_new_file:
+            writer.writeheader()
+        writer.writerow(row)
