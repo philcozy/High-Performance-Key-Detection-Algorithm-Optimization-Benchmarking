@@ -1,3 +1,2 @@
-/benchmark/data
+/benchmark/datasets
 __pycache__/
-*.wav
