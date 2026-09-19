@@ -23,6 +23,7 @@ Raw Audio Input
  ├─ Downmixing & Resampling ── (4410 Hz/ Mono)
  ├─ Real STFT ── (via Numpy)
  ├─ Approximate constant-Q projection ── (72 bins)
+ ├─ Log compression
  ├─ Octave fold ── (12-bin chroma vector)
  ├─ Cosine correlation against 24 rotated templates
  └─ MIREX Score Evaluation ── (Compared against GiantSteps Ground Truth)
@@ -53,12 +54,16 @@ MIREX weighted scheme:
 
 | Configuration    | MIREX score | Date       |
 | ---------------- | ----------- | ---------- |
-| current pipeline | 0.70        | 2026/08/20 |
+| current pipeline | 0.7151      | 2026/9/19  |
 | libkeyfinder     | 0.58 – 0.62 | ---------- |
 | non-deep-learning| 0.75        | ---------- |
 | deep-learning    | 0.80        | ---------- |
 
 ### Key Improvements
+| Addons           | MIREX score |            |
+| ---------------- | ----------- | ---------- |
+| Baseline         | 0.6914      | -          |
+| log compression  | 0.7151      | +3.4%      |
 ---
 
 ## Repository Structure
