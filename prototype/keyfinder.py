@@ -13,6 +13,7 @@ NUM_BANDS = 72                          # number of CQT bins (6 octaves x 12 sem
 NUM_CHROMA = 12                         # number of pitch classes after folding
 Q_STRETCH = 0.9                         # scaling factor for CQT filter quality factor (Q)
 REFERENCE_FREQ = 32.70                  # Hz, frequency of CQT band 0 (C1)
+LOG_GAMMA = 100.0                       # compression strength in log(1 + gamma * |X|)
 OCTAVE_WEIGHTS = np.array([
     0.39997267549999998559, 0.55634425248300645173, 0.52496636345143543600,
     0.60847548384277727607, 0.59898115679999996974, 0.49072435317960994006,
@@ -64,7 +65,7 @@ def spectrum(audio, sr):
     _, _, stft_matrix = stft(
         audio, fs=sr, window="hamming", nperseg=FRAME_SIZE, noverlap=OVERLAP_SIZE
     )
-    return np.abs(stft_matrix).sum(axis=1)
+    return np.abs(stft_matrix)
 
 
 # ---------- stage 3: approximate CQT ----------
@@ -74,11 +75,12 @@ def _band_center_freq(band_index, reference_freq=REFERENCE_FREQ):
     return reference_freq * (2 ** (band_index / 12))
 
 
-def build_cqt_kernel(num_bands=NUM_BANDS, frame_size=FRAME_SIZE, sample_rate=TARGET_SR):
-    """Build per-band (start_bin, hann_window) kernels approximating a CQT."""
+def build_cqt_kernel_matrix(num_bands=NUM_BANDS, frame_size=FRAME_SIZE, sample_rate=TARGET_SR):
     Q = Q_STRETCH * (2 ** (1.0 / 12) - 1)
+    num_fft_bins = frame_size // 2 + 1
 
-    offsets, kernels = [], []
+    kernel_matrix = np.zeros((num_bands, num_fft_bins))
+
     for band_index in range(num_bands):
         center_freq = _band_center_freq(band_index)
         center_bin = center_freq * (frame_size / sample_rate)
@@ -90,30 +92,30 @@ def build_cqt_kernel(num_bands=NUM_BANDS, frame_size=FRAME_SIZE, sample_rate=TAR
         end = int(np.floor(center_bin + bins_needed / 2))
 
         raw_window = windows.hann(end - begin + 1)
-        kernel = raw_window / raw_window.sum() * center_freq
+        kernel = raw_window / raw_window.sum()
+        kernel_matrix[band_index, begin : end + 1] = kernel
 
-        offsets.append(begin)
-        kernels.append(kernel)
-
-    return offsets, kernels
+    return kernel_matrix
 
 
-def apply_cqt_kernel(magnitude, offsets, kernels):
-    """Project an FFT magnitude spectrum onto the CQT kernels, one value per band."""
-    cqt_values = np.zeros(len(kernels))
-    for i, (offset, kernel) in enumerate(zip(offsets, kernels)):
-        bins = magnitude[offset : offset + len(kernel)]
-        cqt_values[i] = np.dot(bins, kernel)
-    return cqt_values
+def apply_cqt_kernel(magnitude, kernel_matrix):
+    """Project each STFT frame onto the CQT kernels -> shape (NUM_BANDS, frames)."""
+    return np.matmul(kernel_matrix, magnitude)
 
 
 def cqt(magnitude):
     """Map an FFT magnitude spectrum to a NUM_BANDS-bin approximate CQT."""
-    offsets, kernels = build_cqt_kernel()
-    return apply_cqt_kernel(magnitude, offsets, kernels)
+    kernel_matrix = build_cqt_kernel_matrix()
+    return apply_cqt_kernel(magnitude, kernel_matrix)
 
 
-# ---------- stage 4: fold CQT into chroma ----------
+# ---------- stage 4: log compress each frames --------
+def compress(cqt_mag):
+    """Return log(1 + LOG_GAMMA * |X|) per frame, summed across time into one spectrum."""
+    cqt_mag = cqt_mag / cqt_mag.max()
+    return np.log1p(LOG_GAMMA * cqt_mag).sum(axis=1)
+
+# ---------- stage 5: fold CQT into chroma ----------
 
 def fold(cqt_bins, num_chroma=NUM_CHROMA, weights=OCTAVE_WEIGHTS):
     """Fold a multi-octave CQT into a single NUM_CHROMA-bin chroma vector."""
@@ -123,7 +125,7 @@ def fold(cqt_bins, num_chroma=NUM_CHROMA, weights=OCTAVE_WEIGHTS):
     return ( reshaped_cqt * weights[:, np.newaxis] ).sum(axis=0)
 
 
-# ---------- stage 5: key classification ----------
+# ---------- stage 6: key classification ----------
 
 def get_profile(key_index, major, minor):
     """Return the rotated major/minor profile for key_index (0-11 major, 12-23 minor)."""
@@ -158,6 +160,7 @@ def detect_key(audio_path, major=SHAATH[0], minor=SHAATH[1]):
     """Run the full pipeline on a WAV file and return its (tonic, mode)."""
     audio, sr = preprocess(audio_path)
     mag = spectrum(audio, sr)
-    cqt_bins = cqt(mag)
-    chroma = fold(cqt_bins)
+    cqt_mag = cqt(mag)
+    cqt_log = compress(cqt_mag)
+    chroma = fold(cqt_log)
     return classify(chroma, major, minor)
