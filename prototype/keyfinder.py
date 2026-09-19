@@ -1,4 +1,5 @@
 import numpy as np
+import soxr
 from scipy.io import wavfile
 from scipy.signal import windows, resample_poly, stft
 
@@ -12,7 +13,10 @@ NUM_BANDS = 72                          # number of CQT bins (6 octaves x 12 sem
 NUM_CHROMA = 12                         # number of pitch classes after folding
 Q_STRETCH = 0.9                         # scaling factor for CQT filter quality factor (Q)
 REFERENCE_FREQ = 32.70                  # Hz, frequency of CQT band 0 (C1)
-OCTAVE_WEIGHTS = np.array([1, 1, 1, 1, 1, 1]) # weighting factors for each of the 6 octaves
+OCTAVE_WEIGHTS = np.array([
+    0.39997267549999998559, 0.55634425248300645173, 0.52496636345143543600,
+    0.60847548384277727607, 0.59898115679999996974, 0.49072435317960994006,
+])
 
 STATES = (
     "C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B",
@@ -20,28 +24,20 @@ STATES = (
 )
 
 # Key profiles: (major_weights, minor_weights), each 12 values indexed C..B
-KRUMHANSL_SCHMUCKLER = (
-    [6.35, 2.23, 3.48, 2.33, 4.38, 4.09, 2.52, 5.19, 2.39, 3.66, 2.29, 2.88],
-    [6.33, 2.68, 3.52, 5.38, 2.60, 3.53, 2.54, 4.75, 3.98, 2.69, 3.34, 3.17],
-)
-BELLMAN_BUDGE = (
-    [16.80, 0.86, 12.95, 1.41, 13.49, 11.93, 1.25, 20.28, 1.80, 8.04, 0.62, 10.57],
-    [18.16, 0.69, 12.99, 13.34, 1.07, 11.15, 1.38, 21.07, 7.49, 1.53, 0.92, 10.21],
-)
 SHAATH = (
-    [7.239, 3.504, 3.584, 2.845, 5.819, 4.559, 2.448, 6.995, 3.391, 4.556, 4.074, 4.459],
-    [7.003, 3.144, 4.359, 5.404, 3.672, 4.089, 3.907, 6.200, 3.634, 2.872, 5.355, 3.832],
-)
-TEMPERLEY = (
-    [5.0, 2.0, 3.5, 2.0, 4.5, 4.0, 2.0, 4.5, 2.0, 3.5, 1.5, 4.0],
-    [5.0, 2.0, 3.5, 4.5, 2.0, 4.0, 2.0, 4.5, 3.5, 2.0, 1.5, 4.0],
+    [7.23900502618145225142, 3.50351166725158691406, 3.58445177536649417505, 2.84511816478676315967,
+     5.81898892118549859731, 4.55865057415321039969, 2.44778850545506543313, 6.99473192146829525484,
+     3.39106613673504853068, 4.55614256655143456953, 4.07392666663523606019, 4.45932757378886890365],
+    [7.00255045060284420089, 3.14360279015996679775, 4.35904319714962529275, 5.40418120718934069657,
+     3.67234420879306133756, 4.08971184917797891956, 3.90791435991553992579, 6.19960288562316463867,
+     3.63424625625277419871, 2.87241191079875557435, 5.35467999794542670600, 3.83242038595048351013],
 )
 
+# Functions detect_key() calls, in order; the benchmark times each one
+STAGES = ("preprocess", "spectrum", "cqt", "fold", "classify")
+
 PROFILES = {
-    "temperley": TEMPERLEY,
-    "bellman_budge": BELLMAN_BUDGE,
     "shaath": SHAATH,
-    "krumhansl_schmuckler": KRUMHANSL_SCHMUCKLER,
 }
 
 
@@ -56,7 +52,7 @@ def preprocess(audio_path):
         audio = np.mean(audio, axis=1)
 
     if sr != TARGET_SR:
-        audio = resample_poly(audio, TARGET_SR, sr)
+        audio = soxr.resample(audio, sr, TARGET_SR, quality='HQ')
 
     return audio, TARGET_SR
 
