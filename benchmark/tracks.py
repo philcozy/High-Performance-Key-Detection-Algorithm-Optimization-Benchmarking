@@ -20,19 +20,19 @@ KEY_SUBDIR = 'key'            # <dataset>/key/<id>.key
 @dataclass(frozen=True)
 class Track:
     """One track that will be evaluated."""
-    dataset: str              # e.g. 'giantsteps-key'
+    dataset: str              # which dataset
     audio_path: Path
-    true_key_str: str         # annotation as written, e.g. 'd minor'
-    true_key: tuple           # parsed (tonic_idx, mode), e.g. (2, 'minor')
+    true_key_str: str         # original annotation as written
+    true_key: tuple           # parsed (tonic_idx, mode)
 
 
 # ---------- reading one annotation ----------
 
 def read_annotation(key_path):
-    """
-    Return the key written in one .key file, e.g. 'd minor'.
-    """
-    return key_path.read_text().split('\t')[0].strip()
+    """Return the key. e.g. 'd minor'."""
+    raw = key_path.read_text()
+    key = raw.split('\t')[0]
+    return key.strip()
 
 
 # ---------- scanning a dataset ----------
@@ -45,5 +45,6 @@ def scan_dataset(name):
     tracks = []
     for audio_path in sorted(audio_dir.glob('*.wav')):
         true_key_str = read_annotation(key_dir / f'{audio_path.stem}.key')
-        tracks.append(Track(name, audio_path, true_key_str, parse_key(true_key_str)))
+        track = Track(name, audio_path, true_key_str, parse_key(true_key_str))
+        tracks.append(track)
     return tracks
