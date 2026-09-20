@@ -14,10 +14,6 @@ BAR_WIDTH = 30                # width of the longest ASCII bar
 LINE_WIDTH = 56               # width of the ─── separators
 TAIL_PERCENTILE = 95          # "slow track" time reported next to the median
 
-NOTE_NAMES = ('C', 'Db', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B')
-# Tonic errors worth naming in the summary: semitones above the true tonic -> what it means
-NAMED_TONIC_ERRORS = {0: 'same tonic', 3: 'relative major', 5: 'fourth', 7: 'fifth', 9: 'relative minor'}
-
 
 # ---------- summary numbers ----------
 
@@ -48,54 +44,35 @@ def summarize_accuracy(results):
 
 
 @dataclass
-class KeyErrors:
-    """Where the mistakes are, beyond the single MIREX number."""
+class ModeBias:
+    """Which mode the pipeline answers, next to which mode the data actually has."""
     n: int
-    true_minor_share: float   # fraction of tracks whose annotation is minor
-    pred_minor_share: float   # fraction of tracks predicted minor
-    mode_recall: dict         # mode -> fraction of those tracks predicted with that mode
-    mode_confusion: Counter   # (true mode, predicted mode) -> tracks
-    tonic_errors: Counter     # semitones from true tonic to predicted tonic -> tracks
-    key_scores: dict          # 'Eb minor' -> mean score of tracks annotated with that key
-    key_counts: dict          # 'Eb minor' -> number of such tracks
+    annotated: Counter        # mode -> tracks annotated with it
+    predicted: Counter        # mode -> tracks predicted with it
+    recall: dict              # mode -> fraction of those tracks predicted with that mode
+
+    def share(self, counts, mode):
+        """counts[mode] as a fraction of all tracks."""
+        return counts[mode] / self.n if self.n else 0.0
 
 
-def summarize_keys(results):
+def summarize_modes(results):
     """
-    Break the results down by mode and by tonic.
+    Count major and minor, annotated versus predicted.
 
     The MIREX score hides which way a system leans: on a dataset that is mostly
-    minor, always answering minor scores well. These numbers make that visible.
+    minor, always answering minor already scores well. These counts make it visible.
     """
-    scored = [r for r in results if r.status == 'ok']
-    keys = [(parse_key(r.true), parse_key(r.pred), r.score) for r in scored]
-    n = len(keys)
+    modes = [(parse_key(r.true)[1], parse_key(r.pred)[1]) for r in results if r.status == 'ok']
+    annotated = Counter(true for true, _ in modes)
+    predicted = Counter(pred for _, pred in modes)
+    hits = Counter(true for true, pred in modes if true == pred)
 
-    mode_confusion = Counter((true[1], pred[1]) for true, pred, _ in keys)
-    tonic_errors = Counter((pred[0] - true[0]) % 12 for true, pred, _ in keys)
-
-    true_counts = Counter(true[1] for true, _, _ in keys)
-    mode_recall = {
-        mode: mode_confusion[(mode, mode)] / true_counts[mode]
-        for mode in (MAJOR, MINOR) if true_counts[mode]
-    }
-
-    key_scores, key_counts = {}, {}
-    for (tonic, mode), _, score in keys:
-        name = f'{NOTE_NAMES[tonic]} {mode}'
-        key_scores[name] = key_scores.get(name, 0.0) + score
-        key_counts[name] = key_counts.get(name, 0) + 1
-    key_scores = {name: total / key_counts[name] for name, total in key_scores.items()}
-
-    return KeyErrors(
-        n=n,
-        true_minor_share=true_counts[MINOR] / n if n else 0.0,
-        pred_minor_share=sum(c for (_, p), c in mode_confusion.items() if p == MINOR) / n if n else 0.0,
-        mode_recall=mode_recall,
-        mode_confusion=mode_confusion,
-        tonic_errors=tonic_errors,
-        key_scores=key_scores,
-        key_counts=key_counts,
+    return ModeBias(
+        n=len(modes),
+        annotated=annotated,
+        predicted=predicted,
+        recall={mode: hits[mode] / annotated[mode] for mode in (MINOR, MAJOR) if annotated[mode]},
     )
 
 
@@ -145,11 +122,12 @@ def print_accuracy(by_dataset, overall):
         print(f'  {cat:9s}  {count:4d}  ({100 * fraction:5.1f}%)  {bar(fraction)}')
 
 
-def print_mode_bias(keys):
+def print_mode_bias(modes):
     """One line: which way the pipeline leans, next to what the data actually is."""
-    print(f'  mode bias: predicted {100 * keys.pred_minor_share:5.1f}% minor, '
-          f'annotations {100 * keys.true_minor_share:5.1f}% minor   '
-          f'(major recall {100 * keys.mode_recall.get(MAJOR, 0.0):.1f}%)')
+    print(f'  mode bias: predicted {100 * modes.share(modes.predicted, MINOR):5.1f}% minor, '
+          f'annotations {100 * modes.share(modes.annotated, MINOR):5.1f}% minor   '
+          f'(recall: minor {100 * modes.recall.get(MINOR, 0.0):.1f}%, '
+          f'major {100 * modes.recall.get(MAJOR, 0.0):.1f}%)')
 
 
 def print_performance(perf, pipeline, workers):
@@ -178,13 +156,13 @@ def print_failures(results):
         print('─' * LINE_WIDTH)
 
 
-def print_report(by_dataset, overall, perf, keys, pipeline, workers, results, out_csv, out_md):
+def print_report(by_dataset, overall, perf, modes, pipeline, workers, results, out_csv, out_md):
     """Print the full human-readable summary of a run."""
     print()
     print('─' * LINE_WIDTH)
     print_accuracy(by_dataset, overall)
     print()
-    print_mode_bias(keys)
+    print_mode_bias(modes)
     print('─' * LINE_WIDTH)
     print_performance(perf, pipeline, workers)
     print('─' * LINE_WIDTH)
@@ -205,55 +183,45 @@ def markdown_table(header, rows):
 
 
 def accuracy_section(by_dataset, overall):
-    rows = [(name, acc.n, f'{acc.score:.4f}') for name, acc in by_dataset.items()]
-    rows.append(('**all**', overall.n, f'**{overall.score:.4f}**'))
-    table = markdown_table(('dataset', 'tracks', 'MIREX'), rows)
+    """MIREX score and error categories, each dataset on its own row."""
+    def row(name, acc):
+        shares = (f'{100 * acc.categories[cat] / acc.n:.1f}%' for cat in MIREX_CATEGORIES)
+        return (name, acc.n, f'{acc.score:.4f}', *shares)
 
-    category_rows = [
-        (cat, overall.categories[cat], f'{100 * overall.categories[cat] / overall.n:.1f}%',
-         CATEGORY_SCORES[cat])
-        for cat in MIREX_CATEGORIES
-    ]
-    categories = markdown_table(('category', 'tracks', 'share', 'score each'), category_rows)
-    return f'## Accuracy\n\n{table}\n\n{categories}'
+    rows = [row(name, acc) for name, acc in by_dataset.items()]
+    if len(by_dataset) > 1:
+        rows.append(row('**all**', overall))
 
-
-def mode_section(keys):
-    """Mode bias: which way the pipeline leans, and how well it finds each mode."""
-    confusion_rows = [
-        (f'true {mode}',
-         keys.mode_confusion[(mode, MAJOR)],
-         keys.mode_confusion[(mode, MINOR)],
-         f'{100 * keys.mode_recall.get(mode, 0.0):.1f}%')
-        for mode in (MAJOR, MINOR)
-    ]
-    return (
-        '## Mode bias\n\n'
-        f'- annotations: **{100 * keys.true_minor_share:.1f}%** minor\n'
-        f'- predictions: **{100 * keys.pred_minor_share:.1f}%** minor\n\n'
-        + markdown_table(('', 'predicted major', 'predicted minor', 'recall'), confusion_rows)
-    )
+    header = ('dataset', 'tracks', 'MIREX', *MIREX_CATEGORIES)
+    weights = ', '.join(f'{cat} {score}' for cat, score in CATEGORY_SCORES.items())
+    return (f'## Accuracy\n\n{markdown_table(header, rows)}\n\n'
+            f'Category columns are shares of that dataset. MIREX weights: {weights}.')
 
 
-def tonic_section(keys):
-    """How far off the tonic is, in semitones, regardless of mode."""
-    rows = []
-    for semitones in range(12):
-        count = keys.tonic_errors[semitones]
-        rows.append((semitones, NAMED_TONIC_ERRORS.get(semitones, ''), count,
-                     f'{100 * count / keys.n:.1f}%'))
-    return f'## Tonic error\n\nSemitones from the annotated tonic to the predicted one.\n\n' \
-           + markdown_table(('semitones', 'meaning', 'tracks', 'share'), rows)
+def mode_section(modes_by_dataset, modes_overall):
+    """
+    Mode bias: what the data has, what the pipeline answered, and recall for each mode.
 
+    A pipeline can score well by answering minor almost always, because these
+    datasets are mostly minor and a mode mistake still earns 0.2 or 0.3.
+    See DATASETS.md for the distribution of the datasets themselves.
+    """
+    def row(name, modes):
+        return (
+            name,
+            f'{100 * modes.share(modes.annotated, MINOR):.1f}% / {100 * modes.share(modes.annotated, MAJOR):.1f}%',
+            f'{100 * modes.share(modes.predicted, MINOR):.1f}% / {100 * modes.share(modes.predicted, MAJOR):.1f}%',
+            f'{100 * modes.recall.get(MINOR, 0.0):.1f}%',
+            f'{100 * modes.recall.get(MAJOR, 0.0):.1f}%',
+        )
 
-def weakest_keys_section(keys, count=5):
-    """The annotated keys the pipeline handles worst and best."""
-    ranked = sorted(keys.key_scores.items(), key=lambda item: item[1])
-    rows = [(name, f'{score:.3f}', keys.key_counts[name]) for name, score in ranked[:count]]
-    rows.append(('...', '', ''))
-    rows += [(name, f'{score:.3f}', keys.key_counts[name]) for name, score in ranked[-count:]]
-    return f'## Weakest and strongest annotated keys\n\n' \
-           + markdown_table(('annotated key', 'mean MIREX', 'tracks'), rows)
+    rows = [row(name, modes) for name, modes in modes_by_dataset.items()]
+    if len(modes_by_dataset) > 1:
+        rows.append(row('**all**', modes_overall))
+
+    header = ('dataset', 'annotated minor / major', 'predicted minor / major',
+              'minor recall', 'major recall')
+    return f'## Mode bias\n\n{markdown_table(header, rows)}'
 
 
 def performance_section(perf, workers):
@@ -270,9 +238,9 @@ def performance_section(perf, workers):
     )
 
 
-def write_run_summary(out_md, timestamp, label, pipeline, workers,
-                      by_dataset, overall, perf, keys, results, out_csv):
-    """Write the one-page Markdown overview of a run."""
+def write_run_summary(out_md, timestamp, label, pipeline, workers, by_dataset, overall,
+                      perf, modes_by_dataset, modes_overall, results, out_csv):
+    """Write the one-page Markdown overview of a run: accuracy, mode bias, performance."""
     failures = Counter(r.status for r in results if r.status != 'ok')
     sections = [
         f'# {label} — {timestamp}',
@@ -281,9 +249,7 @@ def write_run_summary(out_md, timestamp, label, pipeline, workers,
         f'- per-track data: `{out_csv.name}`'
         + (f'\n- failed: {dict(failures)} (tracebacks in benchmark_debug.log)' if failures else ''),
         accuracy_section(by_dataset, overall),
-        mode_section(keys),
-        tonic_section(keys),
-        weakest_keys_section(keys),
+        mode_section(modes_by_dataset, modes_overall),
         performance_section(perf, workers),
     ]
     out_md.write_text('\n\n'.join(sections) + '\n')
