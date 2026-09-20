@@ -1,7 +1,7 @@
 import numpy as np
 import soxr
 from scipy.io import wavfile
-from scipy.signal import windows, resample_poly, stft
+from scipy.signal import windows, stft
 
 # ---------- constants ----------
 
