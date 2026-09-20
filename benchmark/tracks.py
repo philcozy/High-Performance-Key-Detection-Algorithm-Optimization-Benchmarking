@@ -29,11 +29,7 @@ class Track:
 # ---------- reading one annotation ----------
 
 def read_annotation(key_path):
-    """Return the key. e.g. 'd minor'."""
-    raw = key_path.read_text()
-    key = raw.split('\t')[0]
-    return key.strip()
-
+    return key_path.read_text().strip()
 
 # ---------- scanning a dataset ----------
 
