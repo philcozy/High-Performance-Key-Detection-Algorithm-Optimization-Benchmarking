@@ -1,0 +1,1764 @@
+dataset,track,true,pred,score,category,status,total_ms,preprocess_ms,spectrum_ms,cqt_ms,fold_ms,classify_ms
+giantsteps-key,1004923.LOFI.wav,C minor,f minor,0.5,fifth,ok,67.04,43.061,19.026,4.632,0.007,0.212
+giantsteps-key,1007941.LOFI.wav,F minor,f minor,1.0,correct,ok,66.08,40.673,18.598,6.382,0.013,0.284
+giantsteps-key,10089.LOFI.wav,D major,e minor,0.0,wrong,ok,70.76,44.296,22.355,3.617,0.009,0.368
+giantsteps-key,1009960.LOFI.wav,Eb minor,f minor,0.0,wrong,ok,72.1,44.698,23.384,3.709,0.007,0.206
+giantsteps-key,101069.LOFI.wav,E minor,e minor,1.0,correct,ok,39.64,22.32,13.446,3.472,0.011,0.244
+giantsteps-key,1017921.LOFI.wav,B major,E major,0.5,fifth,ok,45.78,28.202,14.45,2.811,0.012,0.199
+giantsteps-key,1026478.LOFI.wav,F minor,eb minor,0.0,wrong,ok,55.6,36.95,14.886,3.393,0.011,0.242
+giantsteps-key,1033148.LOFI.wav,F minor,f minor,1.0,correct,ok,54.5,35.83,15.149,3.238,0.006,0.188
+giantsteps-key,1034795.LOFI.wav,B minor,c# minor,0.0,wrong,ok,38.73,22.754,12.906,2.78,0.009,0.192
+giantsteps-key,1037507.LOFI.wav,G major,D major,0.5,fifth,ok,38.38,22.085,13.52,2.467,0.011,0.2
+giantsteps-key,1041574.LOFI.wav,Ab major,c minor,0.0,wrong,ok,43.26,26.514,13.828,2.607,0.007,0.214
+giantsteps-key,1043194.LOFI.wav,Db minor,a minor,0.0,wrong,ok,44.91,28.823,12.937,2.86,0.008,0.197
+giantsteps-key,1052744.LOFI.wav,G minor,a minor,0.0,wrong,ok,39.22,23.05,12.58,3.163,0.016,0.278
+giantsteps-key,1056896.LOFI.wav,A minor,a minor,1.0,correct,ok,38.53,22.461,12.831,2.946,0.008,0.203
+giantsteps-key,1074548.LOFI.wav,A minor,a minor,1.0,correct,ok,39.43,23.544,12.629,2.895,0.014,0.231
+giantsteps-key,1075123.LOFI.wav,F minor,f minor,1.0,correct,ok,43.15,27.122,13.202,2.541,0.008,0.187
+giantsteps-key,1092676.LOFI.wav,F minor,f minor,1.0,correct,ok,38.95,22.579,12.594,3.408,0.015,0.241
+giantsteps-key,1103512.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.75,23.389,13.595,2.388,0.044,0.22
+giantsteps-key,1105632.LOFI.wav,C minor,c minor,1.0,correct,ok,39.25,23.677,12.893,2.389,0.009,0.192
+giantsteps-key,1140027.LOFI.wav,Db minor,c minor,0.0,wrong,ok,41.97,24.936,12.999,3.72,0.013,0.22
+giantsteps-key,1149778.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,45.02,26.693,14.284,3.713,0.008,0.244
+giantsteps-key,1161234.LOFI.wav,C major,c minor,0.2,parallel,ok,39.87,22.861,14.159,2.526,0.012,0.23
+giantsteps-key,1161249.LOFI.wav,G minor,g minor,1.0,correct,ok,39.83,24.005,12.529,2.943,0.014,0.255
+giantsteps-key,1164898.LOFI.wav,C major,C major,1.0,correct,ok,38.89,23.045,12.896,2.635,0.009,0.216
+giantsteps-key,1178656.LOFI.wav,C minor,c minor,1.0,correct,ok,39.94,23.641,12.866,3.15,0.008,0.19
+giantsteps-key,1193612.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,43.22,26.992,13.446,2.479,0.009,0.196
+giantsteps-key,1194720.LOFI.wav,D minor,d minor,1.0,correct,ok,38.78,23.179,12.802,2.505,0.01,0.187
+giantsteps-key,1198688.LOFI.wav,D minor,d minor,1.0,correct,ok,38.18,22.409,12.84,2.632,0.008,0.203
+giantsteps-key,1206025.LOFI.wav,A minor,c minor,0.0,wrong,ok,39.67,23.24,12.899,3.233,0.01,0.187
+giantsteps-key,1209745.LOFI.wav,Bb major,Bb major,1.0,correct,ok,40.0,23.981,13.229,2.506,0.01,0.187
+giantsteps-key,1224698.LOFI.wav,G major,G major,1.0,correct,ok,17.61,9.048,5.963,2.358,0.007,0.173
+giantsteps-key,1234668.LOFI.wav,G minor,g minor,1.0,correct,ok,39.69,23.076,13.907,2.425,0.007,0.186
+giantsteps-key,1234669.LOFI.wav,G minor,ab minor,0.0,wrong,ok,39.72,22.786,12.999,3.54,0.012,0.269
+giantsteps-key,1234670.LOFI.wav,F minor,f minor,1.0,correct,ok,42.96,26.26,13.379,2.995,0.01,0.219
+giantsteps-key,1234748.LOFI.wav,G minor,Bb major,0.3,relative,ok,43.12,26.287,13.579,2.971,0.008,0.188
+giantsteps-key,1234749.LOFI.wav,Bb major,F major,0.5,fifth,ok,39.73,23.703,13.405,2.325,0.009,0.181
+giantsteps-key,1234750.LOFI.wav,D minor,a minor,0.5,fifth,ok,39.11,22.542,12.648,3.524,0.014,0.265
+giantsteps-key,1234751.LOFI.wav,Bb major,f minor,0.0,wrong,ok,38.88,22.404,13.32,2.793,0.014,0.238
+giantsteps-key,1234752.LOFI.wav,B minor,b minor,1.0,correct,ok,39.57,23.353,12.88,2.92,0.011,0.294
+giantsteps-key,1257593.LOFI.wav,B minor,f# minor,0.5,fifth,ok,41.12,24.06,13.069,3.709,0.008,0.197
+giantsteps-key,1298595.LOFI.wav,F minor,f minor,1.0,correct,ok,38.65,22.534,12.607,3.114,0.017,0.25
+giantsteps-key,1316308.LOFI.wav,G major,f minor,0.0,wrong,ok,38.42,22.565,12.897,2.593,0.015,0.239
+giantsteps-key,1353830.LOFI.wav,D minor,d minor,1.0,correct,ok,38.84,22.585,12.964,2.996,0.008,0.205
+giantsteps-key,1356281.LOFI.wav,Eb major,eb minor,0.2,parallel,ok,39.54,22.98,13.768,2.492,0.009,0.212
+giantsteps-key,1389887.LOFI.wav,Ab minor,a minor,0.0,wrong,ok,38.89,22.937,12.508,3.123,0.012,0.218
+giantsteps-key,1406309.LOFI.wav,B minor,b minor,1.0,correct,ok,39.06,23.24,12.737,2.687,0.01,0.289
+giantsteps-key,1415239.LOFI.wav,C minor,c minor,1.0,correct,ok,39.03,22.58,13.135,3.004,0.009,0.209
+giantsteps-key,1442809.LOFI.wav,Db minor,c# minor,1.0,correct,ok,22.34,12.602,7.091,2.378,0.007,0.188
+giantsteps-key,1468437.LOFI.wav,B minor,f# minor,0.5,fifth,ok,38.06,23.032,12.355,2.353,0.008,0.217
+giantsteps-key,1474122.LOFI.wav,Ab major,f minor,0.3,relative,ok,38.8,22.874,12.799,2.827,0.009,0.187
+giantsteps-key,1486770.LOFI.wav,A minor,a minor,1.0,correct,ok,38.47,22.745,12.152,3.105,0.013,0.346
+giantsteps-key,1494159.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,41.8,25.705,12.977,2.807,0.007,0.204
+giantsteps-key,1549964.LOFI.wav,Db minor,c# minor,1.0,correct,ok,39.72,23.604,13.021,2.804,0.009,0.187
+giantsteps-key,1568217.LOFI.wav,F major,d minor,0.3,relative,ok,38.57,22.897,12.491,2.847,0.009,0.222
+giantsteps-key,1574723.LOFI.wav,D minor,g minor,0.5,fifth,ok,39.11,22.434,12.838,3.52,0.008,0.22
+giantsteps-key,1575015.LOFI.wav,A minor,a minor,1.0,correct,ok,38.79,22.306,13.193,3.0,0.008,0.197
+giantsteps-key,1611446.LOFI.wav,Ab minor,c# minor,0.5,fifth,ok,39.1,23.379,12.472,2.791,0.012,0.259
+giantsteps-key,1614715.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.53,23.328,12.842,3.007,0.012,0.245
+giantsteps-key,1626779.LOFI.wav,Bb minor,c minor,0.0,wrong,ok,39.58,22.761,12.913,3.546,0.015,0.24
+giantsteps-key,1650933.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.82,23.066,12.953,3.459,0.011,0.241
+giantsteps-key,1650934.LOFI.wav,F minor,f minor,1.0,correct,ok,39.59,23.932,12.594,2.71,0.013,0.241
+giantsteps-key,1652412.LOFI.wav,D minor,c minor,0.0,wrong,ok,39.9,23.623,12.996,2.975,0.01,0.197
+giantsteps-key,1669939.LOFI.wav,E major,f# minor,0.0,wrong,ok,39.16,22.197,12.878,3.735,0.012,0.233
+giantsteps-key,1673811.LOFI.wav,D major,d minor,0.2,parallel,ok,39.4,22.828,13.48,2.823,0.006,0.185
+giantsteps-key,1678455.LOFI.wav,Gb minor,bb minor,0.0,wrong,ok,39.32,23.684,12.512,2.836,0.009,0.192
+giantsteps-key,1681074.LOFI.wav,F minor,c# minor,0.0,wrong,ok,38.97,22.985,12.385,3.267,0.008,0.227
+giantsteps-key,1681077.LOFI.wav,Ab minor,f minor,0.0,wrong,ok,39.65,23.346,12.565,3.452,0.008,0.198
+giantsteps-key,1681085.LOFI.wav,F major,g minor,0.0,wrong,ok,38.67,22.379,12.891,3.1,0.007,0.195
+giantsteps-key,1682815.LOFI.wav,C minor,c minor,1.0,correct,ok,39.96,23.14,13.648,2.827,0.009,0.235
+giantsteps-key,1690921.LOFI.wav,D minor,d minor,1.0,correct,ok,39.28,23.264,12.854,2.788,0.012,0.262
+giantsteps-key,1695408.LOFI.wav,A minor,a minor,1.0,correct,ok,39.25,22.476,12.595,3.81,0.026,0.23
+giantsteps-key,1706844.LOFI.wav,Eb major,eb minor,0.2,parallel,ok,40.57,23.323,13.532,3.427,0.008,0.193
+giantsteps-key,1725800.LOFI.wav,G minor,e minor,0.0,wrong,ok,39.49,24.257,12.487,2.429,0.012,0.215
+giantsteps-key,1757071.LOFI.wav,E minor,e minor,1.0,correct,ok,40.77,25.689,12.367,2.376,0.014,0.211
+giantsteps-key,1763782.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,41.18,25.107,12.79,2.992,0.009,0.184
+giantsteps-key,1771576.LOFI.wav,C minor,g minor,0.5,fifth,ok,39.62,22.675,13.354,3.321,0.009,0.185
+giantsteps-key,1771577.LOFI.wav,G minor,g minor,1.0,correct,ok,38.97,23.458,12.62,2.547,0.011,0.236
+giantsteps-key,1776378.LOFI.wav,Ab minor,f minor,0.0,wrong,ok,39.36,23.608,12.571,2.864,0.01,0.207
+giantsteps-key,1781139.LOFI.wav,C minor,c minor,1.0,correct,ok,38.25,22.225,12.649,2.99,0.015,0.221
+giantsteps-key,1785226.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.66,23.878,12.605,2.722,0.011,0.295
+giantsteps-key,1787061.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.38,23.621,12.66,2.745,0.011,0.238
+giantsteps-key,1792026.LOFI.wav,D minor,e minor,0.0,wrong,ok,38.64,22.342,13.07,2.869,0.013,0.234
+giantsteps-key,1792100.LOFI.wav,C minor,c minor,1.0,correct,ok,38.75,23.029,12.594,2.789,0.009,0.228
+giantsteps-key,1792506.LOFI.wav,D minor,d minor,1.0,correct,ok,39.84,23.884,12.872,2.777,0.008,0.185
+giantsteps-key,1795653.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,37.97,22.814,12.38,2.461,0.009,0.198
+giantsteps-key,1796518.LOFI.wav,Db minor,c minor,0.0,wrong,ok,39.82,24.074,12.183,3.023,0.009,0.424
+giantsteps-key,1803909.LOFI.wav,B minor,b minor,1.0,correct,ok,39.0,23.486,12.436,2.718,0.018,0.215
+giantsteps-key,1808022.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,38.18,21.873,12.848,3.177,0.007,0.192
+giantsteps-key,1809174.LOFI.wav,A major,A major,1.0,correct,ok,38.81,22.794,13.204,2.531,0.008,0.193
+giantsteps-key,1814469.LOFI.wav,F minor,f minor,1.0,correct,ok,38.7,23.135,12.386,2.779,0.016,0.254
+giantsteps-key,1822087.LOFI.wav,B minor,f minor,0.0,wrong,ok,39.41,23.735,12.831,2.515,0.013,0.204
+giantsteps-key,1822502.LOFI.wav,D minor,d minor,1.0,correct,ok,40.11,23.285,12.73,3.675,0.009,0.315
+giantsteps-key,1837440.LOFI.wav,B minor,b minor,1.0,correct,ok,38.92,23.16,13.053,2.396,0.01,0.212
+giantsteps-key,1850984.LOFI.wav,A minor,d minor,0.5,fifth,ok,38.47,22.535,12.407,3.192,0.012,0.214
+giantsteps-key,1856889.LOFI.wav,Gb minor,d minor,0.0,wrong,ok,37.84,22.507,12.343,2.592,0.009,0.301
+giantsteps-key,1864037.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.49,22.51,13.015,2.669,0.009,0.195
+giantsteps-key,1880732.LOFI.wav,Eb minor,d minor,0.0,wrong,ok,39.86,22.839,13.869,2.784,0.014,0.246
+giantsteps-key,1904501.LOFI.wav,C minor,d minor,0.0,wrong,ok,38.63,23.116,12.307,2.68,0.013,0.315
+giantsteps-key,190477.LOFI.wav,D minor,d minor,1.0,correct,ok,39.67,23.887,12.787,2.703,0.01,0.198
+giantsteps-key,191347.LOFI.wav,Eb minor,bb minor,0.5,fifth,ok,38.58,22.381,13.245,2.662,0.008,0.175
+giantsteps-key,1922470.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.31,23.186,12.33,2.429,0.012,0.243
+giantsteps-key,1927655.LOFI.wav,G minor,g minor,1.0,correct,ok,39.11,23.047,12.812,2.945,0.008,0.2
+giantsteps-key,1939732.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.46,22.326,12.751,2.992,0.012,0.272
+giantsteps-key,1944125.LOFI.wav,C minor,c minor,1.0,correct,ok,38.41,22.065,12.682,3.379,0.008,0.188
+giantsteps-key,1948785.LOFI.wav,E minor,c# minor,0.0,wrong,ok,38.48,23.315,12.379,2.45,0.015,0.234
+giantsteps-key,1949099.LOFI.wav,E minor,e minor,1.0,correct,ok,37.88,22.644,12.289,2.589,0.011,0.227
+giantsteps-key,1950170.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,40.01,23.219,12.272,4.186,0.011,0.203
+giantsteps-key,1960032.LOFI.wav,C minor,c minor,1.0,correct,ok,38.28,22.201,12.938,2.853,0.008,0.188
+giantsteps-key,1964905.LOFI.wav,A minor,f minor,0.0,wrong,ok,39.13,23.243,12.668,2.876,0.013,0.229
+giantsteps-key,1970992.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.48,22.543,13.068,2.598,0.008,0.181
+giantsteps-key,1978917.LOFI.wav,D minor,c# minor,0.0,wrong,ok,39.59,23.031,13.143,3.081,0.013,0.206
+giantsteps-key,1981501.LOFI.wav,A minor,a minor,1.0,correct,ok,40.1,24.013,13.161,2.586,0.008,0.215
+giantsteps-key,1982269.LOFI.wav,A minor,d minor,0.5,fifth,ok,38.15,22.585,12.917,2.358,0.006,0.209
+giantsteps-key,1983975.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,40.21,24.042,13.296,2.555,0.01,0.199
+giantsteps-key,1984204.LOFI.wav,F minor,f minor,1.0,correct,ok,39.57,23.013,13.235,2.948,0.014,0.248
+giantsteps-key,1986370.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.52,23.173,12.892,3.158,0.007,0.178
+giantsteps-key,1990297.LOFI.wav,A minor,d minor,0.5,fifth,ok,38.62,23.15,12.726,2.427,0.009,0.211
+giantsteps-key,1991458.LOFI.wav,B minor,b minor,1.0,correct,ok,38.77,22.688,12.957,2.833,0.007,0.188
+giantsteps-key,2006103.LOFI.wav,Db minor,ab minor,0.5,fifth,ok,40.99,24.803,12.766,3.055,0.013,0.245
+giantsteps-key,2007977.LOFI.wav,Db minor,ab minor,0.5,fifth,ok,39.21,23.22,13.288,2.423,0.008,0.179
+giantsteps-key,2014445.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.77,22.819,13.291,2.354,0.011,0.208
+giantsteps-key,2018991.LOFI.wav,C minor,c minor,1.0,correct,ok,39.19,22.741,13.148,2.977,0.014,0.202
+giantsteps-key,2024026.LOFI.wav,G major,G major,1.0,correct,ok,41.6,24.887,13.304,3.127,0.009,0.186
+giantsteps-key,2025670.LOFI.wav,C minor,f minor,0.5,fifth,ok,43.22,26.247,13.745,2.962,0.007,0.179
+giantsteps-key,2026524.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.4,23.511,13.004,2.596,0.009,0.203
+giantsteps-key,2029598.LOFI.wav,E minor,e minor,1.0,correct,ok,40.23,23.157,13.854,2.903,0.011,0.222
+giantsteps-key,2031094.LOFI.wav,A minor,a minor,1.0,correct,ok,40.36,23.1,13.073,3.797,0.017,0.258
+giantsteps-key,2031096.LOFI.wav,A minor,a minor,1.0,correct,ok,41.41,24.923,13.574,2.636,0.009,0.179
+giantsteps-key,203493.LOFI.wav,G minor,g minor,1.0,correct,ok,39.68,23.774,12.648,2.941,0.011,0.214
+giantsteps-key,2046342.LOFI.wav,E minor,bb minor,0.0,wrong,ok,41.78,24.767,13.104,3.453,0.01,0.339
+giantsteps-key,2047796.LOFI.wav,D minor,d minor,1.0,correct,ok,38.33,22.805,12.419,2.748,0.016,0.231
+giantsteps-key,2048054.LOFI.wav,C minor,c minor,1.0,correct,ok,40.36,23.875,13.425,2.682,0.008,0.274
+giantsteps-key,2048940.LOFI.wav,G minor,g minor,1.0,correct,ok,39.82,23.141,13.063,3.32,0.009,0.183
+giantsteps-key,2049680.LOFI.wav,F minor,f minor,1.0,correct,ok,40.45,24.168,13.281,2.72,0.01,0.188
+giantsteps-key,2051166.LOFI.wav,E minor,e minor,1.0,correct,ok,41.45,24.28,13.134,3.638,0.016,0.255
+giantsteps-key,2052966.LOFI.wav,Bb minor,c minor,0.0,wrong,ok,39.56,23.207,13.673,2.409,0.007,0.186
+giantsteps-key,2053495.LOFI.wav,B minor,f# minor,0.5,fifth,ok,40.2,23.103,13.029,3.785,0.008,0.184
+giantsteps-key,2054968.LOFI.wav,C major,c minor,0.2,parallel,ok,39.68,23.378,13.226,2.796,0.009,0.182
+giantsteps-key,205597.LOFI.wav,G minor,g minor,1.0,correct,ok,40.6,23.641,12.723,3.833,0.019,0.25
+giantsteps-key,2059625.LOFI.wav,Gb minor,f minor,0.0,wrong,ok,40.03,23.544,13.809,2.395,0.008,0.198
+giantsteps-key,2069519.LOFI.wav,F minor,f minor,1.0,correct,ok,40.28,23.363,13.682,2.955,0.008,0.191
+giantsteps-key,2070773.LOFI.wav,A minor,a minor,1.0,correct,ok,40.01,23.852,12.664,3.205,0.009,0.196
+giantsteps-key,2075331.LOFI.wav,G minor,g minor,1.0,correct,ok,39.98,23.353,12.562,3.751,0.009,0.2
+giantsteps-key,208158.LOFI.wav,E minor,D major,0.0,wrong,ok,39.93,23.864,13.274,2.494,0.007,0.197
+giantsteps-key,2081732.LOFI.wav,E minor,f minor,0.0,wrong,ok,40.11,23.251,13.119,3.357,0.038,0.22
+giantsteps-key,209206.LOFI.wav,G major,a minor,0.0,wrong,ok,39.68,23.455,12.754,3.185,0.009,0.183
+giantsteps-key,2434664.LOFI.wav,C major,C major,1.0,correct,ok,39.49,22.789,12.768,3.532,0.02,0.262
+giantsteps-key,2435861.LOFI.wav,C minor,d minor,0.0,wrong,ok,39.95,24.047,13.241,2.365,0.008,0.204
+giantsteps-key,2436276.LOFI.wav,A minor,a minor,1.0,correct,ok,39.13,22.813,12.978,3.039,0.009,0.205
+giantsteps-key,2436729.LOFI.wav,C minor,c minor,1.0,correct,ok,39.65,23.486,12.626,3.183,0.01,0.235
+giantsteps-key,2438899.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.52,22.945,12.587,3.593,0.016,0.258
+giantsteps-key,2440193.LOFI.wav,A minor,a minor,1.0,correct,ok,39.99,23.466,13.393,2.838,0.008,0.194
+giantsteps-key,2447748.LOFI.wav,Ab minor,c# minor,0.5,fifth,ok,39.98,23.337,13.54,2.825,0.007,0.183
+giantsteps-key,2448121.LOFI.wav,F minor,f minor,1.0,correct,ok,39.8,23.705,12.717,3.1,0.008,0.192
+giantsteps-key,2666332.LOFI.wav,A major,f# minor,0.3,relative,ok,40.1,22.878,12.494,4.342,0.021,0.236
+giantsteps-key,2666528.LOFI.wav,Db minor,c# minor,1.0,correct,ok,39.46,22.962,13.719,2.484,0.009,0.198
+giantsteps-key,2667501.LOFI.wav,B minor,e minor,0.5,fifth,ok,40.17,23.228,13.021,3.655,0.007,0.183
+giantsteps-key,2673157.LOFI.wav,B minor,b minor,1.0,correct,ok,39.66,23.234,12.954,3.118,0.013,0.242
+giantsteps-key,2673251.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.68,23.07,12.628,3.656,0.01,0.227
+giantsteps-key,2673252.LOFI.wav,C minor,c minor,1.0,correct,ok,39.43,23.352,13.28,2.513,0.006,0.189
+giantsteps-key,2673254.LOFI.wav,D minor,e minor,0.0,wrong,ok,39.47,22.845,13.293,3.035,0.008,0.191
+giantsteps-key,2676506.LOFI.wav,C minor,f minor,0.5,fifth,ok,40.06,23.616,12.369,3.789,0.007,0.191
+giantsteps-key,2680040.LOFI.wav,A minor,a minor,1.0,correct,ok,39.98,23.459,13.025,3.225,0.008,0.186
+giantsteps-key,2725284.LOFI.wav,G minor,ab minor,0.0,wrong,ok,40.77,24.792,12.748,2.931,0.008,0.188
+giantsteps-key,2725286.LOFI.wav,G minor,g minor,1.0,correct,ok,42.64,26.22,13.559,2.557,0.008,0.198
+giantsteps-key,2725289.LOFI.wav,E minor,e minor,1.0,correct,ok,39.58,23.103,13.49,2.678,0.01,0.205
+giantsteps-key,2725290.LOFI.wav,G minor,f# minor,0.0,wrong,ok,39.56,22.83,12.775,3.587,0.016,0.249
+giantsteps-key,272788.LOFI.wav,Bb major,bb minor,0.2,parallel,ok,39.89,22.676,13.78,3.053,0.008,0.189
+giantsteps-key,2741219.LOFI.wav,A minor,a minor,1.0,correct,ok,40.43,23.462,14.401,2.305,0.007,0.181
+giantsteps-key,2760321.LOFI.wav,C major,f minor,0.0,wrong,ok,40.44,24.11,13.15,2.794,0.011,0.194
+giantsteps-key,2996293.LOFI.wav,D major,e minor,0.0,wrong,ok,39.75,23.446,12.586,3.323,0.015,0.258
+giantsteps-key,3003894.LOFI.wav,C minor,c minor,1.0,correct,ok,40.22,23.199,13.698,3.012,0.008,0.2
+giantsteps-key,3005030.LOFI.wav,E minor,e minor,1.0,correct,ok,38.62,22.909,13.002,2.4,0.008,0.218
+giantsteps-key,3014118.LOFI.wav,E minor,e minor,1.0,correct,ok,39.23,23.006,13.213,2.712,0.009,0.2
+giantsteps-key,3015217.LOFI.wav,F minor,c minor,0.5,fifth,ok,38.14,22.659,12.274,2.738,0.014,0.34
+giantsteps-key,3024384.LOFI.wav,A minor,e minor,0.5,fifth,ok,39.05,22.566,13.695,2.498,0.009,0.193
+giantsteps-key,3033991.LOFI.wav,C minor,c minor,1.0,correct,ok,37.87,22.868,12.095,2.621,0.007,0.197
+giantsteps-key,305771.LOFI.wav,C minor,c minor,1.0,correct,ok,39.75,23.19,13.215,3.017,0.013,0.213
+giantsteps-key,3069201.LOFI.wav,C major,C major,1.0,correct,ok,38.47,22.616,12.92,2.582,0.013,0.224
+giantsteps-key,3070298.LOFI.wav,D minor,d minor,1.0,correct,ok,38.18,22.452,12.967,2.441,0.021,0.186
+giantsteps-key,3076768.LOFI.wav,A major,a minor,0.2,parallel,ok,38.2,22.845,12.333,2.745,0.008,0.188
+giantsteps-key,3093661.LOFI.wav,G minor,g minor,1.0,correct,ok,39.83,22.762,13.339,3.436,0.008,0.196
+giantsteps-key,3095708.LOFI.wav,G minor,g minor,1.0,correct,ok,38.84,22.783,13.089,2.581,0.017,0.25
+giantsteps-key,3114501.LOFI.wav,Bb minor,f minor,0.5,fifth,ok,38.45,22.311,13.193,2.663,0.008,0.191
+giantsteps-key,3116329.LOFI.wav,G minor,g minor,1.0,correct,ok,39.64,23.542,13.157,2.63,0.009,0.193
+giantsteps-key,3129757.LOFI.wav,Db minor,f# minor,0.5,fifth,ok,39.03,22.621,13.036,3.101,0.007,0.183
+giantsteps-key,3133794.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.32,22.673,12.645,2.467,0.008,0.43
+giantsteps-key,3137686.LOFI.wav,A minor,a minor,1.0,correct,ok,38.86,23.203,12.75,2.592,0.013,0.197
+giantsteps-key,3150078.LOFI.wav,D major,f# minor,0.0,wrong,ok,38.19,22.95,12.287,2.68,0.007,0.179
+giantsteps-key,3151513.LOFI.wav,D minor,f minor,0.0,wrong,ok,38.68,22.832,12.722,2.841,0.008,0.188
+giantsteps-key,3165770.LOFI.wav,E minor,b minor,0.5,fifth,ok,38.3,23.002,12.574,2.399,0.008,0.233
+giantsteps-key,3172588.LOFI.wav,B minor,c# minor,0.0,wrong,ok,39.31,23.184,13.23,2.596,0.009,0.197
+giantsteps-key,3178147.LOFI.wav,A minor,c# minor,0.0,wrong,ok,38.79,22.782,12.865,2.86,0.008,0.19
+giantsteps-key,3178155.LOFI.wav,A minor,f minor,0.0,wrong,ok,38.9,22.81,12.913,2.812,0.008,0.223
+giantsteps-key,3186615.LOFI.wav,F minor,f minor,1.0,correct,ok,38.53,22.808,13.065,2.381,0.007,0.185
+giantsteps-key,3211603.LOFI.wav,C minor,c minor,1.0,correct,ok,39.59,23.257,13.015,3.038,0.008,0.187
+giantsteps-key,3211733.LOFI.wav,D minor,f minor,0.0,wrong,ok,39.55,22.688,12.82,3.456,0.009,0.484
+giantsteps-key,3228297.LOFI.wav,B minor,b minor,1.0,correct,ok,39.18,23.129,12.915,2.838,0.006,0.199
+giantsteps-key,3228649.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.8,23.297,13.608,2.555,0.009,0.219
+giantsteps-key,3228698.LOFI.wav,E minor,e minor,1.0,correct,ok,40.76,23.711,13.788,2.914,0.014,0.242
+giantsteps-key,3229038.LOFI.wav,Eb major,c minor,0.3,relative,ok,39.71,23.014,12.904,3.435,0.018,0.241
+giantsteps-key,3232851.LOFI.wav,A minor,a minor,1.0,correct,ok,41.15,23.461,13.011,4.363,0.01,0.211
+giantsteps-key,3233653.LOFI.wav,F major,g minor,0.0,wrong,ok,38.5,22.985,12.843,2.403,0.007,0.176
+giantsteps-key,3246151.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.48,23.132,13.239,2.734,0.011,0.218
+giantsteps-key,3249708.LOFI.wav,F minor,f minor,1.0,correct,ok,40.26,22.646,13.67,3.644,0.01,0.198
+giantsteps-key,3250632.LOFI.wav,F minor,bb minor,0.5,fifth,ok,41.22,23.912,13.777,3.201,0.013,0.222
+giantsteps-key,3257231.LOFI.wav,E minor,G major,0.3,relative,ok,42.2,26.217,13.202,2.495,0.01,0.188
+giantsteps-key,3260121.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,40.34,23.628,13.216,3.185,0.012,0.205
+giantsteps-key,3262951.LOFI.wav,C minor,c minor,1.0,correct,ok,41.57,24.599,13.512,3.151,0.01,0.21
+giantsteps-key,3270413.LOFI.wav,A minor,a minor,1.0,correct,ok,41.32,24.459,13.197,3.371,0.009,0.19
+giantsteps-key,3271514.LOFI.wav,A minor,a minor,1.0,correct,ok,41.08,24.603,13.745,2.466,0.008,0.174
+giantsteps-key,3272873.LOFI.wav,B minor,b minor,1.0,correct,ok,39.57,23.619,12.777,2.915,0.007,0.177
+giantsteps-key,3274260.LOFI.wav,D minor,d minor,1.0,correct,ok,39.92,22.876,13.938,2.741,0.011,0.198
+giantsteps-key,3275147.LOFI.wav,F minor,f minor,1.0,correct,ok,39.98,23.963,12.795,2.927,0.01,0.188
+giantsteps-key,3284384.LOFI.wav,A minor,ab minor,0.0,wrong,ok,39.99,24.216,12.983,2.461,0.012,0.223
+giantsteps-key,3288636.LOFI.wav,A minor,a minor,1.0,correct,ok,39.83,23.091,12.476,3.996,0.007,0.18
+giantsteps-key,3298344.LOFI.wav,F minor,f minor,1.0,correct,ok,39.57,22.894,13.633,2.604,0.007,0.345
+giantsteps-key,3302298.LOFI.wav,C minor,c minor,1.0,correct,ok,39.31,23.482,12.675,2.803,0.007,0.26
+giantsteps-key,3302451.LOFI.wav,B minor,b minor,1.0,correct,ok,39.28,23.408,12.783,2.775,0.011,0.209
+giantsteps-key,3313070.LOFI.wav,B minor,b minor,1.0,correct,ok,38.95,22.964,12.604,3.085,0.009,0.196
+giantsteps-key,3313145.LOFI.wav,E major,c# minor,0.3,relative,ok,39.11,23.068,13.094,2.667,0.007,0.192
+giantsteps-key,3317232.LOFI.wav,C minor,g minor,0.5,fifth,ok,39.18,23.443,12.513,2.945,0.008,0.191
+giantsteps-key,3317417.LOFI.wav,G minor,c minor,0.5,fifth,ok,38.98,23.541,12.658,2.495,0.009,0.186
+giantsteps-key,3319290.LOFI.wav,F major,f minor,0.2,parallel,ok,39.11,23.112,12.584,3.069,0.01,0.251
+giantsteps-key,3319589.LOFI.wav,Gb minor,e minor,0.0,wrong,ok,40.06,22.872,14.381,2.536,0.007,0.186
+giantsteps-key,3324024.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.44,23.374,12.513,3.223,0.012,0.208
+giantsteps-key,3334441.LOFI.wav,G minor,g minor,1.0,correct,ok,39.9,23.879,13.333,2.413,0.008,0.18
+giantsteps-key,3334471.LOFI.wav,Gb minor,c# minor,0.5,fifth,ok,40.73,23.202,14.316,2.85,0.012,0.237
+giantsteps-key,3338963.LOFI.wav,G minor,g minor,1.0,correct,ok,40.19,24.128,13.351,2.446,0.007,0.181
+giantsteps-key,3339291.LOFI.wav,G minor,g minor,1.0,correct,ok,38.42,22.49,12.354,3.237,0.013,0.215
+giantsteps-key,3344291.LOFI.wav,D minor,c minor,0.0,wrong,ok,39.04,23.522,12.854,2.391,0.007,0.178
+giantsteps-key,3345479.LOFI.wav,D minor,a minor,0.5,fifth,ok,39.13,22.726,13.451,2.655,0.008,0.194
+giantsteps-key,3349486.LOFI.wav,F minor,f minor,1.0,correct,ok,38.64,22.906,13.035,2.419,0.007,0.184
+giantsteps-key,3349967.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.35,22.711,13.138,3.22,0.008,0.184
+giantsteps-key,3354212.LOFI.wav,Gb major,bb minor,0.0,wrong,ok,38.58,23.358,12.592,2.361,0.007,0.175
+giantsteps-key,3356535.LOFI.wav,F minor,a minor,0.0,wrong,ok,38.39,22.581,12.618,2.902,0.008,0.193
+giantsteps-key,3361547.LOFI.wav,G minor,g minor,1.0,correct,ok,38.21,22.448,13.012,2.49,0.007,0.175
+giantsteps-key,3361909.LOFI.wav,Eb major,eb minor,0.2,parallel,ok,38.82,22.561,12.646,3.281,0.014,0.224
+giantsteps-key,3363196.LOFI.wav,E minor,e minor,1.0,correct,ok,39.44,24.072,12.62,2.47,0.008,0.185
+giantsteps-key,3363602.LOFI.wav,B minor,d minor,0.0,wrong,ok,39.07,22.886,12.992,2.872,0.007,0.223
+giantsteps-key,3364661.LOFI.wav,A major,c# minor,0.0,wrong,ok,39.68,23.783,13.001,2.599,0.007,0.181
+giantsteps-key,3367551.LOFI.wav,Db minor,E major,0.3,relative,ok,39.12,22.524,12.727,3.574,0.008,0.186
+giantsteps-key,3367553.LOFI.wav,Db minor,E major,0.3,relative,ok,38.73,23.307,12.701,2.405,0.008,0.216
+giantsteps-key,3367555.LOFI.wav,Eb minor,Eb major,0.2,parallel,ok,38.74,22.509,13.12,2.845,0.007,0.183
+giantsteps-key,3368117.LOFI.wav,E minor,c# minor,0.0,wrong,ok,39.15,23.411,12.823,2.643,0.008,0.178
+giantsteps-key,3372108.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.72,23.297,12.25,2.892,0.007,0.185
+giantsteps-key,3377323.LOFI.wav,F minor,f minor,1.0,correct,ok,40.37,25.051,12.428,2.561,0.013,0.21
+giantsteps-key,3379400.LOFI.wav,C minor,eb minor,0.0,wrong,ok,39.38,23.174,12.495,3.434,0.006,0.191
+giantsteps-key,3383171.LOFI.wav,A minor,a minor,1.0,correct,ok,38.69,22.82,13.103,2.478,0.007,0.193
+giantsteps-key,3387619.LOFI.wav,A minor,a minor,1.0,correct,ok,38.7,23.576,11.952,2.823,0.013,0.233
+giantsteps-key,3389317.LOFI.wav,A minor,e minor,0.5,fifth,ok,37.65,22.662,12.336,2.367,0.009,0.197
+giantsteps-key,3390952.LOFI.wav,C minor,f minor,0.5,fifth,ok,37.94,22.363,12.461,2.823,0.007,0.181
+giantsteps-key,3395666.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.67,22.796,13.105,2.499,0.008,0.189
+giantsteps-key,3397932.LOFI.wav,B minor,d minor,0.0,wrong,ok,38.46,22.642,12.184,3.318,0.012,0.192
+giantsteps-key,3400782.LOFI.wav,F minor,f# minor,0.0,wrong,ok,38.05,22.762,12.643,2.36,0.011,0.194
+giantsteps-key,3402886.LOFI.wav,Gb major,f# minor,0.2,parallel,ok,38.79,22.955,12.706,2.851,0.006,0.184
+giantsteps-key,3402887.LOFI.wav,F minor,f minor,1.0,correct,ok,38.6,23.172,12.845,2.31,0.008,0.184
+giantsteps-key,3402888.LOFI.wav,D minor,d minor,1.0,correct,ok,39.07,22.868,12.958,2.963,0.008,0.184
+giantsteps-key,3409548.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.81,23.564,12.581,2.374,0.008,0.203
+giantsteps-key,3415063.LOFI.wav,G minor,g minor,1.0,correct,ok,38.77,22.187,12.908,3.346,0.008,0.188
+giantsteps-key,3415421.LOFI.wav,E minor,e minor,1.0,correct,ok,38.77,22.323,13.475,2.698,0.007,0.181
+giantsteps-key,341832.LOFI.wav,G major,e minor,0.3,relative,ok,39.52,23.661,12.909,2.657,0.01,0.196
+giantsteps-key,3424038.LOFI.wav,Db minor,f# minor,0.5,fifth,ok,27.35,16.055,9.164,1.862,0.009,0.173
+giantsteps-key,3426022.LOFI.wav,D minor,d minor,1.0,correct,ok,39.14,23.061,13.155,2.632,0.008,0.2
+giantsteps-key,3426285.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,40.47,22.651,14.307,3.217,0.007,0.194
+giantsteps-key,3428673.LOFI.wav,C minor,c minor,1.0,correct,ok,38.48,22.281,13.319,2.495,0.008,0.291
+giantsteps-key,3432247.LOFI.wav,E minor,e minor,1.0,correct,ok,40.2,23.782,12.815,3.289,0.009,0.207
+giantsteps-key,3434746.LOFI.wav,A minor,a minor,1.0,correct,ok,40.06,23.251,13.628,2.876,0.008,0.213
+giantsteps-key,3443052.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.75,23.867,12.592,2.993,0.008,0.198
+giantsteps-key,3450181.LOFI.wav,C minor,c minor,1.0,correct,ok,39.74,24.45,12.594,2.423,0.007,0.177
+giantsteps-key,3467773.LOFI.wav,Bb minor,Db major,0.3,relative,ok,38.2,22.49,12.337,3.072,0.012,0.2
+giantsteps-key,3478184.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.56,22.62,13.082,3.492,0.011,0.263
+giantsteps-key,3479363.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.26,23.34,12.69,2.787,0.018,0.194
+giantsteps-key,3480108.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,41.66,24.256,14.212,2.86,0.01,0.209
+giantsteps-key,3482733.LOFI.wav,G minor,g minor,1.0,correct,ok,39.59,23.158,12.923,3.134,0.012,0.196
+giantsteps-key,3516363.LOFI.wav,G minor,c minor,0.5,fifth,ok,40.38,23.856,13.582,2.674,0.007,0.183
+giantsteps-key,3517044.LOFI.wav,F minor,f minor,1.0,correct,ok,38.4,23.007,12.364,2.746,0.007,0.188
+giantsteps-key,3518768.LOFI.wav,Eb major,c minor,0.3,relative,ok,38.87,22.78,13.022,2.682,0.019,0.238
+giantsteps-key,3518921.LOFI.wav,B minor,b minor,1.0,correct,ok,39.78,23.56,12.7,3.261,0.007,0.172
+giantsteps-key,3519499.LOFI.wav,G minor,ab minor,0.0,wrong,ok,38.21,22.838,12.506,2.595,0.007,0.179
+giantsteps-key,3523229.LOFI.wav,A minor,f# minor,0.0,wrong,ok,38.6,22.765,12.799,2.758,0.008,0.183
+giantsteps-key,3524408.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.04,22.571,12.27,2.899,0.01,0.191
+giantsteps-key,3526370.LOFI.wav,G minor,g minor,1.0,correct,ok,38.82,22.818,13.171,2.548,0.007,0.185
+giantsteps-key,3533310.LOFI.wav,B major,B major,1.0,correct,ok,39.08,23.023,13.1,2.684,0.007,0.176
+giantsteps-key,3533740.LOFI.wav,B minor,f# minor,0.5,fifth,ok,40.4,23.429,12.326,4.324,0.014,0.197
+giantsteps-key,3533956.LOFI.wav,G minor,c minor,0.5,fifth,ok,38.82,23.2,12.909,2.431,0.007,0.194
+giantsteps-key,3535112.LOFI.wav,Bb minor,eb minor,0.5,fifth,ok,39.0,22.856,12.789,3.072,0.008,0.186
+giantsteps-key,3542099.LOFI.wav,F minor,f minor,1.0,correct,ok,39.56,22.85,13.366,3.06,0.008,0.187
+giantsteps-key,3545728.LOFI.wav,F minor,f minor,1.0,correct,ok,39.88,23.406,12.861,3.27,0.014,0.224
+giantsteps-key,3561744.LOFI.wav,G minor,f minor,0.0,wrong,ok,40.05,23.968,13.189,2.487,0.019,0.271
+giantsteps-key,3568438.LOFI.wav,Ab major,Ab major,1.0,correct,ok,39.94,23.346,13.024,3.287,0.008,0.183
+giantsteps-key,3568459.LOFI.wav,G major,b minor,0.0,wrong,ok,39.96,23.402,13.177,3.077,0.008,0.209
+giantsteps-key,3568465.LOFI.wav,A minor,d minor,0.5,fifth,ok,40.21,23.855,12.877,3.176,0.009,0.193
+giantsteps-key,3571314.LOFI.wav,Db minor,c# minor,1.0,correct,ok,41.12,24.174,13.541,2.981,0.038,0.2
+giantsteps-key,3572701.LOFI.wav,F minor,f minor,1.0,correct,ok,40.13,23.2,13.519,3.09,0.007,0.211
+giantsteps-key,3572702.LOFI.wav,E minor,e minor,1.0,correct,ok,40.2,24.311,12.827,2.793,0.006,0.18
+giantsteps-key,3574815.LOFI.wav,A minor,a minor,1.0,correct,ok,39.09,23.266,12.884,2.614,0.009,0.215
+giantsteps-key,3589347.LOFI.wav,C minor,c minor,1.0,correct,ok,39.42,23.471,12.707,2.877,0.015,0.239
+giantsteps-key,3590070.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,40.93,23.723,12.768,4.127,0.011,0.201
+giantsteps-key,3596904.LOFI.wav,A major,f# minor,0.3,relative,ok,39.51,22.865,13.019,3.322,0.009,0.212
+giantsteps-key,3602280.LOFI.wav,G minor,f minor,0.0,wrong,ok,40.29,23.517,13.376,3.088,0.009,0.209
+giantsteps-key,3602282.LOFI.wav,E minor,c minor,0.0,wrong,ok,38.49,22.432,12.882,2.845,0.009,0.231
+giantsteps-key,3625299.LOFI.wav,G minor,g minor,1.0,correct,ok,41.05,23.914,14.128,2.654,0.013,0.234
+giantsteps-key,3625787.LOFI.wav,C minor,c minor,1.0,correct,ok,40.46,22.819,14.022,3.339,0.007,0.186
+giantsteps-key,3625788.LOFI.wav,G minor,g minor,1.0,correct,ok,40.53,23.464,12.835,3.954,0.007,0.181
+giantsteps-key,3628628.LOFI.wav,B major,e minor,0.0,wrong,ok,40.01,24.279,13.075,2.366,0.011,0.202
+giantsteps-key,3629467.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.3,22.699,12.722,2.58,0.008,0.21
+giantsteps-key,3629920.LOFI.wav,G minor,g minor,1.0,correct,ok,39.39,22.837,13.494,2.786,0.007,0.184
+giantsteps-key,3633852.LOFI.wav,B minor,b minor,1.0,correct,ok,39.01,23.079,12.973,2.61,0.013,0.233
+giantsteps-key,3638836.LOFI.wav,F major,f minor,0.2,parallel,ok,40.66,24.688,13.067,2.424,0.013,0.367
+giantsteps-key,3641166.LOFI.wav,E minor,e minor,1.0,correct,ok,39.23,23.41,12.488,3.056,0.008,0.183
+giantsteps-key,3642384.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.9,22.87,12.904,2.806,0.009,0.208
+giantsteps-key,3642409.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.97,23.613,13.095,2.969,0.009,0.195
+giantsteps-key,3648814.LOFI.wav,B minor,b minor,1.0,correct,ok,38.69,22.805,13.071,2.479,0.012,0.22
+giantsteps-key,3661550.LOFI.wav,A minor,a minor,1.0,correct,ok,39.28,23.316,12.622,3.015,0.009,0.202
+giantsteps-key,3667215.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.28,23.062,13.155,2.754,0.011,0.212
+giantsteps-key,3667683.LOFI.wav,G minor,c minor,0.5,fifth,ok,39.48,23.619,12.789,2.712,0.012,0.24
+giantsteps-key,3668409.LOFI.wav,E minor,b minor,0.5,fifth,ok,40.94,24.419,13.072,3.137,0.009,0.188
+giantsteps-key,3681890.LOFI.wav,C major,e minor,0.0,wrong,ok,39.65,23.157,12.531,3.481,0.012,0.367
+giantsteps-key,3686302.LOFI.wav,D minor,d minor,1.0,correct,ok,40.11,23.426,13.414,2.976,0.009,0.196
+giantsteps-key,3687442.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.27,23.111,13.056,2.757,0.013,0.23
+giantsteps-key,3695262.LOFI.wav,F minor,f minor,1.0,correct,ok,38.93,22.793,12.847,2.749,0.029,0.316
+giantsteps-key,3696226.LOFI.wav,Ab minor,Ab major,0.2,parallel,ok,39.31,23.564,12.455,2.973,0.007,0.21
+giantsteps-key,3701975.LOFI.wav,F major,d minor,0.3,relative,ok,39.42,22.748,12.948,3.451,0.006,0.187
+giantsteps-key,3703893.LOFI.wav,E major,c# minor,0.3,relative,ok,40.32,23.984,12.407,3.598,0.014,0.222
+giantsteps-key,3706570.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.06,22.972,12.789,2.933,0.028,0.232
+giantsteps-key,3713557.LOFI.wav,Bb minor,eb minor,0.5,fifth,ok,39.48,23.014,12.82,3.36,0.007,0.187
+giantsteps-key,3725440.LOFI.wav,F minor,f minor,1.0,correct,ok,39.13,22.54,13.502,2.795,0.008,0.188
+giantsteps-key,3740062.LOFI.wav,F minor,f minor,1.0,correct,ok,39.92,24.03,12.784,2.795,0.009,0.199
+giantsteps-key,3753635.LOFI.wav,F major,d minor,0.3,relative,ok,40.5,24.071,13.263,2.86,0.008,0.22
+giantsteps-key,3757006.LOFI.wav,Eb major,f minor,0.0,wrong,ok,39.95,23.354,12.385,3.931,0.009,0.181
+giantsteps-key,3759800.LOFI.wav,B minor,b minor,1.0,correct,ok,40.59,23.03,14.533,2.671,0.006,0.258
+giantsteps-key,376240.LOFI.wav,F minor,f minor,1.0,correct,ok,39.31,23.113,13.073,2.832,0.009,0.189
+giantsteps-key,3767408.LOFI.wav,G minor,g minor,1.0,correct,ok,39.85,23.572,12.822,3.114,0.012,0.228
+giantsteps-key,3772753.LOFI.wav,D minor,d minor,1.0,correct,ok,39.95,23.782,12.757,3.112,0.008,0.192
+giantsteps-key,3773561.LOFI.wav,D minor,d minor,1.0,correct,ok,39.8,23.133,13.577,2.806,0.007,0.192
+giantsteps-key,3776015.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.84,23.156,12.315,3.026,0.012,0.231
+giantsteps-key,3789116.LOFI.wav,E minor,b minor,0.5,fifth,ok,38.29,22.785,12.561,2.612,0.013,0.218
+giantsteps-key,3789117.LOFI.wav,Bb minor,eb minor,0.5,fifth,ok,38.81,22.625,12.806,3.098,0.008,0.186
+giantsteps-key,3792959.LOFI.wav,E minor,e minor,1.0,correct,ok,39.05,22.996,12.824,2.95,0.008,0.187
+giantsteps-key,3794008.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.6,22.5,12.956,2.78,0.014,0.237
+giantsteps-key,3813682.LOFI.wav,G minor,g minor,1.0,correct,ok,38.56,23.135,12.698,2.389,0.008,0.217
+giantsteps-key,3822226.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.28,23.598,12.402,3.005,0.008,0.192
+giantsteps-key,3826491.LOFI.wav,D minor,d minor,1.0,correct,ok,39.15,22.799,12.797,3.257,0.009,0.2
+giantsteps-key,3829561.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.16,23.316,12.619,2.944,0.008,0.187
+giantsteps-key,3833050.LOFI.wav,Db major,c# minor,0.2,parallel,ok,38.91,23.583,12.642,2.345,0.017,0.213
+giantsteps-key,3836490.LOFI.wav,F minor,f minor,1.0,correct,ok,38.7,22.631,12.634,3.128,0.007,0.177
+giantsteps-key,3841927.LOFI.wav,C minor,c minor,1.0,correct,ok,38.8,22.6,13.266,2.651,0.008,0.193
+giantsteps-key,3858289.LOFI.wav,A minor,a minor,1.0,correct,ok,38.38,23.009,12.13,2.944,0.007,0.212
+giantsteps-key,3858324.LOFI.wav,B minor,f# minor,0.5,fifth,ok,39.36,23.433,13.088,2.482,0.015,0.226
+giantsteps-key,3858331.LOFI.wav,C minor,c minor,1.0,correct,ok,38.86,22.875,12.6,3.12,0.007,0.175
+giantsteps-key,3873733.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.95,22.748,13.065,2.867,0.006,0.183
+giantsteps-key,3892740.LOFI.wav,D major,b minor,0.3,relative,ok,39.9,23.975,12.795,2.834,0.008,0.205
+giantsteps-key,3914630.LOFI.wav,Gb major,f# minor,0.2,parallel,ok,38.74,22.944,12.82,2.586,0.012,0.259
+giantsteps-key,3930672.LOFI.wav,D minor,d minor,1.0,correct,ok,39.14,22.873,12.753,3.242,0.007,0.182
+giantsteps-key,3935095.LOFI.wav,E minor,a minor,0.5,fifth,ok,39.25,22.589,13.011,3.355,0.007,0.196
+giantsteps-key,3938837.LOFI.wav,E minor,e minor,1.0,correct,ok,38.46,23.102,12.158,2.854,0.011,0.228
+giantsteps-key,3939148.LOFI.wav,G minor,g minor,1.0,correct,ok,38.45,23.408,12.429,2.345,0.008,0.176
+giantsteps-key,3949799.LOFI.wav,A major,d minor,0.0,wrong,ok,38.92,22.846,12.743,3.052,0.008,0.181
+giantsteps-key,3954078.LOFI.wav,A minor,a minor,1.0,correct,ok,39.24,23.432,13.15,2.377,0.008,0.188
+giantsteps-key,3954191.LOFI.wav,F minor,f minor,1.0,correct,ok,38.73,22.743,12.613,3.078,0.009,0.192
+giantsteps-key,3958396.LOFI.wav,A major,d minor,0.0,wrong,ok,38.62,23.117,12.629,2.593,0.008,0.184
+giantsteps-key,3958397.LOFI.wav,A minor,a minor,1.0,correct,ok,39.0,22.105,13.23,3.196,0.01,0.37
+giantsteps-key,3958398.LOFI.wav,G minor,c minor,0.5,fifth,ok,38.58,23.071,12.719,2.512,0.007,0.191
+giantsteps-key,3958755.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.85,22.864,12.628,3.067,0.008,0.189
+giantsteps-key,3958861.LOFI.wav,E minor,e minor,1.0,correct,ok,38.74,23.415,12.663,2.348,0.009,0.206
+giantsteps-key,3963180.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.33,23.253,12.986,2.83,0.007,0.174
+giantsteps-key,3967462.LOFI.wav,E minor,c minor,0.0,wrong,ok,39.32,22.341,13.353,3.348,0.007,0.183
+giantsteps-key,3969868.LOFI.wav,F minor,f minor,1.0,correct,ok,39.08,23.833,12.081,2.804,0.012,0.245
+giantsteps-key,3971416.LOFI.wav,D minor,d minor,1.0,correct,ok,40.31,24.396,12.884,2.652,0.012,0.235
+giantsteps-key,3979989.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.56,22.246,13.003,3.027,0.008,0.184
+giantsteps-key,3980001.LOFI.wav,D minor,f minor,0.0,wrong,ok,38.88,22.826,13.193,2.599,0.007,0.179
+giantsteps-key,398124.LOFI.wav,D major,b minor,0.3,relative,ok,38.78,22.669,12.856,2.896,0.01,0.237
+giantsteps-key,3986537.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.31,23.038,12.542,2.436,0.008,0.199
+giantsteps-key,3992511.LOFI.wav,Eb minor,f minor,0.0,wrong,ok,39.25,23.605,12.174,3.198,0.007,0.184
+giantsteps-key,3995054.LOFI.wav,C major,c minor,0.2,parallel,ok,38.46,22.46,13.186,2.519,0.01,0.2
+giantsteps-key,3997722.LOFI.wav,F minor,f minor,1.0,correct,ok,38.08,22.746,12.44,2.577,0.009,0.217
+giantsteps-key,4002242.LOFI.wav,A minor,a minor,1.0,correct,ok,38.78,23.49,12.493,2.352,0.014,0.237
+giantsteps-key,400259.LOFI.wav,G minor,g minor,1.0,correct,ok,38.43,22.68,12.852,2.612,0.008,0.194
+giantsteps-key,4014747.LOFI.wav,C minor,c minor,1.0,correct,ok,38.59,22.633,12.359,3.331,0.006,0.187
+giantsteps-key,4014749.LOFI.wav,C minor,c minor,1.0,correct,ok,38.5,22.789,12.475,2.888,0.009,0.24
+giantsteps-key,4018247.LOFI.wav,G minor,g minor,1.0,correct,ok,38.29,22.756,12.893,2.364,0.008,0.186
+giantsteps-key,4021075.LOFI.wav,F minor,f minor,1.0,correct,ok,39.22,23.443,12.912,2.57,0.009,0.197
+giantsteps-key,4045225.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.22,22.6,12.616,2.741,0.007,0.179
+giantsteps-key,4048367.LOFI.wav,B minor,b minor,1.0,correct,ok,39.74,22.786,13.627,3.031,0.011,0.192
+giantsteps-key,4049579.LOFI.wav,G minor,g minor,1.0,correct,ok,38.27,22.84,12.695,2.386,0.008,0.176
+giantsteps-key,4060751.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.85,22.789,12.126,3.664,0.008,0.183
+giantsteps-key,4062807.LOFI.wav,E minor,e minor,1.0,correct,ok,39.41,23.041,13.299,2.789,0.008,0.187
+giantsteps-key,4066359.LOFI.wav,Eb major,c minor,0.3,relative,ok,39.2,23.523,12.935,2.455,0.01,0.189
+giantsteps-key,4066435.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,42.73,26.42,12.758,3.256,0.008,0.195
+giantsteps-key,4086909.LOFI.wav,G minor,g minor,1.0,correct,ok,38.68,22.412,12.989,2.981,0.007,0.202
+giantsteps-key,4088665.LOFI.wav,D minor,d minor,1.0,correct,ok,39.75,23.117,12.934,3.354,0.007,0.251
+giantsteps-key,4091478.LOFI.wav,A minor,a minor,1.0,correct,ok,38.67,22.485,12.947,2.616,0.007,0.522
+giantsteps-key,4093657.LOFI.wav,Db minor,eb minor,0.0,wrong,ok,39.23,22.835,13.361,2.677,0.013,0.223
+giantsteps-key,4093908.LOFI.wav,C minor,c minor,1.0,correct,ok,41.25,25.816,12.789,2.34,0.008,0.182
+giantsteps-key,4098993.LOFI.wav,G minor,g minor,1.0,correct,ok,39.94,22.913,13.768,2.978,0.008,0.19
+giantsteps-key,4104235.LOFI.wav,F minor,f minor,1.0,correct,ok,40.31,24.241,13.301,2.485,0.008,0.187
+giantsteps-key,4107957.LOFI.wav,Db minor,e minor,0.0,wrong,ok,40.14,23.827,13.266,2.721,0.01,0.219
+giantsteps-key,4125044.LOFI.wav,F minor,f minor,1.0,correct,ok,38.87,23.028,12.624,2.948,0.007,0.176
+giantsteps-key,4153238.LOFI.wav,A minor,a minor,1.0,correct,ok,40.49,23.428,12.803,3.968,0.009,0.187
+giantsteps-key,4162405.LOFI.wav,A minor,a minor,1.0,correct,ok,40.05,23.665,13.354,2.754,0.007,0.185
+giantsteps-key,4166222.LOFI.wav,E minor,e minor,1.0,correct,ok,42.1,25.279,13.164,3.304,0.014,0.237
+giantsteps-key,4167325.LOFI.wav,F minor,f minor,1.0,correct,ok,42.51,25.068,14.723,2.408,0.008,0.204
+giantsteps-key,4173942.LOFI.wav,C major,C major,1.0,correct,ok,40.26,23.477,13.365,3.054,0.015,0.253
+giantsteps-key,4186982.LOFI.wav,G minor,g minor,1.0,correct,ok,39.57,23.221,13.339,2.728,0.008,0.186
+giantsteps-key,4188100.LOFI.wav,Bb minor,f minor,0.5,fifth,ok,40.56,23.631,13.1,3.539,0.008,0.196
+giantsteps-key,4191993.LOFI.wav,E minor,e minor,1.0,correct,ok,40.26,23.891,13.314,2.756,0.008,0.208
+giantsteps-key,4200490.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.24,22.665,13.602,2.647,0.009,0.234
+giantsteps-key,4202763.LOFI.wav,A minor,a minor,1.0,correct,ok,39.02,23.342,12.549,2.837,0.011,0.202
+giantsteps-key,4206954.LOFI.wav,D minor,d minor,1.0,correct,ok,39.55,22.989,13.003,3.247,0.01,0.2
+giantsteps-key,4207145.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.86,24.365,12.806,2.411,0.007,0.182
+giantsteps-key,423054.LOFI.wav,D minor,d minor,1.0,correct,ok,38.99,23.144,12.71,2.822,0.008,0.218
+giantsteps-key,4231980.LOFI.wav,C minor,c minor,1.0,correct,ok,38.51,22.482,12.521,3.193,0.009,0.212
+giantsteps-key,4234612.LOFI.wav,C minor,c minor,1.0,correct,ok,40.39,23.713,13.336,3.06,0.008,0.182
+giantsteps-key,4254573.LOFI.wav,C minor,c minor,1.0,correct,ok,40.59,24.618,12.845,2.829,0.007,0.204
+giantsteps-key,4262569.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.14,22.834,13.364,2.626,0.009,0.214
+giantsteps-key,4275052.LOFI.wav,D major,b minor,0.3,relative,ok,39.66,22.826,13.336,3.191,0.008,0.212
+giantsteps-key,4277742.LOFI.wav,F minor,f minor,1.0,correct,ok,40.13,23.883,12.404,3.565,0.008,0.188
+giantsteps-key,4284574.LOFI.wav,G major,a minor,0.0,wrong,ok,39.33,23.894,12.854,2.311,0.007,0.179
+giantsteps-key,4293025.LOFI.wav,A minor,a minor,1.0,correct,ok,38.46,22.575,12.281,3.305,0.008,0.206
+giantsteps-key,4297635.LOFI.wav,B minor,e minor,0.5,fifth,ok,38.84,22.284,13.436,2.805,0.008,0.219
+giantsteps-key,4302974.LOFI.wav,E minor,e minor,1.0,correct,ok,40.03,23.694,13.266,2.788,0.008,0.189
+giantsteps-key,4315749.LOFI.wav,F minor,f minor,1.0,correct,ok,40.97,24.714,13.113,2.785,0.014,0.234
+giantsteps-key,4320199.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.77,23.487,12.747,3.263,0.007,0.186
+giantsteps-key,4325645.LOFI.wav,C minor,c minor,1.0,correct,ok,40.07,23.023,13.044,3.295,0.023,0.468
+giantsteps-key,4325646.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,41.35,25.05,13.263,2.735,0.008,0.209
+giantsteps-key,4327665.LOFI.wav,E minor,e minor,1.0,correct,ok,38.71,23.198,12.812,2.436,0.008,0.186
+giantsteps-key,4328155.LOFI.wav,C minor,c minor,1.0,correct,ok,39.02,22.743,13.077,2.927,0.007,0.187
+giantsteps-key,4328388.LOFI.wav,F minor,f minor,1.0,correct,ok,40.48,23.877,13.536,2.756,0.012,0.203
+giantsteps-key,435443.LOFI.wav,E minor,E major,0.2,parallel,ok,40.14,23.908,13.265,2.671,0.008,0.196
+giantsteps-key,4359736.LOFI.wav,F minor,f minor,1.0,correct,ok,42.98,26.781,13.189,2.695,0.009,0.219
+giantsteps-key,4360488.LOFI.wav,F minor,f# minor,0.0,wrong,ok,41.31,24.816,12.613,3.542,0.011,0.224
+giantsteps-key,4361260.LOFI.wav,C minor,c minor,1.0,correct,ok,39.88,23.241,13.367,2.993,0.008,0.186
+giantsteps-key,4364668.LOFI.wav,Ab minor,eb minor,0.5,fifth,ok,39.5,23.331,13.052,2.83,0.009,0.192
+giantsteps-key,4366506.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.54,23.355,12.715,3.122,0.011,0.224
+giantsteps-key,4371042.LOFI.wav,D minor,d minor,1.0,correct,ok,40.19,24.219,12.684,3.003,0.009,0.193
+giantsteps-key,4399289.LOFI.wav,C major,d minor,0.0,wrong,ok,40.03,23.687,13.018,3.027,0.008,0.198
+giantsteps-key,4424988.LOFI.wav,Ab minor,c# minor,0.5,fifth,ok,37.91,22.622,12.244,2.751,0.008,0.202
+giantsteps-key,4433083.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.14,23.017,12.953,2.821,0.013,0.238
+giantsteps-key,4440292.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.84,23.165,12.755,2.641,0.008,0.192
+giantsteps-key,4450726.LOFI.wav,E major,e minor,0.2,parallel,ok,39.03,22.991,12.652,3.129,0.006,0.174
+giantsteps-key,4452003.LOFI.wav,Gb minor,bb minor,0.0,wrong,ok,26.04,16.03,7.91,1.847,0.011,0.188
+giantsteps-key,4452122.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,37.74,22.64,12.499,2.314,0.008,0.197
+giantsteps-key,4453556.LOFI.wav,G minor,g minor,1.0,correct,ok,38.81,22.843,13.164,2.519,0.008,0.185
+giantsteps-key,4476610.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.94,23.956,12.54,3.155,0.009,0.188
+giantsteps-key,4483817.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,43.89,27.463,13.624,2.496,0.009,0.214
+giantsteps-key,4485436.LOFI.wav,F minor,f minor,1.0,correct,ok,39.78,24.333,12.445,2.638,0.015,0.231
+giantsteps-key,4498388.LOFI.wav,D minor,d minor,1.0,correct,ok,38.76,22.734,13.201,2.553,0.006,0.182
+giantsteps-key,4505122.LOFI.wav,Eb major,eb minor,0.2,parallel,ok,38.06,22.863,12.284,2.629,0.007,0.191
+giantsteps-key,4508323.LOFI.wav,B minor,b minor,1.0,correct,ok,39.77,23.323,13.527,2.655,0.007,0.173
+giantsteps-key,4540971.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,38.83,23.487,12.216,2.783,0.012,0.229
+giantsteps-key,4566667.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.64,23.26,12.6,2.485,0.006,0.207
+giantsteps-key,4573655.LOFI.wav,E minor,a minor,0.5,fifth,ok,38.28,22.718,12.496,2.785,0.007,0.188
+giantsteps-key,4596347.LOFI.wav,F minor,f minor,1.0,correct,ok,39.7,23.452,12.907,3.035,0.009,0.201
+giantsteps-key,4609349.LOFI.wav,A minor,a minor,1.0,correct,ok,38.61,23.044,12.297,2.896,0.013,0.24
+giantsteps-key,4615188.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,39.01,23.594,12.657,2.486,0.007,0.182
+giantsteps-key,4657878.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.28,22.586,12.556,2.791,0.011,0.229
+giantsteps-key,4661735.LOFI.wav,G minor,g minor,1.0,correct,ok,39.0,23.004,12.816,2.894,0.008,0.191
+giantsteps-key,4666231.LOFI.wav,F minor,f minor,1.0,correct,ok,39.55,23.822,12.982,2.421,0.011,0.224
+giantsteps-key,4666417.LOFI.wav,A major,f# minor,0.3,relative,ok,40.1,24.685,12.703,2.434,0.008,0.192
+giantsteps-key,4688833.LOFI.wav,A minor,a minor,1.0,correct,ok,39.5,23.363,12.866,2.987,0.007,0.19
+giantsteps-key,4693198.LOFI.wav,E major,Ab major,0.0,wrong,ok,38.79,22.518,13.209,2.746,0.009,0.207
+giantsteps-key,4702235.LOFI.wav,D major,b minor,0.3,relative,ok,38.33,22.834,12.386,2.76,0.011,0.231
+giantsteps-key,4723905.LOFI.wav,F minor,f minor,1.0,correct,ok,37.81,22.697,12.364,2.467,0.007,0.199
+giantsteps-key,472626.LOFI.wav,G minor,d minor,0.5,fifth,ok,39.26,23.206,13.17,2.58,0.011,0.205
+giantsteps-key,4735775.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.3,23.32,13.032,2.654,0.014,0.188
+giantsteps-key,4755348.LOFI.wav,G minor,g minor,1.0,correct,ok,38.81,22.588,13.003,2.805,0.013,0.294
+giantsteps-key,4758620.LOFI.wav,F minor,f minor,1.0,correct,ok,39.6,23.694,13.101,2.52,0.007,0.187
+giantsteps-key,4779657.LOFI.wav,Bb major,d minor,0.0,wrong,ok,39.5,23.415,12.768,2.998,0.011,0.206
+giantsteps-key,4786362.LOFI.wav,C minor,c minor,1.0,correct,ok,39.36,22.81,13.637,2.595,0.008,0.211
+giantsteps-key,4802314.LOFI.wav,E minor,ab minor,0.0,wrong,ok,38.59,22.729,12.566,2.993,0.009,0.204
+giantsteps-key,4815758.LOFI.wav,C minor,c minor,1.0,correct,ok,38.59,23.335,12.53,2.453,0.007,0.178
+giantsteps-key,4817706.LOFI.wav,Db minor,c# minor,1.0,correct,ok,39.04,23.069,13.14,2.553,0.008,0.183
+giantsteps-key,4823611.LOFI.wav,A minor,d minor,0.5,fifth,ok,38.49,22.665,12.976,2.534,0.013,0.208
+giantsteps-key,4824580.LOFI.wav,C minor,d minor,0.0,wrong,ok,38.78,23.051,12.582,2.807,0.011,0.235
+giantsteps-key,4827420.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.22,23.293,12.745,2.738,0.056,0.245
+giantsteps-key,4834156.LOFI.wav,D minor,d minor,1.0,correct,ok,38.32,22.775,12.569,2.686,0.008,0.198
+giantsteps-key,4840289.LOFI.wav,E minor,e minor,1.0,correct,ok,38.26,22.494,12.795,2.625,0.011,0.227
+giantsteps-key,4842349.LOFI.wav,G minor,g minor,1.0,correct,ok,38.86,23.338,12.204,2.901,0.013,0.277
+giantsteps-key,4846004.LOFI.wav,B minor,b minor,1.0,correct,ok,38.37,22.992,12.632,2.47,0.008,0.19
+giantsteps-key,4846007.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.78,22.863,12.428,3.152,0.012,0.226
+giantsteps-key,4857650.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,38.5,22.833,12.842,2.54,0.009,0.188
+giantsteps-key,4863806.LOFI.wav,F minor,f minor,1.0,correct,ok,38.41,22.963,12.55,2.613,0.008,0.191
+giantsteps-key,4868146.LOFI.wav,F minor,f minor,1.0,correct,ok,39.17,23.036,13.27,2.535,0.007,0.231
+giantsteps-key,4873286.LOFI.wav,Gb major,f# minor,0.2,parallel,ok,39.43,23.813,12.893,2.411,0.01,0.221
+giantsteps-key,4877006.LOFI.wav,F minor,f minor,1.0,correct,ok,38.42,23.003,12.714,2.426,0.008,0.185
+giantsteps-key,4898445.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.3,22.885,12.548,2.58,0.007,0.195
+giantsteps-key,4898455.LOFI.wav,F minor,bb minor,0.5,fifth,ok,38.87,22.787,12.976,2.79,0.011,0.217
+giantsteps-key,4900482.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,39.13,22.963,13.009,2.806,0.016,0.234
+giantsteps-key,4917941.LOFI.wav,F minor,f minor,1.0,correct,ok,38.42,22.827,12.638,2.652,0.016,0.187
+giantsteps-key,4920936.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.78,22.499,13.153,2.817,0.01,0.196
+giantsteps-key,4926785.LOFI.wav,G minor,g minor,1.0,correct,ok,38.97,22.285,13.945,2.418,0.01,0.225
+giantsteps-key,4927548.LOFI.wav,F minor,f minor,1.0,correct,ok,42.27,25.764,13.551,2.657,0.009,0.205
+giantsteps-key,4927724.LOFI.wav,Ab major,Ab major,1.0,correct,ok,39.56,23.636,13.225,2.407,0.01,0.187
+giantsteps-key,4927725.LOFI.wav,Eb minor,ab minor,0.5,fifth,ok,38.17,22.911,12.209,2.743,0.01,0.199
+giantsteps-key,4928111.LOFI.wav,F minor,f minor,1.0,correct,ok,40.02,23.245,13.857,2.58,0.011,0.238
+giantsteps-key,4934196.LOFI.wav,A minor,a minor,1.0,correct,ok,42.21,26.406,12.933,2.579,0.008,0.198
+giantsteps-key,4934251.LOFI.wav,C minor,c minor,1.0,correct,ok,42.92,26.997,13.089,2.557,0.008,0.186
+giantsteps-key,4935536.LOFI.wav,F minor,f minor,1.0,correct,ok,38.77,22.956,12.298,3.161,0.014,0.229
+giantsteps-key,4939812.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,38.14,22.658,12.442,2.657,0.009,0.284
+giantsteps-key,4941208.LOFI.wav,F minor,Eb major,0.0,wrong,ok,39.38,23.684,12.392,2.967,0.014,0.227
+giantsteps-key,4945105.LOFI.wav,F minor,f minor,1.0,correct,ok,41.61,25.714,12.628,2.92,0.013,0.223
+giantsteps-key,4950604.LOFI.wav,F minor,f minor,1.0,correct,ok,40.56,24.382,12.688,2.892,0.011,0.485
+giantsteps-key,4950614.LOFI.wav,E minor,e minor,1.0,correct,ok,38.25,22.398,12.904,2.67,0.007,0.181
+giantsteps-key,4953926.LOFI.wav,C minor,c minor,1.0,correct,ok,38.76,23.13,12.741,2.605,0.008,0.18
+giantsteps-key,4955428.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,40.95,24.237,13.161,3.209,0.01,0.236
+giantsteps-key,4955940.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,40.16,23.086,13.483,3.206,0.014,0.251
+giantsteps-key,4956417.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.8,23.238,13.171,3.094,0.007,0.201
+giantsteps-key,4957129.LOFI.wav,D minor,d minor,1.0,correct,ok,39.98,24.334,12.556,2.725,0.015,0.231
+giantsteps-key,495905.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,37.7,22.646,12.229,2.512,0.008,0.212
+giantsteps-key,4960012.LOFI.wav,G minor,d minor,0.5,fifth,ok,39.71,23.327,13.092,2.977,0.01,0.192
+giantsteps-key,4965571.LOFI.wav,G minor,g minor,1.0,correct,ok,39.54,23.367,12.456,3.443,0.008,0.181
+giantsteps-key,4969568.LOFI.wav,B minor,b minor,1.0,correct,ok,39.46,23.748,12.61,2.795,0.009,0.204
+giantsteps-key,4970082.LOFI.wav,F minor,f minor,1.0,correct,ok,39.19,23.682,12.403,2.74,0.017,0.24
+giantsteps-key,4981539.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.69,22.246,12.38,3.68,0.016,0.24
+giantsteps-key,4981541.LOFI.wav,Bb minor,f minor,0.5,fifth,ok,38.87,22.692,12.656,3.239,0.007,0.188
+giantsteps-key,4983645.LOFI.wav,D minor,d minor,1.0,correct,ok,38.14,23.157,12.228,2.461,0.008,0.2
+giantsteps-key,4983728.LOFI.wav,G minor,g minor,1.0,correct,ok,40.6,24.884,12.395,2.994,0.01,0.217
+giantsteps-key,4992190.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.39,22.478,12.739,2.818,0.015,0.232
+giantsteps-key,4995394.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.58,22.56,12.617,3.036,0.013,0.24
+giantsteps-key,4995597.LOFI.wav,C major,f minor,0.0,wrong,ok,38.33,22.406,13.329,2.236,0.009,0.223
+giantsteps-key,4996031.LOFI.wav,F minor,f minor,1.0,correct,ok,39.65,23.099,13.019,3.161,0.014,0.239
+giantsteps-key,4996389.LOFI.wav,A minor,a minor,1.0,correct,ok,40.57,25.014,12.88,2.373,0.008,0.205
+giantsteps-key,4997194.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,41.39,25.496,12.943,2.667,0.008,0.188
+giantsteps-key,4997222.LOFI.wav,Db minor,c# minor,1.0,correct,ok,39.38,23.539,13.221,2.327,0.008,0.202
+giantsteps-key,5005412.LOFI.wav,G minor,g minor,1.0,correct,ok,38.09,22.357,12.759,2.665,0.01,0.202
+giantsteps-key,5009084.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,41.42,24.116,13.799,3.196,0.011,0.203
+giantsteps-key,5013063.LOFI.wav,E minor,e minor,1.0,correct,ok,39.19,22.766,13.536,2.592,0.007,0.198
+giantsteps-key,5013910.LOFI.wav,G minor,g minor,1.0,correct,ok,39.82,23.684,13.473,2.36,0.008,0.213
+giantsteps-key,5015793.LOFI.wav,C major,d minor,0.0,wrong,ok,40.13,23.306,13.775,2.726,0.01,0.21
+giantsteps-key,5026646.LOFI.wav,F minor,f minor,1.0,correct,ok,39.36,22.826,13.473,2.677,0.014,0.253
+giantsteps-key,5030517.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,41.4,24.914,13.711,2.47,0.007,0.195
+giantsteps-key,5035524.LOFI.wav,E minor,e minor,1.0,correct,ok,39.45,23.55,13.248,2.345,0.007,0.21
+giantsteps-key,5036476.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,42.43,25.049,13.586,3.482,0.012,0.21
+giantsteps-key,5039015.LOFI.wav,Db minor,c# minor,1.0,correct,ok,37.99,22.44,12.635,2.649,0.008,0.178
+giantsteps-key,5039016.LOFI.wav,G minor,g minor,1.0,correct,ok,38.83,22.346,13.005,3.191,0.008,0.195
+giantsteps-key,5048249.LOFI.wav,A minor,a minor,1.0,correct,ok,38.26,22.829,12.756,2.387,0.009,0.197
+giantsteps-key,5048263.LOFI.wav,G minor,g minor,1.0,correct,ok,39.0,22.961,12.852,2.882,0.008,0.206
+giantsteps-key,5049808.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,41.91,26.291,12.707,2.532,0.013,0.27
+giantsteps-key,5070608.LOFI.wav,F minor,f minor,1.0,correct,ok,40.81,24.7,12.952,2.862,0.007,0.205
+giantsteps-key,5073839.LOFI.wav,B major,ab minor,0.3,relative,ok,38.48,22.937,12.841,2.425,0.008,0.186
+giantsteps-key,5078640.LOFI.wav,F minor,f minor,1.0,correct,ok,38.86,22.792,12.712,2.999,0.013,0.236
+giantsteps-key,5079918.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,37.8,22.456,12.616,2.412,0.007,0.226
+giantsteps-key,5081990.LOFI.wav,Gb minor,f# minor,1.0,correct,ok,38.5,22.742,12.661,2.833,0.006,0.182
+giantsteps-key,5085261.LOFI.wav,A major,f# minor,0.3,relative,ok,38.61,22.882,12.73,2.704,0.008,0.195
+giantsteps-key,5103693.LOFI.wav,F major,f minor,0.2,parallel,ok,38.56,22.893,12.409,2.874,0.012,0.261
+giantsteps-key,511348.LOFI.wav,E minor,e minor,1.0,correct,ok,38.6,23.269,12.603,2.418,0.015,0.211
+giantsteps-key,5120298.LOFI.wav,F minor,f minor,1.0,correct,ok,38.62,22.802,12.756,2.776,0.006,0.2
+giantsteps-key,5159593.LOFI.wav,A minor,a minor,1.0,correct,ok,37.88,22.381,12.566,2.618,0.012,0.219
+giantsteps-key,5171396.LOFI.wav,Ab major,f minor,0.3,relative,ok,38.31,22.75,12.193,3.026,0.009,0.232
+giantsteps-key,5263098.LOFI.wav,G minor,g minor,1.0,correct,ok,38.98,23.349,12.772,2.501,0.011,0.245
+giantsteps-key,5264038.LOFI.wav,E minor,f# minor,0.0,wrong,ok,38.41,22.506,12.832,2.809,0.006,0.182
+giantsteps-key,5276059.LOFI.wav,C minor,c minor,1.0,correct,ok,38.98,23.223,13.009,2.484,0.007,0.179
+giantsteps-key,5302340.LOFI.wav,C minor,c minor,1.0,correct,ok,38.45,23.208,12.062,2.84,0.011,0.229
+giantsteps-key,5304804.LOFI.wav,F minor,f minor,1.0,correct,ok,37.81,22.431,12.729,2.366,0.007,0.197
+giantsteps-key,5308082.LOFI.wav,Db minor,c# minor,1.0,correct,ok,38.48,22.482,12.874,2.838,0.007,0.182
+giantsteps-key,5362946.LOFI.wav,A minor,a minor,1.0,correct,ok,38.49,22.848,12.612,2.703,0.011,0.224
+giantsteps-key,5417860.LOFI.wav,Ab minor,ab minor,1.0,correct,ok,38.84,22.72,12.687,3.051,0.016,0.26
+giantsteps-key,5431709.LOFI.wav,C minor,c minor,1.0,correct,ok,38.91,23.391,12.547,2.681,0.009,0.195
+giantsteps-key,5450838.LOFI.wav,E minor,e minor,1.0,correct,ok,39.77,23.808,13.13,2.549,0.008,0.194
+giantsteps-key,571009.LOFI.wav,F minor,f minor,1.0,correct,ok,38.84,23.071,12.842,2.628,0.012,0.198
+giantsteps-key,5740146.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,38.89,22.678,12.752,3.115,0.011,0.228
+giantsteps-key,582991.LOFI.wav,G minor,c minor,0.5,fifth,ok,39.49,23.544,13.186,2.477,0.007,0.188
+giantsteps-key,611797.LOFI.wav,A major,c# minor,0.0,wrong,ok,38.8,23.038,12.571,2.771,0.009,0.298
+giantsteps-key,61415.LOFI.wav,F minor,f minor,1.0,correct,ok,38.95,22.862,13.073,2.742,0.008,0.184
+giantsteps-key,631240.LOFI.wav,G minor,g minor,1.0,correct,ok,39.77,23.511,13.104,2.871,0.009,0.193
+giantsteps-key,631883.LOFI.wav,C minor,c minor,1.0,correct,ok,38.52,22.762,13.036,2.4,0.012,0.229
+giantsteps-key,634032.LOFI.wav,E minor,c minor,0.0,wrong,ok,39.07,23.141,12.623,3.001,0.007,0.219
+giantsteps-key,667508.LOFI.wav,D minor,d minor,1.0,correct,ok,41.0,22.952,13.398,4.324,0.01,0.207
+giantsteps-key,671546.LOFI.wav,A minor,a minor,1.0,correct,ok,39.29,23.236,12.513,3.204,0.01,0.23
+giantsteps-key,677299.LOFI.wav,Gb major,f# minor,0.2,parallel,ok,40.06,24.149,13.204,2.431,0.008,0.183
+giantsteps-key,678406.LOFI.wav,E minor,a minor,0.5,fifth,ok,39.39,22.74,13.487,2.864,0.009,0.204
+giantsteps-key,682724.LOFI.wav,C major,g minor,0.0,wrong,ok,39.03,22.848,13.468,2.447,0.007,0.181
+giantsteps-key,74982.LOFI.wav,C minor,f minor,0.5,fifth,ok,39.07,22.876,12.663,3.167,0.014,0.237
+giantsteps-key,774871.LOFI.wav,B major,c minor,0.0,wrong,ok,38.84,23.4,12.735,2.409,0.009,0.185
+giantsteps-key,774874.LOFI.wav,B minor,f# minor,0.5,fifth,ok,39.13,22.714,12.688,3.384,0.009,0.199
+giantsteps-key,774875.LOFI.wav,Gb minor,d minor,0.0,wrong,ok,38.7,22.855,13.117,2.447,0.007,0.185
+giantsteps-key,781373.LOFI.wav,E major,E major,1.0,correct,ok,38.63,23.2,12.151,2.937,0.01,0.229
+giantsteps-key,781995.LOFI.wav,C major,a minor,0.3,relative,ok,39.2,23.921,12.527,2.439,0.01,0.2
+giantsteps-key,796860.LOFI.wav,Ab minor,c# minor,0.5,fifth,ok,38.78,22.735,12.852,2.882,0.007,0.217
+giantsteps-key,814290.LOFI.wav,E major,f# minor,0.0,wrong,ok,39.24,23.253,13.338,2.353,0.007,0.202
+giantsteps-key,814505.LOFI.wav,A major,a minor,0.2,parallel,ok,39.0,22.764,12.455,3.42,0.013,0.226
+giantsteps-key,822664.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,38.84,23.064,13.045,2.463,0.007,0.183
+giantsteps-key,835903.LOFI.wav,D major,d minor,0.2,parallel,ok,39.15,22.567,13.461,2.777,0.006,0.247
+giantsteps-key,839886.LOFI.wav,D minor,g minor,0.5,fifth,ok,38.46,22.771,12.887,2.527,0.008,0.187
+giantsteps-key,846900.LOFI.wav,E major,e minor,0.2,parallel,ok,39.32,23.079,13.022,2.872,0.011,0.231
+giantsteps-key,847422.LOFI.wav,A minor,a minor,1.0,correct,ok,38.81,23.259,12.878,2.386,0.008,0.19
+giantsteps-key,853834.LOFI.wav,E major,e minor,0.2,parallel,ok,39.66,22.965,12.38,3.672,0.019,0.462
+giantsteps-key,873455.LOFI.wav,E minor,e minor,1.0,correct,ok,38.67,22.488,13.071,2.84,0.007,0.184
+giantsteps-key,877345.LOFI.wav,Eb major,Eb major,1.0,correct,ok,39.17,23.11,12.701,2.989,0.013,0.23
+giantsteps-key,883724.LOFI.wav,F minor,f minor,1.0,correct,ok,40.07,24.052,12.717,2.996,0.01,0.194
+giantsteps-key,890568.LOFI.wav,E minor,e minor,1.0,correct,ok,38.87,22.893,12.903,2.783,0.008,0.195
+giantsteps-key,891993.LOFI.wav,D major,d minor,0.2,parallel,ok,39.0,23.201,12.502,3.001,0.008,0.195
+giantsteps-key,896478.LOFI.wav,B minor,b minor,1.0,correct,ok,39.7,22.931,12.869,3.613,0.008,0.189
+giantsteps-key,903963.LOFI.wav,F major,f minor,0.2,parallel,ok,38.6,23.046,12.766,2.462,0.007,0.228
+giantsteps-key,907837.LOFI.wav,G minor,g minor,1.0,correct,ok,38.56,22.767,12.638,2.816,0.009,0.23
+giantsteps-key,923397.LOFI.wav,Bb minor,bb minor,1.0,correct,ok,39.11,22.424,13.697,2.662,0.007,0.225
+giantsteps-key,945256.LOFI.wav,Eb minor,eb minor,1.0,correct,ok,39.46,23.398,12.89,2.886,0.009,0.195
+giantsteps-key,973819.LOFI.wav,F minor,f minor,1.0,correct,ok,38.98,23.418,12.764,2.451,0.01,0.24
+giantsteps-key,975137.LOFI.wav,C minor,bb minor,0.0,wrong,ok,39.2,22.616,12.477,3.823,0.008,0.186
+giantsteps-key,975138.LOFI.wav,D minor,eb minor,0.0,wrong,ok,38.82,22.739,13.089,2.666,0.01,0.219
+giantsteps-key,981591.LOFI.wav,Bb minor,f# minor,0.0,wrong,ok,39.71,23.305,13.479,2.635,0.008,0.199
+giantsteps-key,992081.LOFI.wav,E major,c# minor,0.3,relative,ok,39.96,23.79,12.886,2.971,0.01,0.208
+giantsteps-key,997308.LOFI.wav,C major,c minor,0.2,parallel,ok,39.66,23.259,13.128,2.97,0.01,0.207
+giantsteps-mtg-key,100066.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.54,23.124,13.416,2.704,0.008,0.196
+giantsteps-mtg-key,1017875.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.07,22.814,12.893,2.993,0.019,0.241
+giantsteps-mtg-key,1019315.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.36,23.656,13.378,2.993,0.008,0.237
+giantsteps-mtg-key,1034722.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.88,22.64,12.63,3.315,0.007,0.206
+giantsteps-mtg-key,10359.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.3,22.981,13.164,2.832,0.009,0.212
+giantsteps-mtg-key,1038248.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.55,23.356,13.098,2.782,0.012,0.22
+giantsteps-mtg-key,103857.LOFI.wav,e major	2,e minor,0.2,parallel,ok,38.89,22.774,13.049,2.668,0.031,0.247
+giantsteps-mtg-key,1051007.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.78,23.667,12.749,3.058,0.008,0.217
+giantsteps-mtg-key,1054705.LOFI.wav,e minor	2	there is some punctual appearance of g# (e major),e minor,1.0,correct,ok,39.6,22.988,12.931,3.101,0.015,0.448
+giantsteps-mtg-key,1056047.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.92,23.787,12.855,2.8,0.01,0.331
+giantsteps-mtg-key,1059355.LOFI.wav,c# major	2,Db major,1.0,correct,ok,39.79,23.837,12.959,2.605,0.014,0.262
+giantsteps-mtg-key,1060028.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.79,23.46,12.714,3.306,0.009,0.206
+giantsteps-mtg-key,1067950.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.49,22.854,13.586,2.733,0.01,0.218
+giantsteps-mtg-key,1072514.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.04,23.119,13.236,2.412,0.006,0.185
+giantsteps-mtg-key,1077935.LOFI.wav,g# major	2,c minor,0.0,wrong,ok,43.16,26.265,13.557,2.989,0.009,0.234
+giantsteps-mtg-key,1093726.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.18,24.293,12.433,3.172,0.008,0.187
+giantsteps-mtg-key,1096228.LOFI.wav,d minor	2,g minor,0.5,fifth,ok,39.79,22.894,13.708,2.868,0.007,0.2
+giantsteps-mtg-key,110504.LOFI.wav,d# minor	2,c minor,0.0,wrong,ok,40.28,23.485,13.87,2.578,0.009,0.23
+giantsteps-mtg-key,11077.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,41.7,23.624,13.947,3.77,0.009,0.229
+giantsteps-mtg-key,1115626.LOFI.wav,g major	2,b minor,0.0,wrong,ok,42.25,26.048,13.442,2.487,0.008,0.187
+giantsteps-mtg-key,11194.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.23,23.305,13.641,2.937,0.01,0.227
+giantsteps-mtg-key,1144674.LOFI.wav,g minor	2	confusion with a# major is possible,g minor,1.0,correct,ok,39.6,23.127,12.494,3.667,0.01,0.2
+giantsteps-mtg-key,1147737.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.21,23.33,12.63,3.891,0.012,0.217
+giantsteps-mtg-key,1152124.LOFI.wav,g minor	2,g minor,1.0,correct,ok,41.61,25.285,13.209,2.819,0.007,0.221
+giantsteps-mtg-key,1156133.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.74,22.47,13.399,2.604,0.007,0.182
+giantsteps-mtg-key,1163534.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.09,23.795,13.652,2.342,0.008,0.199
+giantsteps-mtg-key,1164250.LOFI.wav,b minor	2	second degree is lowered,b minor,1.0,correct,ok,40.28,23.191,12.792,3.99,0.013,0.202
+giantsteps-mtg-key,1164433.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.3,23.718,13.626,2.598,0.013,0.237
+giantsteps-mtg-key,1167965.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.37,23.192,12.882,3.01,0.008,0.196
+giantsteps-mtg-key,1177887.LOFI.wav,a# minor	2,eb minor,0.5,fifth,ok,38.99,23.363,13.048,2.298,0.007,0.194
+giantsteps-mtg-key,1185017.LOFI.wav,g major	2,g minor,0.2,parallel,ok,38.82,22.884,12.572,3.065,0.009,0.199
+giantsteps-mtg-key,1187324.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.63,24.524,12.694,2.999,0.014,0.254
+giantsteps-mtg-key,1190182.LOFI.wav,b minor	2,d minor,0.0,wrong,ok,40.44,23.828,13.612,2.63,0.019,0.211
+giantsteps-mtg-key,1190980.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.28,23.386,13.146,2.465,0.008,0.199
+giantsteps-mtg-key,1194397.LOFI.wav,c# major	2,Db major,1.0,correct,ok,42.64,24.5,14.872,2.986,0.008,0.189
+giantsteps-mtg-key,1194512.LOFI.wav,a minor	2,a minor,1.0,correct,ok,38.32,22.641,12.957,2.431,0.017,0.194
+giantsteps-mtg-key,119467.LOFI.wav,d# minor	2,d minor,0.0,wrong,ok,39.39,22.776,13.105,3.149,0.013,0.233
+giantsteps-mtg-key,1196189.LOFI.wav,g minor	2,g minor,1.0,correct,ok,38.47,22.506,12.824,2.843,0.008,0.191
+giantsteps-mtg-key,1205438.LOFI.wav,e minor	2,f# minor,0.0,wrong,ok,39.8,23.571,13.559,2.385,0.009,0.195
+giantsteps-mtg-key,1240548.LOFI.wav,f# minor	2,eb minor,0.0,wrong,ok,46.29,28.881,13.686,3.411,0.008,0.213
+giantsteps-mtg-key,1243107.LOFI.wav,b minor	2,b minor,1.0,correct,ok,41.72,24.87,13.197,3.359,0.019,0.193
+giantsteps-mtg-key,1258142.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,41.17,23.188,13.675,3.869,0.05,0.233
+giantsteps-mtg-key,125918.LOFI.wav,g major	2,G major,1.0,correct,ok,40.26,23.505,13.896,2.587,0.008,0.188
+giantsteps-mtg-key,1261783.LOFI.wav,c# major	2,ab minor,0.0,wrong,ok,40.74,23.329,13.818,3.26,0.011,0.237
+giantsteps-mtg-key,1267809.LOFI.wav,a major	2,A major,1.0,correct,ok,42.2,26.05,13.336,2.507,0.008,0.214
+giantsteps-mtg-key,1270235.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,41.04,23.451,14.232,3.01,0.013,0.227
+giantsteps-mtg-key,1274431.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.45,23.322,13.419,2.43,0.008,0.192
+giantsteps-mtg-key,1276072.LOFI.wav,f# major	2,f# minor,0.2,parallel,ok,40.08,23.34,13.104,3.19,0.012,0.322
+giantsteps-mtg-key,1277819.LOFI.wav,d minor	2,d minor,1.0,correct,ok,42.65,26.32,13.595,2.429,0.009,0.199
+giantsteps-mtg-key,1287738.LOFI.wav,"c minor	2	confusion with f minor is possible, and there are fragments in c major too",f minor,0.5,fifth,ok,40.93,23.017,14.179,3.303,0.017,0.224
+giantsteps-mtg-key,1288533.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.78,23.527,13.344,2.623,0.008,0.194
+giantsteps-mtg-key,1290631.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.8,23.401,13.3,3.768,0.01,0.223
+giantsteps-mtg-key,1290726.LOFI.wav,b major	2	second degree is lowered,b minor,0.2,parallel,ok,39.35,23.031,13.553,2.484,0.008,0.185
+giantsteps-mtg-key,1298557.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.24,23.256,12.92,2.769,0.008,0.195
+giantsteps-mtg-key,1298600.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.43,23.729,12.266,3.141,0.008,0.188
+giantsteps-mtg-key,1312884.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,39.86,23.323,12.856,3.371,0.008,0.201
+giantsteps-mtg-key,131427.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,39.96,24.498,12.652,2.504,0.007,0.213
+giantsteps-mtg-key,1320423.LOFI.wav,e minor	2,a minor,0.5,fifth,ok,39.79,23.494,13.32,2.668,0.01,0.199
+giantsteps-mtg-key,1320553.LOFI.wav,d# minor	2	confusion with a# minor is possible,bb minor,0.5,fifth,ok,38.9,22.745,12.808,3.072,0.008,0.187
+giantsteps-mtg-key,132143.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.02,23.456,13.196,3.053,0.008,0.214
+giantsteps-mtg-key,1334754.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,39.83,24.05,13.053,2.441,0.007,0.201
+giantsteps-mtg-key,1336593.LOFI.wav,a# minor	2,eb minor,0.5,fifth,ok,38.96,23.25,12.456,2.961,0.009,0.186
+giantsteps-mtg-key,1338256.LOFI.wav,d major	2,b minor,0.3,relative,ok,39.0,22.887,12.584,3.204,0.007,0.211
+giantsteps-mtg-key,1340461.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.68,23.509,13.978,2.897,0.007,0.197
+giantsteps-mtg-key,1342043.LOFI.wav,e major	2,c# minor,0.3,relative,ok,40.83,24.72,12.954,2.844,0.008,0.187
+giantsteps-mtg-key,134948.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.61,23.341,13.402,2.578,0.008,0.188
+giantsteps-mtg-key,1350891.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.73,23.024,13.68,2.721,0.009,0.21
+giantsteps-mtg-key,1352419.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.54,24.321,13.143,2.772,0.008,0.208
+giantsteps-mtg-key,135302.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.84,24.281,12.88,2.401,0.009,0.184
+giantsteps-mtg-key,1362355.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,38.7,22.494,12.653,3.26,0.009,0.197
+giantsteps-mtg-key,1367983.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.3,22.66,13.535,2.766,0.01,0.233
+giantsteps-mtg-key,1372384.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.73,23.0,12.993,2.43,0.01,0.207
+giantsteps-mtg-key,1388341.LOFI.wav,a minor	2,c minor,0.0,wrong,ok,41.31,25.039,13.005,2.899,0.011,0.256
+giantsteps-mtg-key,1389968.LOFI.wav,d# minor	2,ab minor,0.5,fifth,ok,39.85,23.507,12.841,3.16,0.01,0.222
+giantsteps-mtg-key,139755.LOFI.wav,g major	2,e minor,0.3,relative,ok,39.71,23.499,12.87,2.969,0.01,0.191
+giantsteps-mtg-key,1397802.LOFI.wav,c major	2,d minor,0.0,wrong,ok,39.78,23.348,13.314,2.816,0.008,0.201
+giantsteps-mtg-key,1398692.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.46,22.438,12.917,2.721,0.013,0.248
+giantsteps-mtg-key,1402876.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.01,22.457,13.075,3.19,0.008,0.186
+giantsteps-mtg-key,1410568.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.58,23.122,13.447,2.708,0.008,0.195
+giantsteps-mtg-key,1410588.LOFI.wav,b major	2,eb minor,0.0,wrong,ok,39.44,23.065,13.226,2.86,0.007,0.198
+giantsteps-mtg-key,1413180.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.73,23.306,13.182,2.933,0.009,0.2
+giantsteps-mtg-key,1416128.LOFI.wav,f# major	2	major scale with 6th degree lowered,f# minor,0.2,parallel,ok,39.57,22.982,12.875,3.257,0.009,0.344
+giantsteps-mtg-key,1426839.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.02,22.985,13.03,2.731,0.007,0.185
+giantsteps-mtg-key,1428584.LOFI.wav,f major	2,f minor,0.2,parallel,ok,39.95,23.691,13.162,2.798,0.008,0.204
+giantsteps-mtg-key,14344.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.16,23.028,12.975,2.742,0.012,0.202
+giantsteps-mtg-key,1439221.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.68,23.33,12.633,3.433,0.008,0.19
+giantsteps-mtg-key,1441223.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.76,23.495,12.722,3.259,0.009,0.194
+giantsteps-mtg-key,1446413.LOFI.wav,d# minor	2,c minor,0.0,wrong,ok,40.07,23.868,12.652,3.258,0.01,0.191
+giantsteps-mtg-key,144851.LOFI.wav,b major	2,b minor,0.2,parallel,ok,40.79,24.552,13.087,2.775,0.014,0.252
+giantsteps-mtg-key,1453434.LOFI.wav,e major	2,e minor,0.2,parallel,ok,40.15,23.805,13.058,2.99,0.009,0.188
+giantsteps-mtg-key,1454669.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.9,23.158,13.508,2.945,0.007,0.199
+giantsteps-mtg-key,1456345.LOFI.wav,g# major	2,c minor,0.0,wrong,ok,39.27,22.691,13.424,2.863,0.007,0.203
+giantsteps-mtg-key,1460099.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,38.94,23.056,12.884,2.609,0.013,0.253
+giantsteps-mtg-key,14720.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.04,23.538,12.62,3.602,0.008,0.191
+giantsteps-mtg-key,1472760.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.51,23.1,13.354,2.759,0.007,0.197
+giantsteps-mtg-key,1474885.LOFI.wav,d major	2,d minor,0.2,parallel,ok,40.04,23.579,13.537,2.625,0.01,0.209
+giantsteps-mtg-key,1478848.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,39.24,23.462,12.629,2.822,0.009,0.221
+giantsteps-mtg-key,1492875.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.04,22.899,12.552,3.302,0.009,0.187
+giantsteps-mtg-key,1493674.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.72,23.07,13.364,2.986,0.01,0.209
+giantsteps-mtg-key,1497713.LOFI.wav,d major	2,a minor,0.0,wrong,ok,40.35,23.518,13.972,2.585,0.007,0.193
+giantsteps-mtg-key,1507482.LOFI.wav,g# minor	2,c# minor,0.5,fifth,ok,40.14,24.17,12.881,2.732,0.013,0.23
+giantsteps-mtg-key,150864.LOFI.wav,f minor	2,d minor,0.0,wrong,ok,39.56,23.261,12.751,3.143,0.012,0.259
+giantsteps-mtg-key,1544667.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.99,22.634,13.897,3.179,0.007,0.186
+giantsteps-mtg-key,1545117.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.53,23.142,13.337,2.699,0.011,0.244
+giantsteps-mtg-key,1558123.LOFI.wav,a major	2,a minor,0.2,parallel,ok,41.6,25.154,12.789,3.318,0.01,0.225
+giantsteps-mtg-key,155879.LOFI.wav,d minor	2,d minor,1.0,correct,ok,41.01,24.569,13.127,3.031,0.008,0.201
+giantsteps-mtg-key,1569491.LOFI.wav,f minor	2,eb minor,0.0,wrong,ok,40.06,23.385,12.962,3.406,0.011,0.197
+giantsteps-mtg-key,1579295.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.87,23.109,12.528,2.931,0.008,0.193
+giantsteps-mtg-key,1581325.LOFI.wav,g# major	2,f minor,0.3,relative,ok,39.54,23.106,13.242,2.893,0.007,0.193
+giantsteps-mtg-key,1586496.LOFI.wav,g# minor	2	confusion with b major is possible,c# minor,0.5,fifth,ok,39.19,23.119,12.964,2.801,0.009,0.196
+giantsteps-mtg-key,159301.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.37,23.026,13.307,2.757,0.008,0.2
+giantsteps-mtg-key,1595063.LOFI.wav,c major	2,c minor,0.2,parallel,ok,41.42,25.989,12.48,2.674,0.007,0.196
+giantsteps-mtg-key,1598083.LOFI.wav,c# major	2,eb minor,0.0,wrong,ok,39.07,22.312,13.472,2.984,0.009,0.203
+giantsteps-mtg-key,1599632.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.38,23.526,12.851,3.73,0.008,0.188
+giantsteps-mtg-key,1607693.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.25,22.941,13.995,3.028,0.009,0.193
+giantsteps-mtg-key,1612997.LOFI.wav,e minor	2,g minor,0.0,wrong,ok,39.88,23.302,13.484,2.807,0.007,0.198
+giantsteps-mtg-key,1622037.LOFI.wav,a major	2,e minor,0.0,wrong,ok,40.05,24.15,12.986,2.566,0.011,0.229
+giantsteps-mtg-key,1627499.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.02,23.943,12.584,3.189,0.009,0.204
+giantsteps-mtg-key,1642729.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.17,23.623,13.376,2.84,0.01,0.223
+giantsteps-mtg-key,1647165.LOFI.wav,d major	2,d minor,0.2,parallel,ok,38.71,22.933,13.016,2.456,0.009,0.213
+giantsteps-mtg-key,1648142.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.41,23.761,13.307,3.015,0.016,0.195
+giantsteps-mtg-key,1660225.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.95,23.748,12.647,3.221,0.01,0.227
+giantsteps-mtg-key,1662838.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.81,23.26,13.564,2.681,0.007,0.214
+giantsteps-mtg-key,1669212.LOFI.wav,d minor	2,g minor,0.5,fifth,ok,40.8,23.267,14.497,2.662,0.013,0.252
+giantsteps-mtg-key,1673356.LOFI.wav,d major	2,A major,0.5,fifth,ok,40.77,22.546,14.463,3.445,0.013,0.192
+giantsteps-mtg-key,167955.LOFI.wav,e major	2,f# minor,0.0,wrong,ok,40.43,24.085,13.14,2.902,0.01,0.188
+giantsteps-mtg-key,1681314.LOFI.wav,f minor	2,f minor,1.0,correct,ok,41.15,24.944,13.017,2.895,0.008,0.196
+giantsteps-mtg-key,168450.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.29,23.19,12.758,3.031,0.011,0.213
+giantsteps-mtg-key,1691194.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,39.9,23.622,13.18,2.785,0.01,0.207
+giantsteps-mtg-key,1693189.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.26,22.994,12.85,3.119,0.009,0.207
+giantsteps-mtg-key,1694550.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,39.44,23.214,12.985,2.942,0.011,0.201
+giantsteps-mtg-key,17025.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,38.84,22.935,13.212,2.415,0.007,0.192
+giantsteps-mtg-key,1716212.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.37,23.034,13.038,2.988,0.013,0.203
+giantsteps-mtg-key,174074.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,40.35,23.916,13.192,2.973,0.007,0.181
+giantsteps-mtg-key,1740984.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.76,22.678,13.382,3.318,0.007,0.289
+giantsteps-mtg-key,1743700.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.29,23.765,12.675,2.565,0.007,0.187
+giantsteps-mtg-key,1746583.LOFI.wav,c# minor	2	key can also be perceived as e major,c# minor,1.0,correct,ok,39.23,22.967,12.93,2.965,0.013,0.233
+giantsteps-mtg-key,1746628.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,38.85,23.125,12.777,2.642,0.01,0.194
+giantsteps-mtg-key,1758017.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,39.07,23.339,12.719,2.727,0.008,0.183
+giantsteps-mtg-key,1758691.LOFI.wav,d major	2,b minor,0.3,relative,ok,39.04,23.198,12.839,2.71,0.007,0.208
+giantsteps-mtg-key,1759353.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,38.37,22.385,12.85,2.775,0.015,0.23
+giantsteps-mtg-key,178137.LOFI.wav,e minor	2,c# minor,0.0,wrong,ok,38.51,22.897,12.516,2.813,0.008,0.192
+giantsteps-mtg-key,1781925.LOFI.wav,b minor	2,e minor,0.5,fifth,ok,39.25,23.407,12.827,2.726,0.007,0.196
+giantsteps-mtg-key,1783835.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,41.31,25.07,13.294,2.651,0.008,0.2
+giantsteps-mtg-key,1789849.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.44,22.698,12.838,2.576,0.009,0.218
+giantsteps-mtg-key,1795965.LOFI.wav,c major	2,c minor,0.2,parallel,ok,40.19,23.337,13.024,3.562,0.007,0.178
+giantsteps-mtg-key,1797450.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.68,23.215,13.002,3.156,0.008,0.202
+giantsteps-mtg-key,180831.LOFI.wav,e major	2,f# minor,0.0,wrong,ok,39.41,23.216,12.77,2.725,0.013,0.566
+giantsteps-mtg-key,1810291.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.3,25.01,13.051,2.946,0.008,0.196
+giantsteps-mtg-key,181659.LOFI.wav,f# major	2,bb minor,0.0,wrong,ok,39.78,23.473,12.928,3.081,0.009,0.197
+giantsteps-mtg-key,1848401.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.55,22.727,13.641,2.879,0.009,0.198
+giantsteps-mtg-key,1857841.LOFI.wav,f# major	2,f# minor,0.2,parallel,ok,39.01,23.075,12.928,2.64,0.014,0.248
+giantsteps-mtg-key,1860990.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.04,23.368,12.654,2.618,0.018,0.263
+giantsteps-mtg-key,1879911.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,40.16,23.931,12.391,3.51,0.007,0.241
+giantsteps-mtg-key,188000.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.54,22.932,13.567,2.752,0.007,0.193
+giantsteps-mtg-key,1881646.LOFI.wav,d major	2	second degree is lowered,d minor,0.2,parallel,ok,39.69,23.413,13.055,2.914,0.008,0.211
+giantsteps-mtg-key,188616.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.61,22.733,12.638,2.946,0.008,0.201
+giantsteps-mtg-key,189424.LOFI.wav,d major	2,b minor,0.3,relative,ok,38.91,22.708,12.779,3.085,0.007,0.246
+giantsteps-mtg-key,1895483.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.64,23.278,13.402,2.655,0.008,0.204
+giantsteps-mtg-key,1896153.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.52,23.771,12.443,3.001,0.008,0.211
+giantsteps-mtg-key,18975.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.05,23.306,14.762,2.712,0.007,0.185
+giantsteps-mtg-key,190162.LOFI.wav,d major	2,D major,1.0,correct,ok,39.29,22.438,13.091,3.461,0.009,0.194
+giantsteps-mtg-key,190288.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.56,22.791,13.613,2.874,0.008,0.198
+giantsteps-mtg-key,1905079.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,38.92,23.347,12.786,2.51,0.007,0.19
+giantsteps-mtg-key,1918063.LOFI.wav,g major	2,g minor,0.2,parallel,ok,40.27,23.175,13.466,3.218,0.009,0.309
+giantsteps-mtg-key,1918338.LOFI.wav,e major	2,e minor,0.2,parallel,ok,40.93,24.347,13.656,2.653,0.008,0.182
+giantsteps-mtg-key,1926319.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.9,22.981,14.07,3.531,0.009,0.207
+giantsteps-mtg-key,1926377.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.46,23.738,12.668,2.71,0.01,0.231
+giantsteps-mtg-key,193072.LOFI.wav,c minor	2,c minor,1.0,correct,ok,37.87,22.201,12.701,2.615,0.01,0.25
+giantsteps-mtg-key,1934576.LOFI.wav,c# minor	2,bb minor,0.0,wrong,ok,38.53,22.655,12.905,2.69,0.008,0.186
+giantsteps-mtg-key,1958231.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,38.69,23.043,12.952,2.413,0.008,0.191
+giantsteps-mtg-key,1958760.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,38.58,23.126,12.189,2.923,0.009,0.236
+giantsteps-mtg-key,19613.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.08,22.875,12.533,2.362,0.008,0.216
+giantsteps-mtg-key,196477.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,38.31,22.291,12.86,2.902,0.007,0.177
+giantsteps-mtg-key,1971434.LOFI.wav,a# major	2,bb minor,0.2,parallel,ok,39.68,23.111,13.836,2.432,0.008,0.2
+giantsteps-mtg-key,1974069.LOFI.wav,e major	2,c# minor,0.3,relative,ok,39.26,23.223,12.645,3.025,0.013,0.242
+giantsteps-mtg-key,197434.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.36,23.436,13.075,2.443,0.013,0.225
+giantsteps-mtg-key,19805.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.05,22.648,13.198,2.887,0.022,0.203
+giantsteps-mtg-key,1980637.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.65,23.207,12.791,2.369,0.008,0.194
+giantsteps-mtg-key,1981132.LOFI.wav,d major	2,d minor,0.2,parallel,ok,38.58,22.96,12.469,2.834,0.007,0.226
+giantsteps-mtg-key,1989603.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.76,23.055,14.418,2.986,0.009,0.196
+giantsteps-mtg-key,19936.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.27,22.818,13.35,2.811,0.007,0.202
+giantsteps-mtg-key,2003951.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.49,23.012,12.425,2.776,0.007,0.186
+giantsteps-mtg-key,200573.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.33,23.067,13.181,2.767,0.008,0.218
+giantsteps-mtg-key,2016942.LOFI.wav,a# major	2,Bb major,1.0,correct,ok,39.88,22.896,13.359,3.301,0.009,0.208
+giantsteps-mtg-key,2017315.LOFI.wav,d major	2,G major,0.5,fifth,ok,40.43,24.49,12.785,2.843,0.008,0.23
+giantsteps-mtg-key,2019112.LOFI.wav,g# major	2,bb minor,0.0,wrong,ok,39.29,22.881,12.96,3.141,0.012,0.214
+giantsteps-mtg-key,2022073.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.22,23.009,13.268,2.649,0.007,0.205
+giantsteps-mtg-key,2022519.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.32,22.679,12.984,3.277,0.014,0.241
+giantsteps-mtg-key,2028917.LOFI.wav,c major	2	there are many modulations inside track,c minor,0.2,parallel,ok,39.16,23.725,12.687,2.428,0.01,0.189
+giantsteps-mtg-key,2046030.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.42,23.075,12.867,3.196,0.008,0.186
+giantsteps-mtg-key,2047805.LOFI.wav,b major	2,f# minor,0.0,wrong,ok,38.36,22.672,12.676,2.73,0.007,0.184
+giantsteps-mtg-key,2049030.LOFI.wav,c# major	2	confusion with a# minor is possible,Db major,1.0,correct,ok,40.18,23.364,12.838,3.582,0.013,0.277
+giantsteps-mtg-key,206180.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,39.66,23.996,12.997,2.364,0.007,0.197
+giantsteps-mtg-key,206648.LOFI.wav,a major	2,A major,1.0,correct,ok,39.81,23.048,13.312,3.162,0.008,0.192
+giantsteps-mtg-key,2068812.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.32,23.145,12.979,2.892,0.01,0.204
+giantsteps-mtg-key,2090586.LOFI.wav,e major	2,b minor,0.0,wrong,ok,40.37,23.893,12.681,3.457,0.01,0.248
+giantsteps-mtg-key,209475.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.32,24.23,13.393,2.406,0.008,0.197
+giantsteps-mtg-key,217855.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.48,22.459,13.147,2.567,0.009,0.216
+giantsteps-mtg-key,218890.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.28,23.396,12.645,2.962,0.011,0.188
+giantsteps-mtg-key,218955.LOFI.wav,d major	2,d minor,0.2,parallel,ok,41.11,25.169,12.956,2.688,0.008,0.199
+giantsteps-mtg-key,219078.LOFI.wav,d major	2,D major,1.0,correct,ok,40.24,24.417,12.99,2.549,0.008,0.184
+giantsteps-mtg-key,221206.LOFI.wav,g major	2,d minor,0.0,wrong,ok,38.3,22.866,12.359,2.791,0.007,0.19
+giantsteps-mtg-key,224078.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.53,23.106,12.64,3.495,0.007,0.192
+giantsteps-mtg-key,224256.LOFI.wav,g# major	2,f minor,0.3,relative,ok,38.47,22.841,12.128,3.133,0.011,0.249
+giantsteps-mtg-key,225388.LOFI.wav,g major	2,d minor,0.0,wrong,ok,40.29,24.83,12.567,2.621,0.008,0.187
+giantsteps-mtg-key,226990.LOFI.wav,d major	2,d minor,0.2,parallel,ok,38.81,22.186,12.981,3.33,0.007,0.222
+giantsteps-mtg-key,23309.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.3,22.605,13.493,2.928,0.007,0.185
+giantsteps-mtg-key,239698.LOFI.wav,b minor	2,g minor,0.0,wrong,ok,41.65,24.119,14.721,2.529,0.007,0.191
+giantsteps-mtg-key,239972.LOFI.wav,a# major	2,g minor,0.3,relative,ok,43.27,26.965,13.272,2.739,0.012,0.192
+giantsteps-mtg-key,2422478.LOFI.wav,g# major	2,eb minor,0.0,wrong,ok,41.18,24.365,12.83,3.58,0.011,0.224
+giantsteps-mtg-key,2423336.LOFI.wav,f minor	2	indian mode,f minor,1.0,correct,ok,38.85,22.445,13.527,2.557,0.011,0.204
+giantsteps-mtg-key,2425817.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,41.8,25.17,13.454,2.846,0.013,0.21
+giantsteps-mtg-key,2426699.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,40.06,24.421,12.841,2.46,0.008,0.248
+giantsteps-mtg-key,2435069.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,41.52,26.002,12.287,2.957,0.008,0.187
+giantsteps-mtg-key,2446138.LOFI.wav,c# minor	2	confusion with e major is possible,c# minor,1.0,correct,ok,40.64,23.975,13.535,2.77,0.012,0.249
+giantsteps-mtg-key,245736.LOFI.wav,d major	2,d minor,0.2,parallel,ok,40.2,24.206,12.852,2.834,0.013,0.198
+giantsteps-mtg-key,251655.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.39,23.794,12.828,2.416,0.012,0.241
+giantsteps-mtg-key,25185.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.4,23.337,12.481,3.263,0.009,0.219
+giantsteps-mtg-key,255261.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.88,23.219,13.632,2.736,0.009,0.198
+giantsteps-mtg-key,255895.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.55,23.235,13.213,2.75,0.012,0.229
+giantsteps-mtg-key,25702.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.8,25.114,12.847,2.418,0.009,0.318
+giantsteps-mtg-key,257025.LOFI.wav,e minor	2,e minor,1.0,correct,ok,42.49,25.821,13.735,2.635,0.009,0.2
+giantsteps-mtg-key,25703.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,41.44,22.72,14.707,3.176,0.022,0.553
+giantsteps-mtg-key,2664585.LOFI.wav,g major	2,g minor,0.2,parallel,ok,40.34,23.26,13.16,3.54,0.013,0.242
+giantsteps-mtg-key,26737.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.81,24.208,12.889,2.449,0.009,0.172
+giantsteps-mtg-key,2678362.LOFI.wav,a# major	2,g minor,0.3,relative,ok,38.5,22.844,12.688,2.686,0.007,0.19
+giantsteps-mtg-key,269382.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.37,23.679,13.574,2.821,0.007,0.199
+giantsteps-mtg-key,2702217.LOFI.wav,g# major	2,c minor,0.0,wrong,ok,39.34,23.213,12.968,2.852,0.01,0.209
+giantsteps-mtg-key,2706210.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,38.92,23.301,12.803,2.484,0.01,0.221
+giantsteps-mtg-key,2706938.LOFI.wav,b major	2,c minor,0.0,wrong,ok,38.68,22.518,12.589,3.292,0.007,0.192
+giantsteps-mtg-key,2707024.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.82,23.133,13.446,2.958,0.006,0.192
+giantsteps-mtg-key,2721806.LOFI.wav,g# major	2,f minor,0.3,relative,ok,38.64,22.739,13.159,2.445,0.008,0.196
+giantsteps-mtg-key,273439.LOFI.wav,f minor	2,f minor,1.0,correct,ok,42.42,26.042,12.825,3.239,0.01,0.208
+giantsteps-mtg-key,273553.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.08,24.15,12.826,2.837,0.008,0.178
+giantsteps-mtg-key,2741616.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,39.93,23.333,13.17,3.086,0.01,0.205
+giantsteps-mtg-key,2754261.LOFI.wav,g major	2,e minor,0.3,relative,ok,39.63,23.736,12.452,3.167,0.007,0.185
+giantsteps-mtg-key,2763714.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,37.74,22.45,12.606,2.349,0.01,0.23
+giantsteps-mtg-key,277229.LOFI.wav,a# minor	2,c# minor,0.0,wrong,ok,40.17,24.322,12.881,2.627,0.008,0.226
+giantsteps-mtg-key,282105.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,39.41,23.351,13.096,2.679,0.007,0.195
+giantsteps-mtg-key,283467.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.03,23.43,12.383,2.869,0.011,0.236
+giantsteps-mtg-key,287952.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,37.89,22.631,12.537,2.447,0.007,0.179
+giantsteps-mtg-key,289631.LOFI.wav,g major	2,e minor,0.3,relative,ok,38.85,23.114,12.892,2.546,0.008,0.192
+giantsteps-mtg-key,290580.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,38.71,23.096,12.322,2.992,0.008,0.191
+giantsteps-mtg-key,291094.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.03,22.638,13.115,2.913,0.013,0.24
+giantsteps-mtg-key,292281.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,38.93,23.406,12.71,2.531,0.008,0.183
+giantsteps-mtg-key,292564.LOFI.wav,d major	2,d minor,0.2,parallel,ok,38.33,22.797,12.477,2.769,0.006,0.184
+giantsteps-mtg-key,292730.LOFI.wav,b minor	2,d minor,0.0,wrong,ok,39.38,22.833,13.838,2.386,0.009,0.223
+giantsteps-mtg-key,293203.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.11,23.298,12.465,3.002,0.012,0.241
+giantsteps-mtg-key,297002.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.94,22.919,13.52,2.246,0.006,0.178
+giantsteps-mtg-key,297010.LOFI.wav,c minor	2,c minor,1.0,correct,ok,27.93,15.625,9.762,2.291,0.007,0.178
+giantsteps-mtg-key,297012.LOFI.wav,a# minor	2,eb minor,0.5,fifth,ok,38.9,22.943,13.229,2.44,0.007,0.203
+giantsteps-mtg-key,297013.LOFI.wav,g minor	2,g minor,1.0,correct,ok,37.96,22.806,12.15,2.73,0.008,0.179
+giantsteps-mtg-key,297025.LOFI.wav,d minor	2,d minor,1.0,correct,ok,48.35,31.029,12.837,4.145,0.013,0.234
+giantsteps-mtg-key,297030.LOFI.wav,b minor	2,e minor,0.5,fifth,ok,45.86,29.734,12.857,3.006,0.007,0.184
+giantsteps-mtg-key,297057.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.2,23.073,12.209,3.603,0.008,0.213
+giantsteps-mtg-key,297067.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.89,22.391,13.12,3.096,0.007,0.186
+giantsteps-mtg-key,297071.LOFI.wav,"g# major	2	mixolydian mode and, in addition, vi degree is lowered",c# minor,0.0,wrong,ok,41.01,24.864,13.044,2.789,0.01,0.209
+giantsteps-mtg-key,297113.LOFI.wav,f major	2,F major,1.0,correct,ok,43.79,28.127,12.912,2.463,0.008,0.181
+giantsteps-mtg-key,297125.LOFI.wav,g minor	2,g minor,1.0,correct,ok,38.64,22.657,12.993,2.716,0.007,0.187
+giantsteps-mtg-key,297129.LOFI.wav,d major	2,b minor,0.3,relative,ok,39.29,22.625,13.319,3.037,0.012,0.203
+giantsteps-mtg-key,297131.LOFI.wav,b major	2,B major,1.0,correct,ok,39.63,23.433,12.48,3.415,0.009,0.199
+giantsteps-mtg-key,297161.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.85,25.016,13.083,2.389,0.01,0.262
+giantsteps-mtg-key,297162.LOFI.wav,a minor	2,a minor,1.0,correct,ok,38.87,22.931,12.357,3.255,0.01,0.218
+giantsteps-mtg-key,297188.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,39.82,22.616,13.399,3.488,0.01,0.217
+giantsteps-mtg-key,297191.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.97,23.547,13.688,2.447,0.008,0.202
+giantsteps-mtg-key,297193.LOFI.wav,a minor	2,a minor,1.0,correct,ok,41.89,24.989,13.44,3.15,0.01,0.21
+giantsteps-mtg-key,297204.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.73,24.349,13.079,3.001,0.009,0.202
+giantsteps-mtg-key,297206.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.88,24.403,12.889,3.294,0.008,0.191
+giantsteps-mtg-key,297218.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,38.5,23.045,12.546,2.605,0.007,0.204
+giantsteps-mtg-key,297253.LOFI.wav,a major	2,c# minor,0.0,wrong,ok,38.55,22.626,12.858,2.665,0.009,0.272
+giantsteps-mtg-key,297261.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.32,22.852,13.231,2.913,0.007,0.226
+giantsteps-mtg-key,297264.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.0,23.476,12.701,2.491,0.01,0.236
+giantsteps-mtg-key,297266.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.15,23.721,12.221,3.863,0.01,0.235
+giantsteps-mtg-key,297268.LOFI.wav,g minor	2,g minor,1.0,correct,ok,38.4,22.888,12.677,2.55,0.009,0.187
+giantsteps-mtg-key,297269.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.62,24.102,11.952,3.114,0.009,0.349
+giantsteps-mtg-key,297281.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.41,22.653,13.671,2.764,0.009,0.21
+giantsteps-mtg-key,297286.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.28,24.258,13.008,2.731,0.008,0.188
+giantsteps-mtg-key,297287.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.13,23.215,13.115,2.506,0.012,0.183
+giantsteps-mtg-key,297334.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,39.18,23.343,12.461,3.089,0.007,0.196
+giantsteps-mtg-key,297335.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,39.42,22.774,12.778,3.605,0.007,0.176
+giantsteps-mtg-key,297336.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,39.25,23.022,12.916,2.971,0.009,0.238
+giantsteps-mtg-key,297346.LOFI.wav,g major	2,e minor,0.3,relative,ok,39.88,24.499,12.672,2.427,0.008,0.186
+giantsteps-mtg-key,297347.LOFI.wav,g major	2,e minor,0.3,relative,ok,39.75,23.546,12.827,3.082,0.008,0.193
+giantsteps-mtg-key,297349.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.57,22.682,14.025,2.561,0.007,0.21
+giantsteps-mtg-key,297355.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.47,23.728,12.976,2.468,0.008,0.208
+giantsteps-mtg-key,297356.LOFI.wav,f major	2,f minor,0.2,parallel,ok,41.34,24.598,13.595,2.86,0.008,0.188
+giantsteps-mtg-key,297360.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.0,23.043,13.09,3.562,0.009,0.193
+giantsteps-mtg-key,297379.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,39.97,23.44,13.547,2.667,0.01,0.215
+giantsteps-mtg-key,297409.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.01,23.809,13.064,2.832,0.011,0.2
+giantsteps-mtg-key,297410.LOFI.wav,g major	2,a minor,0.0,wrong,ok,38.32,22.464,12.73,2.843,0.012,0.189
+giantsteps-mtg-key,297411.LOFI.wav,f# minor	2,c# minor,0.5,fifth,ok,39.35,23.012,13.011,3.028,0.007,0.204
+giantsteps-mtg-key,297413.LOFI.wav,d# major	2	mixolydian mode,bb minor,0.0,wrong,ok,39.49,22.965,13.498,2.719,0.008,0.198
+giantsteps-mtg-key,297415.LOFI.wav,c major	2,c minor,0.2,parallel,ok,39.5,23.039,12.536,3.624,0.008,0.207
+giantsteps-mtg-key,297418.LOFI.wav,c major	2,a minor,0.3,relative,ok,40.35,23.985,12.926,3.084,0.013,0.231
+giantsteps-mtg-key,297422.LOFI.wav,f major	2,F major,1.0,correct,ok,39.6,22.876,13.216,3.228,0.006,0.189
+giantsteps-mtg-key,297424.LOFI.wav,c major	2,C major,1.0,correct,ok,39.46,22.968,13.494,2.678,0.009,0.224
+giantsteps-mtg-key,297474.LOFI.wav,b major	2,ab minor,0.3,relative,ok,39.61,23.347,13.158,2.816,0.009,0.197
+giantsteps-mtg-key,297488.LOFI.wav,f major	2,d minor,0.3,relative,ok,38.68,22.615,13.157,2.513,0.012,0.281
+giantsteps-mtg-key,297491.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,39.51,22.961,12.814,3.359,0.007,0.286
+giantsteps-mtg-key,297494.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.28,22.836,13.756,3.399,0.007,0.189
+giantsteps-mtg-key,297501.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.53,23.665,12.64,2.918,0.009,0.203
+giantsteps-mtg-key,297506.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.51,23.737,12.932,2.568,0.007,0.182
+giantsteps-mtg-key,297513.LOFI.wav,c major	2	mixolydian mode,c minor,0.2,parallel,ok,39.43,22.6,13.421,3.066,0.009,0.242
+giantsteps-mtg-key,297521.LOFI.wav,f minor	2	mixolydian mode and… blues scale?,f minor,1.0,correct,ok,39.7,23.284,13.573,2.539,0.007,0.202
+giantsteps-mtg-key,297535.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.2,24.5,12.589,2.817,0.008,0.203
+giantsteps-mtg-key,297536.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.38,23.563,13.66,2.734,0.016,0.294
+giantsteps-mtg-key,297538.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.16,22.78,13.19,3.897,0.007,0.202
+giantsteps-mtg-key,297542.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.83,23.054,13.695,2.798,0.007,0.188
+giantsteps-mtg-key,297579.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.76,23.464,13.165,2.825,0.008,0.204
+giantsteps-mtg-key,297580.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.45,23.514,12.801,2.824,0.011,0.193
+giantsteps-mtg-key,297598.LOFI.wav,c# minor	2	blues scale? it also sounds a little bit like b major…,c# minor,1.0,correct,ok,39.84,23.368,13.252,2.911,0.007,0.215
+giantsteps-mtg-key,297600.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.39,22.955,13.331,2.773,0.012,0.215
+giantsteps-mtg-key,297608.LOFI.wav,a major	2,f# minor,0.3,relative,ok,39.58,23.543,12.389,3.325,0.009,0.218
+giantsteps-mtg-key,297615.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.66,23.875,12.929,2.526,0.019,0.214
+giantsteps-mtg-key,297616.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.2,22.77,13.0,3.122,0.007,0.209
+giantsteps-mtg-key,297617.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.71,22.769,13.719,2.938,0.01,0.184
+giantsteps-mtg-key,297620.LOFI.wav,"d minor	2	confusion between d minor and f major can be generated by the insistence on the use of the dmin7 chord, but there is no doubt that key is d minor",d minor,1.0,correct,ok,39.72,23.395,13.133,2.9,0.008,0.194
+giantsteps-mtg-key,297627.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.82,23.813,13.075,2.504,0.015,0.294
+giantsteps-mtg-key,297652.LOFI.wav,e minor	2,c# minor,0.0,wrong,ok,40.14,23.548,13.137,3.12,0.012,0.221
+giantsteps-mtg-key,297654.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.09,22.838,13.029,2.91,0.008,0.206
+giantsteps-mtg-key,297656.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.83,23.034,12.801,2.618,0.015,0.247
+giantsteps-mtg-key,297657.LOFI.wav,f major	2,f minor,0.2,parallel,ok,39.51,23.777,12.74,2.619,0.012,0.256
+giantsteps-mtg-key,297658.LOFI.wav,"f major	2	in this case, the major mode is not so clear as in the precedent track",f minor,0.2,parallel,ok,39.03,22.902,13.026,2.808,0.009,0.186
+giantsteps-mtg-key,297659.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.34,23.079,13.366,2.581,0.008,0.224
+giantsteps-mtg-key,297660.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.43,23.984,12.432,2.632,0.013,0.257
+giantsteps-mtg-key,297666.LOFI.wav,a minor	2	key is only iterable from bottom flute melody,e minor,0.5,fifth,ok,39.58,23.412,13.051,2.773,0.011,0.223
+giantsteps-mtg-key,297686.LOFI.wav,a# major	2	mixolydian mode,c minor,0.0,wrong,ok,39.29,23.214,12.692,3.024,0.007,0.245
+giantsteps-mtg-key,297692.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.4,22.837,13.446,2.83,0.008,0.194
+giantsteps-mtg-key,297695.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.57,23.47,12.902,2.915,0.008,0.19
+giantsteps-mtg-key,297696.LOFI.wav,a minor	2,a minor,1.0,correct,ok,38.37,22.639,12.91,2.479,0.011,0.222
+giantsteps-mtg-key,297697.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.16,23.048,12.65,3.156,0.007,0.219
+giantsteps-mtg-key,297698.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.3,22.563,12.936,3.496,0.009,0.208
+giantsteps-mtg-key,297699.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.99,23.077,12.906,3.663,0.012,0.202
+giantsteps-mtg-key,297705.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.01,23.927,12.897,2.766,0.019,0.296
+giantsteps-mtg-key,297717.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.71,23.001,13.015,3.417,0.008,0.183
+giantsteps-mtg-key,297718.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.1,22.83,13.32,2.674,0.008,0.19
+giantsteps-mtg-key,297721.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,40.43,24.097,13.376,2.663,0.009,0.2
+giantsteps-mtg-key,297748.LOFI.wav,a major	2	mixolydian mode,d minor,0.0,wrong,ok,40.04,24.473,12.684,2.498,0.019,0.222
+giantsteps-mtg-key,297756.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,40.63,24.238,12.361,3.662,0.021,0.24
+giantsteps-mtg-key,297757.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.88,23.231,13.347,2.997,0.013,0.198
+giantsteps-mtg-key,297767.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.54,23.589,12.851,2.807,0.008,0.189
+giantsteps-mtg-key,297768.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.14,24.291,12.809,2.687,0.012,0.233
+giantsteps-mtg-key,297769.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.66,23.473,12.859,3.041,0.009,0.18
+giantsteps-mtg-key,297804.LOFI.wav,e minor	2	dorian mode,e minor,1.0,correct,ok,40.38,23.791,13.436,2.862,0.006,0.192
+giantsteps-mtg-key,297806.LOFI.wav,a# major	2,bb minor,0.2,parallel,ok,39.52,23.249,13.135,2.787,0.011,0.228
+giantsteps-mtg-key,297807.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.76,23.723,12.967,2.639,0.013,0.3
+giantsteps-mtg-key,297811.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.65,23.211,13.155,2.943,0.05,0.197
+giantsteps-mtg-key,297818.LOFI.wav,g# major	2,eb minor,0.0,wrong,ok,39.2,22.885,13.216,2.807,0.009,0.189
+giantsteps-mtg-key,297849.LOFI.wav,g minor	2,f minor,0.0,wrong,ok,40.14,23.759,13.22,2.864,0.008,0.199
+giantsteps-mtg-key,297853.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.73,23.65,12.799,2.749,0.015,0.382
+giantsteps-mtg-key,297879.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.73,23.228,13.067,3.156,0.007,0.184
+giantsteps-mtg-key,297882.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.12,23.288,12.958,3.513,0.013,0.227
+giantsteps-mtg-key,297889.LOFI.wav,"f major	2	but… confusion with d minor, its minor relative, is perceived",d minor,0.3,relative,ok,39.78,23.124,12.963,3.356,0.009,0.248
+giantsteps-mtg-key,297890.LOFI.wav,"f major	2	but… confusion with d minor, its minor relative, is perceived",d minor,0.3,relative,ok,39.31,23.196,13.382,2.435,0.009,0.197
+giantsteps-mtg-key,297895.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.23,23.946,12.761,3.2,0.009,0.205
+giantsteps-mtg-key,297967.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.96,23.483,13.553,2.601,0.01,0.227
+giantsteps-mtg-key,297994.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,41.1,24.604,13.749,2.437,0.009,0.212
+giantsteps-mtg-key,297995.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,42.83,26.816,12.919,2.768,0.01,0.202
+giantsteps-mtg-key,297996.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,42.15,26.005,13.176,2.697,0.007,0.184
+giantsteps-mtg-key,298006.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.65,23.745,13.662,2.971,0.008,0.187
+giantsteps-mtg-key,298011.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,41.33,25.79,12.439,2.772,0.009,0.222
+giantsteps-mtg-key,298020.LOFI.wav,f major	2	lydian or augmented lydian mode,bb minor,0.0,wrong,ok,38.44,22.96,12.686,2.504,0.012,0.198
+giantsteps-mtg-key,298054.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.29,22.833,12.898,3.235,0.013,0.209
+giantsteps-mtg-key,298080.LOFI.wav,d# major	2,d minor,0.0,wrong,ok,39.95,22.796,13.237,3.554,0.015,0.23
+giantsteps-mtg-key,298082.LOFI.wav,f major	2,d minor,0.3,relative,ok,39.9,24.1,12.91,2.528,0.011,0.256
+giantsteps-mtg-key,298104.LOFI.wav,c minor	2,c minor,1.0,correct,ok,42.75,25.697,13.73,3.025,0.014,0.198
+giantsteps-mtg-key,298110.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,41.58,24.997,12.993,3.278,0.008,0.222
+giantsteps-mtg-key,298111.LOFI.wav,b minor	2,b minor,1.0,correct,ok,41.36,23.533,14.473,3.058,0.007,0.197
+giantsteps-mtg-key,298129.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.27,23.432,13.008,2.453,0.012,0.252
+giantsteps-mtg-key,298134.LOFI.wav,a major	2,a minor,0.2,parallel,ok,39.56,23.124,13.039,3.042,0.008,0.204
+giantsteps-mtg-key,298169.LOFI.wav,f minor	2,d minor,0.0,wrong,ok,38.96,22.737,12.947,2.978,0.007,0.215
+giantsteps-mtg-key,298170.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.4,23.675,13.306,3.117,0.01,0.202
+giantsteps-mtg-key,298172.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.63,23.198,12.623,3.513,0.008,0.198
+giantsteps-mtg-key,298173.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,37.8,22.401,12.685,2.432,0.008,0.188
+giantsteps-mtg-key,298193.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.49,23.644,12.715,2.851,0.007,0.196
+giantsteps-mtg-key,298211.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.1,22.698,14.419,2.699,0.007,0.195
+giantsteps-mtg-key,298215.LOFI.wav,a major	2,a minor,0.2,parallel,ok,39.55,23.088,13.321,2.856,0.01,0.188
+giantsteps-mtg-key,298216.LOFI.wav,f major	2,f minor,0.2,parallel,ok,39.65,24.043,12.819,2.439,0.012,0.221
+giantsteps-mtg-key,298226.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.76,23.232,13.158,3.089,0.01,0.185
+giantsteps-mtg-key,298319.LOFI.wav,a# major	2,f minor,0.0,wrong,ok,39.7,22.969,13.009,3.438,0.008,0.179
+giantsteps-mtg-key,298327.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.03,23.293,12.517,2.928,0.009,0.194
+giantsteps-mtg-key,298332.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.07,23.362,12.901,2.524,0.008,0.187
+giantsteps-mtg-key,298334.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,39.21,22.571,13.284,2.972,0.008,0.291
+giantsteps-mtg-key,298398.LOFI.wav,f# major	2,bb minor,0.0,wrong,ok,39.35,23.104,13.256,2.706,0.007,0.194
+giantsteps-mtg-key,298399.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.79,23.214,12.485,2.743,0.009,0.246
+giantsteps-mtg-key,298429.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.59,23.929,12.887,2.454,0.012,0.217
+giantsteps-mtg-key,298430.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.35,23.105,12.77,3.139,0.007,0.224
+giantsteps-mtg-key,298431.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.12,23.374,12.873,2.598,0.007,0.186
+giantsteps-mtg-key,298474.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.52,23.39,13.803,3.021,0.013,0.209
+giantsteps-mtg-key,298525.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.23,22.598,13.7,2.472,0.009,0.35
+giantsteps-mtg-key,298530.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.83,24.071,12.552,2.921,0.006,0.204
+giantsteps-mtg-key,298532.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.29,22.796,13.366,2.817,0.01,0.213
+giantsteps-mtg-key,298535.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.97,23.07,12.648,2.949,0.008,0.203
+giantsteps-mtg-key,298536.LOFI.wav,b minor	2,b minor,1.0,correct,ok,41.37,25.011,12.788,3.26,0.011,0.209
+giantsteps-mtg-key,298763.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.39,23.088,13.207,2.787,0.007,0.201
+giantsteps-mtg-key,298764.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.85,23.141,13.548,2.869,0.009,0.192
+giantsteps-mtg-key,298791.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.23,22.975,13.414,2.524,0.007,0.22
+giantsteps-mtg-key,298795.LOFI.wav,"f major	2	mode is clearly major, but there are little movements to minor mode in the second half (short appearances of ab). anyway, key is f major",f minor,0.2,parallel,ok,39.33,23.331,12.771,2.805,0.051,0.255
+giantsteps-mtg-key,298805.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,40.29,24.185,12.758,3.065,0.008,0.201
+giantsteps-mtg-key,298817.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.7,23.342,13.577,3.489,0.009,0.194
+giantsteps-mtg-key,298824.LOFI.wav,f minor	2	frygian mode,f minor,1.0,correct,ok,39.25,24.212,12.103,2.644,0.008,0.197
+giantsteps-mtg-key,298846.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.24,23.636,12.582,2.646,0.011,0.271
+giantsteps-mtg-key,298850.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.58,22.573,14.004,2.689,0.008,0.203
+giantsteps-mtg-key,298860.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.23,23.126,13.159,2.661,0.007,0.19
+giantsteps-mtg-key,298863.LOFI.wav,"g# major	2	confusion between key, g# major, and its dominant relative, d# major, is easy",ab minor,0.2,parallel,ok,41.18,24.269,12.503,4.079,0.01,0.225
+giantsteps-mtg-key,298866.LOFI.wav,f major	2,f minor,0.2,parallel,ok,39.0,22.914,13.07,2.665,0.011,0.233
+giantsteps-mtg-key,298880.LOFI.wav,d# minor	2,bb minor,0.5,fifth,ok,39.38,22.621,13.029,3.325,0.009,0.203
+giantsteps-mtg-key,298914.LOFI.wav,d major	2,f# minor,0.0,wrong,ok,40.03,23.249,14.043,2.421,0.014,0.211
+giantsteps-mtg-key,298915.LOFI.wav,d major	2,f# minor,0.0,wrong,ok,39.22,23.147,12.876,2.854,0.014,0.228
+giantsteps-mtg-key,298938.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.32,24.015,12.616,2.4,0.008,0.183
+giantsteps-mtg-key,298940.LOFI.wav,g# minor	2,eb minor,0.5,fifth,ok,39.52,23.734,12.749,2.742,0.007,0.197
+giantsteps-mtg-key,298944.LOFI.wav,g# major	2,Ab major,1.0,correct,ok,38.96,22.763,12.813,3.086,0.008,0.201
+giantsteps-mtg-key,298951.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.32,22.935,12.329,2.69,0.012,0.243
+giantsteps-mtg-key,298984.LOFI.wav,d# major	2,c minor,0.3,relative,ok,39.28,23.465,12.924,2.522,0.013,0.259
+giantsteps-mtg-key,298985.LOFI.wav,d# major	2,c minor,0.3,relative,ok,39.12,22.821,13.283,2.705,0.009,0.216
+giantsteps-mtg-key,298986.LOFI.wav,d# major	2,Eb major,1.0,correct,ok,38.81,23.118,12.788,2.598,0.012,0.194
+giantsteps-mtg-key,298987.LOFI.wav,d# major	2,Eb major,1.0,correct,ok,39.68,23.088,13.279,2.995,0.008,0.214
+giantsteps-mtg-key,298992.LOFI.wav,g major	2,D major,0.5,fifth,ok,38.54,22.714,13.062,2.427,0.01,0.22
+giantsteps-mtg-key,298998.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.32,22.697,12.587,3.65,0.009,0.248
+giantsteps-mtg-key,299003.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.59,22.789,13.821,2.685,0.007,0.194
+giantsteps-mtg-key,299025.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.89,23.475,13.274,2.852,0.01,0.194
+giantsteps-mtg-key,299031.LOFI.wav,g major	2,g minor,0.2,parallel,ok,39.9,23.686,12.878,2.744,0.05,0.442
+giantsteps-mtg-key,299032.LOFI.wav,g major	2,g minor,0.2,parallel,ok,39.34,23.065,12.985,3.006,0.008,0.188
+giantsteps-mtg-key,299040.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,38.79,23.088,12.707,2.674,0.01,0.216
+giantsteps-mtg-key,299041.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.46,24.079,12.603,3.481,0.008,0.206
+giantsteps-mtg-key,299050.LOFI.wav,"a major	2	major mode is not completely clear, but it is major",c# minor,0.0,wrong,ok,39.52,23.951,12.811,2.416,0.009,0.24
+giantsteps-mtg-key,299059.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.78,23.483,12.727,3.244,0.007,0.221
+giantsteps-mtg-key,299063.LOFI.wav,a major	2,a minor,0.2,parallel,ok,39.28,22.642,13.327,3.011,0.007,0.197
+giantsteps-mtg-key,299064.LOFI.wav,e minor	2,a minor,0.5,fifth,ok,40.11,23.459,13.614,2.751,0.008,0.196
+giantsteps-mtg-key,299071.LOFI.wav,a major	2,a minor,0.2,parallel,ok,40.03,24.565,12.728,2.455,0.007,0.191
+giantsteps-mtg-key,299073.LOFI.wav,e major	2,e minor,0.2,parallel,ok,40.59,24.535,12.52,3.178,0.009,0.241
+giantsteps-mtg-key,299074.LOFI.wav,c# minor	2	confusion with e major is possible,c# minor,1.0,correct,ok,40.69,23.348,13.217,3.638,0.013,0.212
+giantsteps-mtg-key,299114.LOFI.wav,g# major	2,f minor,0.3,relative,ok,39.38,23.263,12.946,2.876,0.008,0.207
+giantsteps-mtg-key,29912.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.45,24.439,13.073,2.607,0.011,0.227
+giantsteps-mtg-key,299157.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.34,23.049,13.017,2.994,0.007,0.194
+giantsteps-mtg-key,299159.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.52,22.976,13.424,2.815,0.01,0.198
+giantsteps-mtg-key,299160.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.58,23.231,13.203,2.829,0.009,0.211
+giantsteps-mtg-key,299191.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.84,23.769,12.948,2.691,0.02,0.29
+giantsteps-mtg-key,299298.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.83,23.353,12.684,3.483,0.008,0.219
+giantsteps-mtg-key,299306.LOFI.wav,f major	2,d minor,0.3,relative,ok,39.11,22.651,13.172,2.954,0.009,0.233
+giantsteps-mtg-key,299310.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.15,23.515,13.503,2.839,0.009,0.196
+giantsteps-mtg-key,299311.LOFI.wav,c minor	2,a minor,0.0,wrong,ok,39.76,23.671,12.743,2.956,0.015,0.27
+giantsteps-mtg-key,299355.LOFI.wav,g major	2,b minor,0.0,wrong,ok,39.68,23.217,13.049,3.132,0.008,0.187
+giantsteps-mtg-key,299365.LOFI.wav,f major	2,f minor,0.2,parallel,ok,40.1,23.489,13.303,3.018,0.006,0.191
+giantsteps-mtg-key,299396.LOFI.wav,b minor	2,a minor,0.0,wrong,ok,39.75,23.208,12.812,3.431,0.009,0.198
+giantsteps-mtg-key,299401.LOFI.wav,b major	2,ab minor,0.3,relative,ok,39.93,23.968,12.795,2.879,0.008,0.191
+giantsteps-mtg-key,299450.LOFI.wav,a# major	2,g minor,0.3,relative,ok,39.28,23.035,12.826,3.127,0.007,0.182
+giantsteps-mtg-key,299452.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.9,23.021,13.784,2.811,0.007,0.199
+giantsteps-mtg-key,299453.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.25,23.557,13.661,2.696,0.013,0.227
+giantsteps-mtg-key,299454.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.65,24.123,13.344,2.873,0.009,0.212
+giantsteps-mtg-key,299455.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.64,24.042,12.982,3.327,0.011,0.194
+giantsteps-mtg-key,299456.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.1,23.434,13.369,2.661,0.021,0.464
+giantsteps-mtg-key,299457.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.84,23.838,13.202,2.426,0.01,0.206
+giantsteps-mtg-key,299459.LOFI.wav,f minor	2	frygian approach,f minor,1.0,correct,ok,42.26,25.479,13.929,2.539,0.008,0.209
+giantsteps-mtg-key,299462.LOFI.wav,e minor	2,a minor,0.5,fifth,ok,39.78,23.1,12.993,3.387,0.017,0.19
+giantsteps-mtg-key,299464.LOFI.wav,b major	2,b minor,0.2,parallel,ok,41.04,23.529,13.887,3.321,0.008,0.196
+giantsteps-mtg-key,299465.LOFI.wav,e major	2,c# minor,0.3,relative,ok,40.07,23.808,13.563,2.411,0.008,0.196
+giantsteps-mtg-key,299466.LOFI.wav,f major	2,F major,1.0,correct,ok,40.03,23.455,13.273,2.967,0.011,0.219
+giantsteps-mtg-key,299467.LOFI.wav,g major	2,a minor,0.0,wrong,ok,41.83,25.89,12.562,3.099,0.007,0.19
+giantsteps-mtg-key,299468.LOFI.wav,a major	2,A major,1.0,correct,ok,40.47,23.518,13.535,3.141,0.007,0.194
+giantsteps-mtg-key,299470.LOFI.wav,g major	2,e minor,0.3,relative,ok,39.09,22.908,13.165,2.711,0.014,0.204
+giantsteps-mtg-key,299471.LOFI.wav,f major	2,d minor,0.3,relative,ok,42.66,25.535,13.597,3.224,0.008,0.208
+giantsteps-mtg-key,299472.LOFI.wav,g major	2,a minor,0.0,wrong,ok,40.43,24.311,13.375,2.463,0.007,0.2
+giantsteps-mtg-key,299473.LOFI.wav,f major	2,a minor,0.0,wrong,ok,39.9,23.692,13.08,2.833,0.009,0.192
+giantsteps-mtg-key,299474.LOFI.wav,g major	2,e minor,0.3,relative,ok,39.43,23.27,12.67,3.204,0.009,0.195
+giantsteps-mtg-key,299475.LOFI.wav,f major	2,d minor,0.3,relative,ok,40.36,23.554,13.304,3.178,0.01,0.21
+giantsteps-mtg-key,299482.LOFI.wav,a major	2,c# minor,0.0,wrong,ok,42.3,26.407,12.912,2.642,0.008,0.235
+giantsteps-mtg-key,299483.LOFI.wav,g major	2,e minor,0.3,relative,ok,40.02,23.925,13.117,2.662,0.009,0.208
+giantsteps-mtg-key,299486.LOFI.wav,e major	2,c# minor,0.3,relative,ok,39.1,23.771,12.335,2.723,0.008,0.181
+giantsteps-mtg-key,299488.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.44,22.779,13.1,3.227,0.01,0.221
+giantsteps-mtg-key,299489.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.81,24.044,13.022,2.473,0.007,0.181
+giantsteps-mtg-key,299490.LOFI.wav,f# major	2,F# major,1.0,correct,ok,39.46,23.173,13.096,2.863,0.008,0.22
+giantsteps-mtg-key,299491.LOFI.wav,d major	2	mixolydian scale,d minor,0.2,parallel,ok,38.95,22.807,12.846,2.999,0.008,0.194
+giantsteps-mtg-key,299493.LOFI.wav,a major	2,a minor,0.2,parallel,ok,39.54,22.813,13.298,3.112,0.012,0.207
+giantsteps-mtg-key,299503.LOFI.wav,c major	2,c minor,0.2,parallel,ok,39.91,24.257,12.927,2.399,0.007,0.232
+giantsteps-mtg-key,299507.LOFI.wav,f minor	2	frygian scale,f# minor,0.0,wrong,ok,40.4,23.015,13.184,3.865,0.012,0.205
+giantsteps-mtg-key,299509.LOFI.wav,d major	2	mixolydian scale,d minor,0.2,parallel,ok,40.4,22.919,13.546,3.608,0.012,0.209
+giantsteps-mtg-key,299511.LOFI.wav,d major	2,e minor,0.0,wrong,ok,40.92,23.981,13.198,3.4,0.01,0.23
+giantsteps-mtg-key,299513.LOFI.wav,c# major	2,Db major,1.0,correct,ok,39.71,24.198,12.74,2.492,0.007,0.194
+giantsteps-mtg-key,299546.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.5,23.351,13.207,2.615,0.009,0.206
+giantsteps-mtg-key,299547.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.76,23.02,13.394,3.064,0.008,0.192
+giantsteps-mtg-key,299625.LOFI.wav,c major	2,c minor,0.2,parallel,ok,39.46,23.666,12.657,2.789,0.018,0.225
+giantsteps-mtg-key,299657.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.48,25.112,12.726,2.343,0.007,0.201
+giantsteps-mtg-key,299665.LOFI.wav,g# major	2,c minor,0.0,wrong,ok,38.25,22.722,12.32,2.903,0.008,0.207
+giantsteps-mtg-key,299667.LOFI.wav,a major	2,a minor,0.2,parallel,ok,38.98,22.611,13.06,2.905,0.008,0.313
+giantsteps-mtg-key,299668.LOFI.wav,a minor	2	frygian scale,f# minor,0.0,wrong,ok,39.03,23.848,12.336,2.492,0.01,0.241
+giantsteps-mtg-key,299669.LOFI.wav,c minor	2	frygian scale,c minor,1.0,correct,ok,40.23,24.531,12.838,2.547,0.008,0.211
+giantsteps-mtg-key,299679.LOFI.wav,f major	2,d minor,0.3,relative,ok,39.22,23.579,12.594,2.758,0.007,0.189
+giantsteps-mtg-key,299681.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.0,23.361,13.852,2.477,0.01,0.198
+giantsteps-mtg-key,299701.LOFI.wav,a# minor	2,eb minor,0.5,fifth,ok,38.43,23.223,12.008,2.869,0.012,0.222
+giantsteps-mtg-key,2997186.LOFI.wav,b minor	2,b minor,1.0,correct,ok,38.4,22.516,12.995,2.56,0.01,0.22
+giantsteps-mtg-key,299729.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.62,22.538,12.941,2.82,0.02,0.18
+giantsteps-mtg-key,299739.LOFI.wav,f minor	2,bb minor,0.5,fifth,ok,39.0,23.024,13.204,2.485,0.008,0.196
+giantsteps-mtg-key,299743.LOFI.wav,f# major	2	mixolydian scale,f# minor,0.2,parallel,ok,39.13,23.323,12.493,2.954,0.013,0.238
+giantsteps-mtg-key,299754.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,38.5,22.972,12.782,2.415,0.011,0.224
+giantsteps-mtg-key,299767.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.74,22.381,13.171,2.884,0.008,0.207
+giantsteps-mtg-key,299769.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.78,23.459,12.538,2.489,0.007,0.211
+giantsteps-mtg-key,299772.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.86,25.485,13.228,2.832,0.01,0.213
+giantsteps-mtg-key,299773.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.53,23.329,13.294,2.57,0.016,0.221
+giantsteps-mtg-key,299782.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.04,22.297,13.859,3.5,0.011,0.241
+giantsteps-mtg-key,299786.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.59,23.605,13.324,2.358,0.008,0.21
+giantsteps-mtg-key,299789.LOFI.wav,g# major	2,c minor,0.0,wrong,ok,39.7,23.117,13.557,2.744,0.008,0.189
+giantsteps-mtg-key,299792.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,40.44,24.848,13.032,2.281,0.006,0.196
+giantsteps-mtg-key,299801.LOFI.wav,a minor	2,a minor,1.0,correct,ok,26.02,16.223,7.656,1.884,0.007,0.19
+giantsteps-mtg-key,299807.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,39.03,23.445,12.87,2.431,0.008,0.187
+giantsteps-mtg-key,299808.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,38.28,22.77,12.335,2.879,0.009,0.199
+giantsteps-mtg-key,299809.LOFI.wav,c minor	2,c minor,1.0,correct,ok,44.05,27.412,13.267,3.074,0.009,0.193
+giantsteps-mtg-key,299810.LOFI.wav,c minor	2,c minor,1.0,correct,ok,43.89,27.307,13.561,2.731,0.007,0.195
+giantsteps-mtg-key,299811.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,40.59,23.669,13.895,2.738,0.007,0.2
+giantsteps-mtg-key,299812.LOFI.wav,e major	2,e minor,0.2,parallel,ok,40.06,23.031,13.802,2.915,0.007,0.216
+giantsteps-mtg-key,299817.LOFI.wav,f minor	2,d minor,0.0,wrong,ok,40.64,23.593,13.424,3.322,0.01,0.196
+giantsteps-mtg-key,299832.LOFI.wav,c# major	2,Db major,1.0,correct,ok,41.9,25.809,13.226,2.559,0.009,0.202
+giantsteps-mtg-key,299834.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.27,23.744,12.387,2.841,0.008,0.202
+giantsteps-mtg-key,299835.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,40.53,23.846,13.672,2.703,0.009,0.207
+giantsteps-mtg-key,299836.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.97,23.22,13.272,3.14,0.011,0.209
+giantsteps-mtg-key,299847.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.14,24.179,13.141,2.521,0.01,0.202
+giantsteps-mtg-key,299869.LOFI.wav,a major	2,f# minor,0.3,relative,ok,39.77,23.178,12.623,3.257,0.047,0.527
+giantsteps-mtg-key,299870.LOFI.wav,d major	2,g minor,0.0,wrong,ok,39.47,22.784,13.735,2.68,0.006,0.183
+giantsteps-mtg-key,299887.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.74,23.229,13.349,2.794,0.014,0.24
+giantsteps-mtg-key,299904.LOFI.wav,c major	2,c minor,0.2,parallel,ok,41.22,25.044,13.551,2.337,0.009,0.187
+giantsteps-mtg-key,299905.LOFI.wav,c# major	2	mixolydian scale,c# minor,0.2,parallel,ok,39.57,23.238,12.804,3.226,0.008,0.201
+giantsteps-mtg-key,299932.LOFI.wav,f major	2,f minor,0.2,parallel,ok,40.29,23.539,13.731,2.716,0.01,0.205
+giantsteps-mtg-key,299933.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.02,23.019,13.522,3.157,0.014,0.203
+giantsteps-mtg-key,299943.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,38.4,22.363,12.793,2.969,0.008,0.191
+giantsteps-mtg-key,299945.LOFI.wav,b minor	2,c# minor,0.0,wrong,ok,39.81,23.467,12.857,3.19,0.009,0.196
+giantsteps-mtg-key,299968.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,39.87,23.016,13.901,2.648,0.008,0.202
+giantsteps-mtg-key,299976.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.93,23.402,13.561,3.582,0.014,0.262
+giantsteps-mtg-key,299977.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.2,24.174,13.235,2.524,0.008,0.185
+giantsteps-mtg-key,299978.LOFI.wav,f minor	2,f minor,1.0,correct,ok,41.24,23.917,14.128,2.909,0.012,0.189
+giantsteps-mtg-key,299994.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.11,22.871,12.846,2.98,0.013,0.317
+giantsteps-mtg-key,299995.LOFI.wav,a major	2,f# minor,0.3,relative,ok,40.62,23.464,12.94,3.854,0.014,0.229
+giantsteps-mtg-key,3010576.LOFI.wav,f minor	2,f minor,1.0,correct,ok,41.56,24.454,14.24,2.417,0.009,0.351
+giantsteps-mtg-key,3014691.LOFI.wav,b major	2,ab minor,0.3,relative,ok,40.09,23.267,13.327,3.213,0.008,0.195
+giantsteps-mtg-key,3014758.LOFI.wav,f# major	2,c# minor,0.0,wrong,ok,39.82,23.429,13.07,3.024,0.012,0.206
+giantsteps-mtg-key,3018901.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.86,23.065,12.537,3.938,0.013,0.193
+giantsteps-mtg-key,3020003.LOFI.wav,g# minor	2,F# major,0.0,wrong,ok,39.87,23.976,13.154,2.443,0.013,0.201
+giantsteps-mtg-key,3027735.LOFI.wav,f minor	2	in some fragments key modulates to c minor,c minor,0.5,fifth,ok,39.87,23.266,13.101,3.203,0.01,0.198
+giantsteps-mtg-key,30278.LOFI.wav,d major	2,b minor,0.3,relative,ok,39.73,23.372,12.862,3.153,0.011,0.217
+giantsteps-mtg-key,3028271.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.91,23.502,12.681,3.46,0.008,0.183
+giantsteps-mtg-key,3028806.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.54,23.782,13.077,2.397,0.007,0.197
+giantsteps-mtg-key,3034770.LOFI.wav,c# minor	2,d minor,0.0,wrong,ok,39.83,23.162,13.301,3.094,0.008,0.185
+giantsteps-mtg-key,3044568.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.28,22.879,12.757,3.285,0.01,0.248
+giantsteps-mtg-key,3052009.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.56,23.181,12.696,3.386,0.013,0.199
+giantsteps-mtg-key,3062618.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.6,23.759,12.895,2.672,0.007,0.192
+giantsteps-mtg-key,307186.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.71,23.02,13.265,3.152,0.008,0.189
+giantsteps-mtg-key,3074103.LOFI.wav,g major	2	there are modulations to e minor,e minor,0.3,relative,ok,38.7,23.127,12.395,2.817,0.013,0.239
+giantsteps-mtg-key,307425.LOFI.wav,c minor	2	frygian mode,c minor,1.0,correct,ok,39.58,23.309,12.888,3.077,0.013,0.2
+giantsteps-mtg-key,3078576.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.71,24.164,12.608,2.63,0.007,0.217
+giantsteps-mtg-key,3086101.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.6,22.779,13.46,3.053,0.009,0.213
+giantsteps-mtg-key,3093686.LOFI.wav,c major	2,d minor,0.0,wrong,ok,39.08,22.678,13.225,2.845,0.008,0.228
+giantsteps-mtg-key,3095574.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.99,23.545,13.236,2.92,0.007,0.202
+giantsteps-mtg-key,3098555.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.27,23.931,12.53,2.495,0.006,0.219
+giantsteps-mtg-key,3126447.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.94,23.276,13.354,3.01,0.008,0.206
+giantsteps-mtg-key,312995.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.96,22.991,13.421,3.225,0.009,0.217
+giantsteps-mtg-key,3137109.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.18,23.944,12.922,3.029,0.009,0.191
+giantsteps-mtg-key,3139360.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.51,24.625,13.064,2.536,0.007,0.198
+giantsteps-mtg-key,3141667.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,40.49,22.963,13.721,3.487,0.01,0.217
+giantsteps-mtg-key,315480.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.23,22.5,14.495,2.91,0.009,0.221
+giantsteps-mtg-key,3154894.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.23,23.904,13.308,2.732,0.008,0.188
+giantsteps-mtg-key,316031.LOFI.wav,c# minor	2,bb minor,0.0,wrong,ok,39.84,24.021,12.995,2.521,0.007,0.213
+giantsteps-mtg-key,3161699.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.19,23.124,14.033,2.754,0.007,0.2
+giantsteps-mtg-key,3162448.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,42.6,22.777,16.247,3.285,0.012,0.198
+giantsteps-mtg-key,3166014.LOFI.wav,a major	2,a minor,0.2,parallel,ok,40.41,23.42,13.073,3.638,0.008,0.192
+giantsteps-mtg-key,3198358.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.86,24.666,13.318,2.568,0.013,0.21
+giantsteps-mtg-key,3205441.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,41.69,23.002,15.185,2.791,0.019,0.447
+giantsteps-mtg-key,3207588.LOFI.wav,f# major	2,c# minor,0.0,wrong,ok,39.58,23.728,12.693,2.869,0.009,0.199
+giantsteps-mtg-key,3213612.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.47,23.693,13.447,3.06,0.008,0.178
+giantsteps-mtg-key,3230155.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.57,24.17,13.277,2.804,0.008,0.204
+giantsteps-mtg-key,3235703.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.67,23.969,12.76,2.668,0.008,0.186
+giantsteps-mtg-key,3240761.LOFI.wav,a# major	2,Bb major,1.0,correct,ok,39.5,22.887,13.348,2.877,0.01,0.284
+giantsteps-mtg-key,3250046.LOFI.wav,f# major	2,f minor,0.0,wrong,ok,39.54,22.835,12.898,3.43,0.013,0.247
+giantsteps-mtg-key,3252056.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.62,24.6,12.734,2.961,0.007,0.228
+giantsteps-mtg-key,3257500.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.92,23.115,12.579,2.835,0.012,0.268
+giantsteps-mtg-key,326117.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.51,23.931,12.661,2.585,0.012,0.206
+giantsteps-mtg-key,32715.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,38.97,23.101,12.515,3.035,0.01,0.218
+giantsteps-mtg-key,3272193.LOFI.wav,g major	2,g minor,0.2,parallel,ok,40.62,24.454,13.187,2.659,0.009,0.21
+giantsteps-mtg-key,3286229.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.96,24.814,12.575,3.244,0.013,0.201
+giantsteps-mtg-key,3286310.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,38.37,22.71,12.831,2.528,0.009,0.206
+giantsteps-mtg-key,3292669.LOFI.wav,a# major	2	key is a# minor from begining to 0:28; from 0:28 to end key is a# major,f minor,0.0,wrong,ok,39.03,22.964,13.192,2.599,0.007,0.188
+giantsteps-mtg-key,3296534.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.13,23.515,13.552,2.771,0.009,0.203
+giantsteps-mtg-key,3298819.LOFI.wav,c# minor	2	locrian mode,c# minor,1.0,correct,ok,41.36,25.209,12.902,2.928,0.01,0.215
+giantsteps-mtg-key,3299235.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.25,23.392,12.536,2.998,0.009,0.191
+giantsteps-mtg-key,330141.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.14,23.147,12.758,2.943,0.008,0.189
+giantsteps-mtg-key,3303218.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,40.17,23.196,13.51,3.113,0.011,0.238
+giantsteps-mtg-key,3311376.LOFI.wav,g major	2,d minor,0.0,wrong,ok,40.36,23.412,12.39,4.189,0.018,0.224
+giantsteps-mtg-key,331595.LOFI.wav,c major	2,g minor,0.0,wrong,ok,40.35,23.732,13.845,2.496,0.008,0.192
+giantsteps-mtg-key,3318291.LOFI.wav,g# major	2,f minor,0.3,relative,ok,40.23,23.18,13.166,3.585,0.007,0.214
+giantsteps-mtg-key,3327760.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.34,24.893,12.918,3.234,0.007,0.195
+giantsteps-mtg-key,333831.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.2,23.382,13.133,3.381,0.008,0.201
+giantsteps-mtg-key,3341440.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.97,23.79,13.447,2.435,0.01,0.2
+giantsteps-mtg-key,3356780.LOFI.wav,e minor	2,c# minor,0.0,wrong,ok,40.06,23.051,13.555,3.115,0.013,0.211
+giantsteps-mtg-key,33583.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.99,23.699,12.824,3.189,0.007,0.195
+giantsteps-mtg-key,335862.LOFI.wav,c major	2	possible confusion with a minor,f minor,0.0,wrong,ok,40.09,23.256,12.808,3.586,0.01,0.316
+giantsteps-mtg-key,3359168.LOFI.wav,g minor	2,c minor,0.5,fifth,ok,39.92,24.128,13.131,2.373,0.007,0.193
+giantsteps-mtg-key,3360682.LOFI.wav,f# major	2,g minor,0.0,wrong,ok,40.7,23.522,13.386,3.488,0.009,0.197
+giantsteps-mtg-key,3360996.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.67,24.076,13.065,3.224,0.008,0.211
+giantsteps-mtg-key,3377570.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.59,23.895,13.117,3.286,0.009,0.198
+giantsteps-mtg-key,3378284.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.56,24.244,13.503,2.509,0.007,0.207
+giantsteps-mtg-key,33846.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.3,23.289,13.583,3.122,0.008,0.21
+giantsteps-mtg-key,3390945.LOFI.wav,d# minor	2,bb minor,0.5,fifth,ok,40.97,24.092,12.616,3.989,0.008,0.187
+giantsteps-mtg-key,3391744.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.64,23.726,13.032,3.589,0.009,0.194
+giantsteps-mtg-key,33961.LOFI.wav,g minor	2,g minor,1.0,correct,ok,41.19,24.679,13.811,2.407,0.009,0.2
+giantsteps-mtg-key,3400910.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,38.56,23.519,12.371,2.392,0.008,0.19
+giantsteps-mtg-key,3408131.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.03,23.219,12.567,2.948,0.009,0.195
+giantsteps-mtg-key,3440288.LOFI.wav,f# major	2,f# minor,0.2,parallel,ok,40.79,24.625,13.211,2.647,0.014,0.213
+giantsteps-mtg-key,3445831.LOFI.wav,d# minor	2,bb minor,0.5,fifth,ok,44.45,27.318,13.574,3.245,0.009,0.207
+giantsteps-mtg-key,3467040.LOFI.wav,c# minor	2,a minor,0.0,wrong,ok,39.21,22.929,12.979,3.027,0.007,0.18
+giantsteps-mtg-key,3476908.LOFI.wav,b minor	2,d minor,0.0,wrong,ok,40.18,23.81,12.94,3.128,0.006,0.194
+giantsteps-mtg-key,3486594.LOFI.wav,d# minor	2,c minor,0.0,wrong,ok,39.36,23.135,13.323,2.59,0.009,0.213
+giantsteps-mtg-key,3489634.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,38.86,22.882,13.022,2.616,0.009,0.227
+giantsteps-mtg-key,349463.LOFI.wav,d major	2,d minor,0.2,parallel,ok,41.2,25.027,13.412,2.469,0.008,0.199
+giantsteps-mtg-key,350773.LOFI.wav,f major	2,f minor,0.2,parallel,ok,39.8,23.636,12.596,3.222,0.014,0.228
+giantsteps-mtg-key,3509627.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.88,23.329,13.073,3.161,0.008,0.217
+giantsteps-mtg-key,3516171.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.31,23.449,13.113,2.439,0.01,0.201
+giantsteps-mtg-key,3520807.LOFI.wav,d# major	2,g minor,0.0,wrong,ok,40.16,23.878,13.026,2.94,0.009,0.213
+giantsteps-mtg-key,3526880.LOFI.wav,c# minor	2	there are modulations to f# minor,c# minor,1.0,correct,ok,39.69,22.719,13.24,3.368,0.008,0.247
+giantsteps-mtg-key,3527620.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.74,23.492,13.204,2.754,0.008,0.196
+giantsteps-mtg-key,3528734.LOFI.wav,b minor	2,e minor,0.5,fifth,ok,38.75,23.184,12.887,2.349,0.008,0.205
+giantsteps-mtg-key,3537560.LOFI.wav,a minor	2	there is a modulation to e minor and track ends in a major,a minor,1.0,correct,ok,39.01,22.665,13.123,2.891,0.011,0.21
+giantsteps-mtg-key,3540106.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.88,24.132,12.593,3.86,0.008,0.196
+giantsteps-mtg-key,3547619.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,41.65,24.613,13.407,3.32,0.009,0.204
+giantsteps-mtg-key,35645.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.25,23.925,13.661,2.375,0.008,0.2
+giantsteps-mtg-key,3569019.LOFI.wav,e major	2,f# minor,0.0,wrong,ok,40.19,24.239,12.882,2.755,0.008,0.204
+giantsteps-mtg-key,356905.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.73,23.539,14.159,2.755,0.007,0.187
+giantsteps-mtg-key,3574764.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,40.71,24.394,13.137,2.89,0.009,0.194
+giantsteps-mtg-key,3581368.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,39.73,23.776,13.248,2.428,0.008,0.187
+giantsteps-mtg-key,358893.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.18,23.826,13.108,2.932,0.008,0.199
+giantsteps-mtg-key,3607700.LOFI.wav,e minor	2,eb minor,0.0,wrong,ok,40.27,23.253,13.202,3.505,0.009,0.203
+giantsteps-mtg-key,3619815.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.21,23.038,12.547,3.303,0.008,0.214
+giantsteps-mtg-key,3622084.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,40.11,24.287,12.826,2.699,0.008,0.197
+giantsteps-mtg-key,3630680.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.91,22.349,13.21,3.06,0.008,0.19
+giantsteps-mtg-key,3639596.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,39.3,23.221,13.398,2.399,0.007,0.192
+giantsteps-mtg-key,3647184.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.8,23.899,12.257,3.356,0.008,0.189
+giantsteps-mtg-key,3655850.LOFI.wav,g# major	2,f minor,0.3,relative,ok,39.58,24.004,12.867,2.418,0.007,0.206
+giantsteps-mtg-key,3662506.LOFI.wav,d# major	2,bb minor,0.0,wrong,ok,39.76,23.032,13.225,2.959,0.01,0.436
+giantsteps-mtg-key,3671250.LOFI.wav,b major	2,ab minor,0.3,relative,ok,38.9,22.896,13.015,2.695,0.006,0.195
+giantsteps-mtg-key,367369.LOFI.wav,g major	2,d minor,0.0,wrong,ok,39.39,22.836,13.206,3.051,0.008,0.198
+giantsteps-mtg-key,3676879.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,39.37,23.917,12.778,2.368,0.01,0.2
+giantsteps-mtg-key,3687603.LOFI.wav,c# major	2,eb minor,0.0,wrong,ok,39.43,23.272,12.686,3.11,0.011,0.221
+giantsteps-mtg-key,3694824.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,39.96,23.043,12.942,3.645,0.007,0.19
+giantsteps-mtg-key,3705941.LOFI.wav,c major	2,g minor,0.0,wrong,ok,41.53,25.756,12.608,2.876,0.008,0.197
+giantsteps-mtg-key,371036.LOFI.wav,g# minor	2,f# minor,0.0,wrong,ok,40.7,24.376,13.561,2.454,0.009,0.21
+giantsteps-mtg-key,3728272.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.83,22.603,13.385,3.547,0.008,0.203
+giantsteps-mtg-key,3731508.LOFI.wav,c minor	2,c# minor,0.0,wrong,ok,40.01,23.181,13.356,3.18,0.007,0.2
+giantsteps-mtg-key,3733853.LOFI.wav,"c major	2	key as c major is clear in the totally tonal part, between 0:18 and 1:12. before and after, key is b major",a minor,0.3,relative,ok,40.2,23.021,14.138,2.761,0.008,0.19
+giantsteps-mtg-key,373434.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.68,24.887,13.047,2.424,0.01,0.22
+giantsteps-mtg-key,3737315.LOFI.wav,f major	2	possible confusion with d minor,d minor,0.3,relative,ok,41.3,25.052,13.041,2.925,0.008,0.191
+giantsteps-mtg-key,3762907.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.81,23.285,13.213,2.852,0.008,0.322
+giantsteps-mtg-key,3766235.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.99,23.516,13.647,2.511,0.01,0.203
+giantsteps-mtg-key,3771813.LOFI.wav,d# minor	2,ab minor,0.5,fifth,ok,39.51,24.007,12.763,2.426,0.008,0.218
+giantsteps-mtg-key,37779.LOFI.wav,a# major	2,bb minor,0.2,parallel,ok,39.23,22.758,12.766,3.417,0.008,0.188
+giantsteps-mtg-key,3783446.LOFI.wav,c# major	2,Db major,1.0,correct,ok,39.9,23.058,13.711,2.86,0.006,0.187
+giantsteps-mtg-key,3794333.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.65,23.834,13.04,2.468,0.012,0.208
+giantsteps-mtg-key,3798377.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,43.68,27.074,13.6,2.663,0.015,0.215
+giantsteps-mtg-key,3801208.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.53,24.012,12.714,3.493,0.007,0.201
+giantsteps-mtg-key,3801681.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.84,23.966,13.395,3.156,0.008,0.235
+giantsteps-mtg-key,3817388.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.67,23.403,13.396,2.546,0.009,0.222
+giantsteps-mtg-key,3830951.LOFI.wav,g minor	2,g minor,1.0,correct,ok,38.7,22.688,12.624,2.978,0.012,0.285
+giantsteps-mtg-key,3831323.LOFI.wav,g# major	2,f minor,0.3,relative,ok,40.21,24.366,12.732,2.836,0.008,0.183
+giantsteps-mtg-key,3831852.LOFI.wav,f major	2	there are modulations to c# major and f minor,f minor,0.2,parallel,ok,39.61,22.922,13.597,2.797,0.007,0.196
+giantsteps-mtg-key,3831965.LOFI.wav,a# major	2,d minor,0.0,wrong,ok,40.13,24.181,12.45,3.161,0.011,0.23
+giantsteps-mtg-key,3833751.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.66,23.436,12.938,2.997,0.008,0.194
+giantsteps-mtg-key,3836467.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,39.51,23.242,12.926,3.037,0.009,0.205
+giantsteps-mtg-key,384265.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.86,22.977,14.004,2.572,0.008,0.201
+giantsteps-mtg-key,3854133.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.98,24.188,13.891,2.604,0.008,0.204
+giantsteps-mtg-key,385707.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.77,22.767,13.013,2.667,0.01,0.219
+giantsteps-mtg-key,3857465.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,40.24,23.966,12.654,3.232,0.013,0.255
+giantsteps-mtg-key,386088.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.14,23.621,12.829,3.4,0.007,0.198
+giantsteps-mtg-key,3865255.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.88,24.264,13.249,3.066,0.008,0.202
+giantsteps-mtg-key,3868708.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.68,24.985,12.89,2.522,0.008,0.19
+giantsteps-mtg-key,3870922.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.92,24.438,12.998,3.172,0.011,0.188
+giantsteps-mtg-key,388664.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.62,23.455,13.755,3.1,0.008,0.212
+giantsteps-mtg-key,3889717.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.86,23.312,12.778,2.478,0.008,0.196
+giantsteps-mtg-key,3897406.LOFI.wav,c minor	2,g minor,0.5,fifth,ok,42.01,25.544,13.26,2.889,0.013,0.199
+giantsteps-mtg-key,3905287.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.34,23.839,12.728,3.365,0.008,0.305
+giantsteps-mtg-key,3906152.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,40.4,23.483,13.353,3.121,0.008,0.347
+giantsteps-mtg-key,3912606.LOFI.wav,b major	2,B major,1.0,correct,ok,40.39,24.024,13.335,2.688,0.012,0.222
+giantsteps-mtg-key,3915618.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.05,23.129,12.973,2.582,0.01,0.247
+giantsteps-mtg-key,3916942.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,39.86,23.813,12.856,2.898,0.008,0.184
+giantsteps-mtg-key,392321.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.28,23.323,13.262,3.384,0.008,0.213
+giantsteps-mtg-key,3923369.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,40.64,23.118,14.247,2.955,0.013,0.223
+giantsteps-mtg-key,3935158.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,39.23,23.437,12.977,2.518,0.009,0.193
+giantsteps-mtg-key,3937649.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,41.46,25.225,12.339,3.569,0.009,0.196
+giantsteps-mtg-key,396112.LOFI.wav,e major	2,c# minor,0.3,relative,ok,39.57,22.647,13.621,3.029,0.006,0.193
+giantsteps-mtg-key,3966027.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.3,23.873,13.472,2.654,0.008,0.196
+giantsteps-mtg-key,3999467.LOFI.wav,g major	2,b minor,0.0,wrong,ok,39.81,24.329,12.599,2.441,0.012,0.256
+giantsteps-mtg-key,40030.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.23,23.106,12.813,2.995,0.012,0.219
+giantsteps-mtg-key,401815.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.92,23.313,13.254,3.033,0.009,0.225
+giantsteps-mtg-key,4020452.LOFI.wav,f major	2,f minor,0.2,parallel,ok,39.18,23.346,12.827,2.697,0.009,0.213
+giantsteps-mtg-key,4026906.LOFI.wav,e major	2,E major,1.0,correct,ok,41.96,25.566,13.271,2.794,0.008,0.22
+giantsteps-mtg-key,402978.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.95,22.806,12.722,3.151,0.007,0.183
+giantsteps-mtg-key,4032964.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.38,22.926,13.457,2.689,0.009,0.224
+giantsteps-mtg-key,4051513.LOFI.wav,c# minor	2	a bit phrygian,c# minor,1.0,correct,ok,39.99,23.525,13.433,2.752,0.008,0.193
+giantsteps-mtg-key,4052411.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.38,22.799,13.293,2.966,0.01,0.217
+giantsteps-mtg-key,4061369.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,40.43,23.523,13.284,3.216,0.008,0.305
+giantsteps-mtg-key,40643.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.28,24.032,13.162,2.719,0.008,0.27
+giantsteps-mtg-key,4071302.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.66,23.369,13.094,2.871,0.01,0.194
+giantsteps-mtg-key,4081121.LOFI.wav,a# major	2,g minor,0.3,relative,ok,39.35,22.99,13.335,2.608,0.013,0.248
+giantsteps-mtg-key,4085830.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.95,23.25,12.735,3.63,0.011,0.193
+giantsteps-mtg-key,40875.LOFI.wav,g# minor	2,c# minor,0.5,fifth,ok,40.48,23.509,14.007,2.651,0.007,0.219
+giantsteps-mtg-key,4089252.LOFI.wav,c# minor	2,c minor,0.0,wrong,ok,40.36,23.902,13.271,2.889,0.008,0.199
+giantsteps-mtg-key,4090254.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.78,22.909,13.536,2.94,0.014,0.259
+giantsteps-mtg-key,4096403.LOFI.wav,e major	2,e minor,0.2,parallel,ok,39.78,22.543,12.991,3.877,0.05,0.222
+giantsteps-mtg-key,4104550.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.28,23.071,13.253,2.685,0.006,0.184
+giantsteps-mtg-key,4106262.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,40.28,23.872,13.534,2.565,0.008,0.204
+giantsteps-mtg-key,4111004.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.12,23.611,12.642,2.534,0.01,0.231
+giantsteps-mtg-key,4115098.LOFI.wav,e minor	2,a minor,0.5,fifth,ok,39.67,23.236,12.786,3.349,0.008,0.193
+giantsteps-mtg-key,4123856.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.36,23.464,13.679,2.918,0.007,0.21
+giantsteps-mtg-key,4132072.LOFI.wav,g# major	2,f minor,0.3,relative,ok,39.06,23.139,12.547,3.007,0.011,0.246
+giantsteps-mtg-key,4134179.LOFI.wav,a# major	2,c minor,0.0,wrong,ok,40.53,24.665,13.132,2.408,0.009,0.23
+giantsteps-mtg-key,4149415.LOFI.wav,e major	2,ab minor,0.0,wrong,ok,40.18,24.17,12.969,2.744,0.008,0.192
+giantsteps-mtg-key,4151001.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.69,23.05,13.736,2.62,0.007,0.191
+giantsteps-mtg-key,4151005.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.44,23.755,12.555,2.773,0.013,0.235
+giantsteps-mtg-key,4164104.LOFI.wav,d# major	2,f minor,0.0,wrong,ok,39.5,23.555,12.888,2.704,0.014,0.229
+giantsteps-mtg-key,4164425.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.31,22.864,12.77,3.381,0.012,0.201
+giantsteps-mtg-key,4180893.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.35,22.759,13.401,2.837,0.007,0.254
+giantsteps-mtg-key,4184078.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.64,23.314,13.084,2.942,0.009,0.198
+giantsteps-mtg-key,4184925.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.74,23.447,13.099,2.838,0.012,0.23
+giantsteps-mtg-key,4188354.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,39.35,22.918,13.018,3.115,0.01,0.203
+giantsteps-mtg-key,41907.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.09,23.242,13.699,2.825,0.007,0.194
+giantsteps-mtg-key,4196452.LOFI.wav,c# major	2,ab minor,0.0,wrong,ok,39.49,23.351,12.842,2.97,0.012,0.208
+giantsteps-mtg-key,4202945.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.94,23.259,12.864,2.495,0.01,0.225
+giantsteps-mtg-key,4214391.LOFI.wav,b minor	2,bb minor,0.0,wrong,ok,40.27,23.581,13.007,3.34,0.009,0.242
+giantsteps-mtg-key,4217672.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.64,23.295,13.332,2.668,0.006,0.254
+giantsteps-mtg-key,4220180.LOFI.wav,c# major	2,f minor,0.0,wrong,ok,40.12,24.297,12.763,2.761,0.008,0.203
+giantsteps-mtg-key,4222236.LOFI.wav,c major	2,F major,0.5,fifth,ok,38.89,22.857,13.22,2.521,0.01,0.195
+giantsteps-mtg-key,4251163.LOFI.wav,"d minor	2	begining of track key is g minor but it is only a very short fragment, then key is d minor",d minor,1.0,correct,ok,39.22,23.012,12.779,3.146,0.008,0.185
+giantsteps-mtg-key,4262086.LOFI.wav,e minor	2	key modulates to c# minor,c# minor,0.0,wrong,ok,40.02,22.998,13.648,3.094,0.007,0.189
+giantsteps-mtg-key,4266877.LOFI.wav,c major	2	there is some modal exchange and vi degree lowered,d minor,0.0,wrong,ok,39.04,23.095,12.373,3.16,0.01,0.312
+giantsteps-mtg-key,4272275.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.15,24.531,12.913,2.402,0.007,0.21
+giantsteps-mtg-key,4272853.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,39.51,23.097,13.139,2.982,0.008,0.19
+giantsteps-mtg-key,4292533.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.54,23.157,13.654,2.451,0.007,0.193
+giantsteps-mtg-key,4297505.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.81,23.168,12.722,2.584,0.009,0.231
+giantsteps-mtg-key,4299047.LOFI.wav,d# major	2,c minor,0.3,relative,ok,39.76,23.645,13.294,2.451,0.012,0.252
+giantsteps-mtg-key,4306620.LOFI.wav,e minor	2,f minor,0.0,wrong,ok,39.4,22.727,13.025,3.337,0.007,0.215
+giantsteps-mtg-key,4310604.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,39.01,22.767,13.514,2.453,0.007,0.19
+giantsteps-mtg-key,431138.LOFI.wav,a minor	2,f minor,0.0,wrong,ok,39.52,23.425,12.898,2.908,0.009,0.195
+giantsteps-mtg-key,4315887.LOFI.wav,d# major	2,c minor,0.3,relative,ok,38.49,22.676,12.64,2.869,0.007,0.21
+giantsteps-mtg-key,431805.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.01,22.502,13.371,2.862,0.007,0.181
+giantsteps-mtg-key,4318934.LOFI.wav,b major	2,c# minor,0.0,wrong,ok,38.84,23.168,12.783,2.603,0.009,0.195
+giantsteps-mtg-key,4323121.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.03,23.205,12.355,3.126,0.011,0.223
+giantsteps-mtg-key,432966.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.85,24.533,12.973,2.955,0.009,0.197
+giantsteps-mtg-key,4334231.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.12,22.879,12.94,3.021,0.007,0.191
+giantsteps-mtg-key,4340765.LOFI.wav,a# major	2,g minor,0.3,relative,ok,39.73,23.318,13.245,2.869,0.007,0.201
+giantsteps-mtg-key,4341902.LOFI.wav,f# minor	2,f minor,0.0,wrong,ok,39.27,23.441,12.941,2.564,0.01,0.218
+giantsteps-mtg-key,4351142.LOFI.wav,f major	2,d minor,0.3,relative,ok,38.84,22.878,12.895,2.644,0.015,0.282
+giantsteps-mtg-key,435271.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.92,23.737,13.023,2.865,0.008,0.192
+giantsteps-mtg-key,4354199.LOFI.wav,a minor	2,c# minor,0.0,wrong,ok,39.55,22.99,12.813,3.443,0.009,0.202
+giantsteps-mtg-key,4364291.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.47,23.374,12.714,3.072,0.01,0.198
+giantsteps-mtg-key,4376323.LOFI.wav,f major	2,d minor,0.3,relative,ok,38.09,22.325,12.725,2.758,0.007,0.192
+giantsteps-mtg-key,4377128.LOFI.wav,g# minor	2,Ab major,0.2,parallel,ok,39.0,22.422,13.372,2.927,0.007,0.192
+giantsteps-mtg-key,4381031.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.18,23.475,13.003,2.43,0.008,0.19
+giantsteps-mtg-key,4398291.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.14,23.122,12.634,3.014,0.012,0.249
+giantsteps-mtg-key,4408526.LOFI.wav,c minor	2,d minor,0.0,wrong,ok,39.89,24.4,12.803,2.368,0.01,0.21
+giantsteps-mtg-key,4416284.LOFI.wav,g# major	2	confusion with f minor can be possible,c# minor,0.0,wrong,ok,39.4,23.418,12.91,2.773,0.008,0.205
+giantsteps-mtg-key,4418313.LOFI.wav,g# major	2	mode is not totally clear,bb minor,0.0,wrong,ok,39.17,22.701,13.717,2.431,0.012,0.23
+giantsteps-mtg-key,441969.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.08,22.999,12.916,2.811,0.013,0.231
+giantsteps-mtg-key,4421420.LOFI.wav,c major	2,c minor,0.2,parallel,ok,38.98,23.234,13.015,2.378,0.009,0.232
+giantsteps-mtg-key,443912.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.05,23.045,12.764,2.953,0.007,0.194
+giantsteps-mtg-key,4445523.LOFI.wav,b major	2,b minor,0.2,parallel,ok,39.8,23.061,13.139,3.26,0.011,0.228
+giantsteps-mtg-key,4464873.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,38.63,23.353,11.975,2.949,0.012,0.248
+giantsteps-mtg-key,446875.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.39,23.797,12.796,2.487,0.008,0.209
+giantsteps-mtg-key,4482723.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.53,22.698,13.739,2.777,0.012,0.194
+giantsteps-mtg-key,4503715.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.79,23.439,13.617,2.455,0.007,0.193
+giantsteps-mtg-key,450431.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.9,23.756,12.563,3.297,0.008,0.193
+giantsteps-mtg-key,4509681.LOFI.wav,"f# major	2	from begining to 0:37 key is f# major, from 0:37 to 1:57 key is g# major, and from 1:57 to end key is f# major again",ab minor,0.0,wrong,ok,40.61,24.055,13.408,2.778,0.014,0.243
+giantsteps-mtg-key,4510650.LOFI.wav,b major	2,ab minor,0.3,relative,ok,39.74,22.791,13.771,2.891,0.007,0.183
+giantsteps-mtg-key,451169.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,42.15,24.983,13.922,2.933,0.009,0.207
+giantsteps-mtg-key,4514491.LOFI.wav,a# major	2,g minor,0.3,relative,ok,40.03,23.699,12.589,3.367,0.013,0.246
+giantsteps-mtg-key,4523424.LOFI.wav,e major	2,E major,1.0,correct,ok,39.63,22.964,13.318,2.971,0.013,0.259
+giantsteps-mtg-key,4528744.LOFI.wav,d major	2,a minor,0.0,wrong,ok,39.4,23.149,13.367,2.587,0.007,0.188
+giantsteps-mtg-key,4562821.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.99,23.58,13.77,2.373,0.007,0.189
+giantsteps-mtg-key,4568358.LOFI.wav,a# major	2,bb minor,0.2,parallel,ok,39.92,23.19,12.915,3.424,0.012,0.244
+giantsteps-mtg-key,457131.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.14,23.046,14.008,2.716,0.014,0.243
+giantsteps-mtg-key,4572120.LOFI.wav,b major	2	there are modulations to g# minor,bb minor,0.0,wrong,ok,39.99,23.884,13.232,2.583,0.008,0.198
+giantsteps-mtg-key,4587945.LOFI.wav,e minor	2,b minor,0.5,fifth,ok,40.27,23.91,13.486,2.599,0.007,0.191
+giantsteps-mtg-key,4590651.LOFI.wav,b minor	2,e minor,0.5,fifth,ok,40.1,22.901,13.444,3.393,0.013,0.242
+giantsteps-mtg-key,4590691.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,39.13,22.718,13.475,2.556,0.01,0.261
+giantsteps-mtg-key,4596386.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.99,23.856,13.262,2.574,0.008,0.196
+giantsteps-mtg-key,460731.LOFI.wav,e major	2,a minor,0.0,wrong,ok,39.66,23.546,13.28,2.55,0.006,0.202
+giantsteps-mtg-key,4616741.LOFI.wav,"a# major	2	key is clearly a# major, but iii degree is lowered occasionally",g minor,0.3,relative,ok,39.1,22.64,12.761,3.316,0.016,0.251
+giantsteps-mtg-key,4623197.LOFI.wav,d# major	2,bb minor,0.0,wrong,ok,38.38,22.329,12.89,2.775,0.009,0.254
+giantsteps-mtg-key,4630401.LOFI.wav,b major	2	confusion with its minor relative g# minor is possible,ab minor,0.3,relative,ok,38.38,22.041,12.984,3.055,0.008,0.21
+giantsteps-mtg-key,4631771.LOFI.wav,a# major	2,g minor,0.3,relative,ok,38.8,23.104,12.962,2.455,0.007,0.19
+giantsteps-mtg-key,4660390.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,40.23,23.63,12.515,3.735,0.01,0.225
+giantsteps-mtg-key,4660409.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.16,23.57,13.364,2.845,0.013,0.247
+giantsteps-mtg-key,4661608.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.34,23.538,13.033,3.491,0.008,0.186
+giantsteps-mtg-key,466208.LOFI.wav,g# minor	2,c# minor,0.5,fifth,ok,40.12,23.789,13.433,2.613,0.007,0.187
+giantsteps-mtg-key,4664095.LOFI.wav,f# major	2	arabian mode,f# minor,0.2,parallel,ok,39.3,22.581,12.965,3.357,0.013,0.262
+giantsteps-mtg-key,4665597.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.9,23.729,13.659,2.967,0.013,0.414
+giantsteps-mtg-key,4690755.LOFI.wav,e major	2,e minor,0.2,parallel,ok,39.96,23.537,13.404,2.732,0.007,0.196
+giantsteps-mtg-key,4692133.LOFI.wav,g minor	2	confusion with f minor is possible,c minor,0.5,fifth,ok,39.54,23.606,13.295,2.369,0.008,0.189
+giantsteps-mtg-key,470136.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,40.58,24.168,12.147,3.89,0.012,0.251
+giantsteps-mtg-key,4704294.LOFI.wav,f minor	2,bb minor,0.5,fifth,ok,39.24,22.471,13.615,2.795,0.015,0.226
+giantsteps-mtg-key,4710435.LOFI.wav,a# major	2,d minor,0.0,wrong,ok,40.03,23.117,13.166,3.423,0.008,0.23
+giantsteps-mtg-key,471711.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.17,23.974,13.37,2.526,0.007,0.203
+giantsteps-mtg-key,4726263.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.4,23.229,12.424,3.352,0.014,0.26
+giantsteps-mtg-key,4733800.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.7,23.796,13.646,2.948,0.009,0.206
+giantsteps-mtg-key,4741346.LOFI.wav,c# minor	2,d minor,0.0,wrong,ok,40.16,23.374,13.738,2.758,0.008,0.186
+giantsteps-mtg-key,4753283.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.92,23.694,13.536,2.395,0.007,0.209
+giantsteps-mtg-key,4756702.LOFI.wav,e minor	2,f minor,0.0,wrong,ok,40.56,24.186,12.252,3.761,0.016,0.235
+giantsteps-mtg-key,4759312.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.8,23.242,13.899,2.353,0.006,0.209
+giantsteps-mtg-key,4765342.LOFI.wav,a major	2,a minor,0.2,parallel,ok,41.02,23.407,14.727,2.614,0.008,0.179
+giantsteps-mtg-key,4767556.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.26,24.006,13.573,2.393,0.007,0.198
+giantsteps-mtg-key,4771754.LOFI.wav,f# minor	2	major or minor mode discrimination is not clear,f# minor,1.0,correct,ok,40.04,23.621,12.344,3.709,0.012,0.251
+giantsteps-mtg-key,4772886.LOFI.wav,c minor	2	end of track modulates to f minor,c minor,1.0,correct,ok,39.78,23.382,13.508,2.553,0.01,0.234
+giantsteps-mtg-key,4784473.LOFI.wav,f# major	2,f# minor,0.2,parallel,ok,39.68,23.002,13.226,3.149,0.008,0.207
+giantsteps-mtg-key,4792796.LOFI.wav,b major	2,ab minor,0.3,relative,ok,41.19,24.105,13.114,3.679,0.007,0.208
+giantsteps-mtg-key,4793409.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.44,23.122,12.612,3.371,0.012,0.228
+giantsteps-mtg-key,4809086.LOFI.wav,"a# minor	2	despite internal modulations, key is clearly a# minor",bb minor,1.0,correct,ok,39.15,23.143,12.807,2.896,0.007,0.199
+giantsteps-mtg-key,4811158.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,39.43,23.163,13.215,2.788,0.007,0.182
+giantsteps-mtg-key,4820720.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.4,23.465,14.023,2.612,0.006,0.211
+giantsteps-mtg-key,4824309.LOFI.wav,d major	2,D major,1.0,correct,ok,39.01,22.997,12.398,3.229,0.015,0.252
+giantsteps-mtg-key,4838183.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.97,23.586,13.074,3.015,0.008,0.192
+giantsteps-mtg-key,4848629.LOFI.wav,e minor	2,d minor,0.0,wrong,ok,38.7,22.23,13.176,3.003,0.008,0.2
+giantsteps-mtg-key,4855328.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.24,23.19,13.101,2.564,0.01,0.262
+giantsteps-mtg-key,4857871.LOFI.wav,a# major	2,g minor,0.3,relative,ok,38.36,22.741,12.796,2.474,0.01,0.235
+giantsteps-mtg-key,486395.LOFI.wav,f# major	2,ab minor,0.0,wrong,ok,39.2,22.283,13.686,2.868,0.021,0.221
+giantsteps-mtg-key,4870279.LOFI.wav,d# major	2,f minor,0.0,wrong,ok,39.87,23.129,13.429,2.932,0.009,0.271
+giantsteps-mtg-key,4873800.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.93,23.352,13.723,2.467,0.011,0.267
+giantsteps-mtg-key,4878879.LOFI.wav,e major	2,c# minor,0.3,relative,ok,38.53,23.496,12.22,2.48,0.01,0.207
+giantsteps-mtg-key,487971.LOFI.wav,c major	2,C major,1.0,correct,ok,38.43,22.441,12.492,3.018,0.01,0.371
+giantsteps-mtg-key,4885376.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,38.56,22.271,13.473,2.507,0.007,0.222
+giantsteps-mtg-key,4887623.LOFI.wav,e major	2	there are some fragments in e minor inside track,f# minor,0.0,wrong,ok,39.68,23.628,13.113,2.584,0.01,0.239
+giantsteps-mtg-key,4887778.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.62,24.642,12.216,3.475,0.009,0.189
+giantsteps-mtg-key,489351.LOFI.wav,a# major	2,g minor,0.3,relative,ok,39.29,22.735,13.233,2.939,0.012,0.266
+giantsteps-mtg-key,4906181.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.18,22.367,13.504,2.894,0.009,0.204
+giantsteps-mtg-key,4906900.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.71,23.653,12.181,2.575,0.008,0.212
+giantsteps-mtg-key,4907717.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.63,23.656,12.686,2.976,0.009,0.207
+giantsteps-mtg-key,4912830.LOFI.wav,c minor	2	dorian mode,f minor,0.5,fifth,ok,39.19,22.4,13.417,2.952,0.013,0.301
+giantsteps-mtg-key,491529.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,39.17,22.668,13.089,3.115,0.007,0.208
+giantsteps-mtg-key,4917696.LOFI.wav,g# minor	2,c# minor,0.5,fifth,ok,39.5,23.239,13.334,2.611,0.01,0.219
+giantsteps-mtg-key,4920129.LOFI.wav,f minor	2,f minor,1.0,correct,ok,37.88,22.463,12.528,2.559,0.011,0.223
+giantsteps-mtg-key,4943671.LOFI.wav,g# major	2	indian mode in melody,f minor,0.3,relative,ok,39.56,23.275,12.974,2.958,0.011,0.23
+giantsteps-mtg-key,4944953.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.47,23.314,13.257,2.618,0.007,0.179
+giantsteps-mtg-key,4946269.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.96,24.268,12.604,2.792,0.007,0.205
+giantsteps-mtg-key,495613.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.48,22.824,12.713,2.66,0.007,0.195
+giantsteps-mtg-key,4970565.LOFI.wav,b major 	2,ab minor,0.3,relative,ok,38.74,22.438,12.631,3.265,0.012,0.284
+giantsteps-mtg-key,49721.LOFI.wav,c major	2,c minor,0.2,parallel,ok,38.9,22.957,12.767,2.784,0.008,0.28
+giantsteps-mtg-key,4974176.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.29,23.247,12.321,2.425,0.007,0.204
+giantsteps-mtg-key,4975002.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,40.62,24.766,12.54,3.016,0.011,0.208
+giantsteps-mtg-key,4992440.LOFI.wav,c# major	2,ab minor,0.0,wrong,ok,38.59,22.408,12.847,2.945,0.013,0.256
+giantsteps-mtg-key,4998705.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.0,22.761,12.966,2.945,0.008,0.223
+giantsteps-mtg-key,501476.LOFI.wav,d major	2,f# minor,0.0,wrong,ok,40.09,23.158,13.872,2.765,0.006,0.208
+giantsteps-mtg-key,501562.LOFI.wav,c minor	2,c minor,1.0,correct,ok,37.96,22.32,12.628,2.66,0.012,0.227
+giantsteps-mtg-key,5031142.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,39.55,22.949,12.603,3.686,0.008,0.2
+giantsteps-mtg-key,503690.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.14,22.601,13.074,3.186,0.008,0.19
+giantsteps-mtg-key,5048299.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.79,23.664,12.384,3.447,0.008,0.198
+giantsteps-mtg-key,5054157.LOFI.wav,f major	2,d minor,0.3,relative,ok,39.64,24.2,12.546,2.532,0.011,0.249
+giantsteps-mtg-key,5057312.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.99,23.116,12.949,3.617,0.007,0.207
+giantsteps-mtg-key,5059176.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,40.14,23.306,13.196,3.355,0.007,0.186
+giantsteps-mtg-key,5061.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.32,23.748,12.522,2.705,0.014,0.231
+giantsteps-mtg-key,5066211.LOFI.wav,c minor	2,g minor,0.5,fifth,ok,40.2,24.626,12.48,2.681,0.014,0.276
+giantsteps-mtg-key,50823.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.08,23.197,12.827,3.717,0.014,0.217
+giantsteps-mtg-key,508703.LOFI.wav,e major	2,f# minor,0.0,wrong,ok,40.12,23.353,13.776,2.689,0.008,0.204
+giantsteps-mtg-key,5092947.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.98,23.566,12.455,2.593,0.018,0.25
+giantsteps-mtg-key,5095717.LOFI.wav,f# major	2,bb minor,0.0,wrong,ok,39.94,23.842,12.463,3.25,0.012,0.243
+giantsteps-mtg-key,5106232.LOFI.wav,"f# minor	2	from 1:25, key becomes something between g minor and g major",f# minor,1.0,correct,ok,38.89,22.554,13.048,2.933,0.013,0.233
+giantsteps-mtg-key,5120148.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.88,22.898,13.03,2.649,0.008,0.2
+giantsteps-mtg-key,5123514.LOFI.wav,a# major	2,c minor,0.0,wrong,ok,39.18,23.409,12.268,3.144,0.008,0.256
+giantsteps-mtg-key,5124850.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,38.65,22.935,12.7,2.672,0.011,0.226
+giantsteps-mtg-key,512956.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.94,22.584,12.956,3.024,0.013,0.246
+giantsteps-mtg-key,5133242.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.25,23.178,12.963,2.815,0.008,0.186
+giantsteps-mtg-key,5135485.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.3,23.318,12.814,2.89,0.008,0.195
+giantsteps-mtg-key,5138597.LOFI.wav,g minor	2,c minor,0.5,fifth,ok,42.37,26.211,12.992,2.806,0.009,0.218
+giantsteps-mtg-key,5144599.LOFI.wav,d# major	2,Bb major,0.5,fifth,ok,39.92,22.666,13.301,3.589,0.008,0.235
+giantsteps-mtg-key,5148970.LOFI.wav,g# major	2	mode is not totally clear,Ab major,1.0,correct,ok,39.83,22.892,13.85,2.732,0.011,0.237
+giantsteps-mtg-key,5152629.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.47,23.264,13.536,2.39,0.007,0.192
+giantsteps-mtg-key,5157102.LOFI.wav,"f# minor	2	in some fragments inside the track, key is a major",f# minor,1.0,correct,ok,39.3,23.1,13.081,2.755,0.013,0.244
+giantsteps-mtg-key,5159908.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,43.01,26.056,13.814,2.822,0.008,0.207
+giantsteps-mtg-key,5186642.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.97,25.336,13.274,3.081,0.007,0.182
+giantsteps-mtg-key,5187049.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.03,24.128,13.177,2.399,0.01,0.23
+giantsteps-mtg-key,5192554.LOFI.wav,e minor	2,g minor,0.0,wrong,ok,39.4,23.038,13.08,2.938,0.01,0.237
+giantsteps-mtg-key,51936.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.08,23.275,13.346,3.144,0.009,0.207
+giantsteps-mtg-key,5207006.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.36,23.8,13.63,2.643,0.008,0.199
+giantsteps-mtg-key,5211090.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.75,23.844,13.231,2.38,0.007,0.202
+giantsteps-mtg-key,5215470.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.89,23.103,13.472,3.005,0.01,0.203
+giantsteps-mtg-key,521598.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.5,23.448,13.873,2.861,0.008,0.214
+giantsteps-mtg-key,522851.LOFI.wav,g# minor	2,f# minor,0.0,wrong,ok,39.29,23.465,12.93,2.606,0.008,0.188
+giantsteps-mtg-key,5234073.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,40.29,23.702,13.637,2.667,0.008,0.194
+giantsteps-mtg-key,5234318.LOFI.wav,g major	2,G major,1.0,correct,ok,40.08,22.673,14.286,2.783,0.009,0.228
+giantsteps-mtg-key,5245862.LOFI.wav,d# minor	2,Db major,0.0,wrong,ok,40.46,23.097,13.649,3.308,0.014,0.274
+giantsteps-mtg-key,5263861.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,43.49,26.01,14.592,2.557,0.009,0.227
+giantsteps-mtg-key,5272649.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,41.24,24.378,14.095,2.472,0.008,0.206
+giantsteps-mtg-key,5279212.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.99,23.192,13.544,2.555,0.012,0.502
+giantsteps-mtg-key,528454.LOFI.wav,e major	2,ab minor,0.0,wrong,ok,40.73,22.627,14.559,3.171,0.013,0.231
+giantsteps-mtg-key,5287841.LOFI.wav,a# major	2,bb minor,0.2,parallel,ok,40.65,23.488,14.076,2.651,0.008,0.311
+giantsteps-mtg-key,5296203.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,41.3,24.506,13.35,3.1,0.009,0.243
+giantsteps-mtg-key,5299867.LOFI.wav,b major	2,b minor,0.2,parallel,ok,40.03,23.907,13.345,2.483,0.007,0.196
+giantsteps-mtg-key,5309154.LOFI.wav,f minor	2,bb minor,0.5,fifth,ok,41.11,23.272,13.677,3.779,0.015,0.247
+giantsteps-mtg-key,5315479.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.73,23.136,13.738,2.575,0.008,0.179
+giantsteps-mtg-key,5324261.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.85,23.58,13.287,2.637,0.013,0.232
+giantsteps-mtg-key,5329278.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.15,23.482,13.371,2.969,0.009,0.221
+giantsteps-mtg-key,5338500.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,34.84,20.115,11.456,2.955,0.008,0.214
+giantsteps-mtg-key,533963.LOFI.wav,g minor	2,g minor,1.0,correct,ok,41.01,22.684,13.813,4.185,0.012,0.208
+giantsteps-mtg-key,5344837.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.87,23.487,13.383,2.63,0.012,0.254
+giantsteps-mtg-key,5351971.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.88,23.43,13.109,3.018,0.008,0.222
+giantsteps-mtg-key,5359592.LOFI.wav,a# major	2,g minor,0.3,relative,ok,39.95,23.622,13.117,2.839,0.012,0.253
+giantsteps-mtg-key,536497.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.35,23.349,13.685,3.033,0.008,0.195
+giantsteps-mtg-key,5371595.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.23,23.379,13.07,2.455,0.011,0.234
+giantsteps-mtg-key,5380961.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.88,23.159,13.444,2.954,0.01,0.209
+giantsteps-mtg-key,5393783.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.54,23.441,12.667,2.987,0.007,0.351
+giantsteps-mtg-key,5403134.LOFI.wav,f minor	2	confusion with g# major is possible,f minor,1.0,correct,ok,39.99,23.212,13.389,3.097,0.007,0.197
+giantsteps-mtg-key,5404020.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.72,22.99,12.978,2.472,0.006,0.195
+giantsteps-mtg-key,5404068.LOFI.wav,a# minor	2,f minor,0.5,fifth,ok,40.71,22.884,14.379,3.135,0.009,0.214
+giantsteps-mtg-key,5411517.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.71,23.862,12.934,2.63,0.008,0.196
+giantsteps-mtg-key,5415462.LOFI.wav,f minor	2,g minor,0.0,wrong,ok,41.05,22.622,13.671,4.455,0.007,0.203
+giantsteps-mtg-key,5419394.LOFI.wav,f minor	2	locrian mode,ab minor,0.0,wrong,ok,40.96,23.843,14.094,2.723,0.008,0.198
+giantsteps-mtg-key,5420676.LOFI.wav,g# major	2,bb minor,0.0,wrong,ok,40.7,23.663,13.635,3.096,0.009,0.205
+giantsteps-mtg-key,542315.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.79,24.988,12.776,2.729,0.007,0.198
+giantsteps-mtg-key,5427061.LOFI.wav,a major	2,f# minor,0.3,relative,ok,40.69,23.604,13.68,3.106,0.008,0.2
+giantsteps-mtg-key,542876.LOFI.wav,e minor	2,f# minor,0.0,wrong,ok,39.6,23.054,13.922,2.337,0.007,0.199
+giantsteps-mtg-key,5428785.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.75,22.878,13.032,2.544,0.009,0.196
+giantsteps-mtg-key,5429242.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,44.76,27.829,13.656,2.9,0.016,0.245
+giantsteps-mtg-key,5441797.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.61,22.364,13.76,2.788,0.022,0.456
+giantsteps-mtg-key,5443161.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.31,23.441,12.938,2.634,0.007,0.208
+giantsteps-mtg-key,5456553.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.98,23.339,12.704,2.625,0.009,0.209
+giantsteps-mtg-key,5458695.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.24,22.865,12.982,3.038,0.008,0.238
+giantsteps-mtg-key,5466977.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.76,23.375,13.312,2.783,0.009,0.194
+giantsteps-mtg-key,5467340.LOFI.wav,d# minor	2,bb minor,0.5,fifth,ok,39.59,23.188,12.727,3.401,0.007,0.191
+giantsteps-mtg-key,5478004.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,38.7,23.151,12.769,2.489,0.007,0.208
+giantsteps-mtg-key,5492171.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.45,23.166,12.885,3.113,0.008,0.186
+giantsteps-mtg-key,5492384.LOFI.wav,b major	2,c# minor,0.0,wrong,ok,39.62,23.045,13.504,2.715,0.01,0.24
+giantsteps-mtg-key,5495991.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,38.94,22.986,12.804,2.79,0.012,0.252
+giantsteps-mtg-key,5497219.LOFI.wav,d# minor	2,d minor,0.0,wrong,ok,38.04,22.65,12.667,2.437,0.008,0.196
+giantsteps-mtg-key,5498352.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,39.0,23.093,12.946,2.668,0.008,0.195
+giantsteps-mtg-key,5545112.LOFI.wav,c major	2,c minor,0.2,parallel,ok,39.55,23.175,13.007,3.024,0.01,0.228
+giantsteps-mtg-key,5547982.LOFI.wav,d# major	2,c minor,0.3,relative,ok,39.7,23.074,12.792,3.536,0.008,0.203
+giantsteps-mtg-key,5558264.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.0,23.009,13.115,2.585,0.008,0.199
+giantsteps-mtg-key,5568606.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,39.06,22.988,12.769,3.006,0.008,0.195
+giantsteps-mtg-key,5575647.LOFI.wav,a# minor	2,a minor,0.0,wrong,ok,39.95,23.735,12.713,3.172,0.01,0.225
+giantsteps-mtg-key,558054.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,40.41,23.599,13.395,3.104,0.007,0.209
+giantsteps-mtg-key,5580807.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.76,24.262,12.719,2.474,0.008,0.209
+giantsteps-mtg-key,5594806.LOFI.wav,a# major	2,d minor,0.0,wrong,ok,40.42,23.359,13.719,3.03,0.01,0.211
+giantsteps-mtg-key,561086.LOFI.wav,b major	2,c# minor,0.0,wrong,ok,39.05,23.119,12.798,2.792,0.009,0.239
+giantsteps-mtg-key,5611816.LOFI.wav,d# major	2	confusion with c minor is possible,c minor,0.3,relative,ok,39.7,23.748,12.682,2.965,0.007,0.211
+giantsteps-mtg-key,5612854.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.59,24.814,12.648,2.821,0.008,0.222
+giantsteps-mtg-key,5618695.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.86,23.514,13.216,2.841,0.008,0.191
+giantsteps-mtg-key,5630800.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.55,23.177,13.206,2.839,0.01,0.223
+giantsteps-mtg-key,563669.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.01,22.756,12.646,3.222,0.016,0.249
+giantsteps-mtg-key,5653983.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.48,23.808,12.925,2.445,0.008,0.195
+giantsteps-mtg-key,5654170.LOFI.wav,f# minor	2,g minor,0.0,wrong,ok,39.26,22.838,12.815,3.305,0.008,0.206
+giantsteps-mtg-key,5672671.LOFI.wav,b minor	2,c minor,0.0,wrong,ok,39.34,23.224,13.018,2.751,0.009,0.227
+giantsteps-mtg-key,5687266.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.44,23.614,12.729,2.785,0.011,0.202
+giantsteps-mtg-key,5697805.LOFI.wav,a major	2,A major,1.0,correct,ok,39.06,23.731,12.496,2.533,0.008,0.193
+giantsteps-mtg-key,5728532.LOFI.wav,e minor	2	duplicated,f# minor,0.0,wrong,ok,42.43,25.712,13.48,2.942,0.008,0.198
+giantsteps-mtg-key,5734184.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.83,22.518,12.823,3.184,0.012,0.197
+giantsteps-mtg-key,5736132.LOFI.wav,e major	2,c# minor,0.3,relative,ok,39.04,23.04,13.102,2.582,0.008,0.221
+giantsteps-mtg-key,5739130.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.56,23.824,13.666,2.707,0.015,0.187
+giantsteps-mtg-key,574098.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.27,23.106,12.83,2.927,0.017,0.262
+giantsteps-mtg-key,5742777.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.04,23.41,12.775,2.538,0.008,0.229
+giantsteps-mtg-key,575766.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.29,23.515,12.611,2.852,0.007,0.216
+giantsteps-mtg-key,5769455.LOFI.wav,g# major	2,Ab major,1.0,correct,ok,38.79,22.692,13.334,2.436,0.008,0.238
+giantsteps-mtg-key,5795173.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.95,24.16,13.637,2.866,0.008,0.191
+giantsteps-mtg-key,580557.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,40.32,24.194,13.344,2.453,0.014,0.231
+giantsteps-mtg-key,5813087.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.12,23.034,13.516,3.216,0.014,0.253
+giantsteps-mtg-key,58167.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.29,23.028,13.49,2.458,0.01,0.215
+giantsteps-mtg-key,5821511.LOFI.wav,b minor	2,b minor,1.0,correct,ok,42.75,26.112,13.495,2.832,0.008,0.211
+giantsteps-mtg-key,58226.LOFI.wav,c# major	2,f minor,0.0,wrong,ok,40.49,24.136,13.639,2.424,0.008,0.189
+giantsteps-mtg-key,5831818.LOFI.wav,g# major	2,c minor,0.0,wrong,ok,40.38,23.363,13.034,3.622,0.011,0.256
+giantsteps-mtg-key,585098.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,39.57,23.566,13.259,2.444,0.023,0.191
+giantsteps-mtg-key,5855468.LOFI.wav,d# minor	2,c minor,0.0,wrong,ok,40.87,23.724,13.839,3.015,0.008,0.195
+giantsteps-mtg-key,58581.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,42.57,26.489,13.327,2.435,0.009,0.219
+giantsteps-mtg-key,5866030.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.79,23.022,13.387,4.029,0.012,0.238
+giantsteps-mtg-key,5874377.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,41.28,24.623,13.82,2.477,0.008,0.253
+giantsteps-mtg-key,5876668.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.04,22.825,14.203,3.313,0.034,0.437
+giantsteps-mtg-key,5881.LOFI.wav,a major	2,a minor,0.2,parallel,ok,41.41,25.345,13.248,2.509,0.008,0.215
+giantsteps-mtg-key,5886473.LOFI.wav,"a# major	2	mixolydian mode is present in harmony, and arabic mode is present in melody",f minor,0.0,wrong,ok,39.7,23.185,13.489,2.634,0.01,0.251
+giantsteps-mtg-key,588879.LOFI.wav,f minor	2,f minor,1.0,correct,ok,41.58,25.158,13.687,2.374,0.012,0.249
+giantsteps-mtg-key,5888808.LOFI.wav,a# minor	2,eb minor,0.5,fifth,ok,39.49,23.421,13.037,2.692,0.01,0.223
+giantsteps-mtg-key,5925664.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.79,24.656,13.056,2.792,0.007,0.191
+giantsteps-mtg-key,5948622.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.84,22.851,12.978,2.611,0.01,0.288
+giantsteps-mtg-key,5955816.LOFI.wav,f minor	2,f minor,1.0,correct,ok,38.58,22.395,13.272,2.616,0.008,0.188
+giantsteps-mtg-key,5956160.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,39.34,23.748,12.781,2.512,0.008,0.195
+giantsteps-mtg-key,5971086.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,40.97,25.171,12.384,3.032,0.016,0.244
+giantsteps-mtg-key,5980991.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.36,22.847,13.172,2.997,0.015,0.218
+giantsteps-mtg-key,5986917.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,39.08,22.502,13.361,2.788,0.014,0.316
+giantsteps-mtg-key,598701.LOFI.wav,b minor	2,D major,0.3,relative,ok,39.24,23.45,12.605,2.902,0.011,0.188
+giantsteps-mtg-key,5996975.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.76,23.05,13.257,3.121,0.009,0.209
+giantsteps-mtg-key,5998113.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.22,22.761,13.078,2.831,0.011,0.431
+giantsteps-mtg-key,6003575.LOFI.wav,g major	2,G major,1.0,correct,ok,39.45,23.207,12.899,3.044,0.007,0.191
+giantsteps-mtg-key,6011574.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.13,23.244,13.097,2.514,0.007,0.188
+giantsteps-mtg-key,601207.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.46,23.498,12.446,3.187,0.01,0.217
+giantsteps-mtg-key,6027087.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,40.09,23.15,13.76,2.824,0.012,0.237
+giantsteps-mtg-key,603802.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.78,23.074,13.485,2.913,0.009,0.194
+giantsteps-mtg-key,6039665.LOFI.wav,f# major	2,c# minor,0.0,wrong,ok,39.59,23.64,13.116,2.544,0.007,0.193
+giantsteps-mtg-key,6042784.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.92,23.46,12.83,3.175,0.014,0.331
+giantsteps-mtg-key,6051774.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.73,22.759,13.689,2.953,0.01,0.195
+giantsteps-mtg-key,605407.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.91,22.933,13.054,3.614,0.008,0.217
+giantsteps-mtg-key,6062914.LOFI.wav,c# minor	2,a minor,0.0,wrong,ok,40.06,23.502,13.622,2.628,0.008,0.209
+giantsteps-mtg-key,6065388.LOFI.wav,g# major	2,Ab major,1.0,correct,ok,39.04,23.073,12.919,2.698,0.015,0.229
+giantsteps-mtg-key,60661.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,40.9,23.914,13.524,3.15,0.009,0.206
+giantsteps-mtg-key,6067929.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.67,23.153,13.612,2.628,0.008,0.186
+giantsteps-mtg-key,608572.LOFI.wav,d major	2,d minor,0.2,parallel,ok,40.34,23.61,13.637,2.75,0.012,0.213
+giantsteps-mtg-key,6086331.LOFI.wav,g# major	2,Ab major,1.0,correct,ok,40.19,22.95,13.599,3.332,0.009,0.206
+giantsteps-mtg-key,608703.LOFI.wav,d minor	2,g minor,0.5,fifth,ok,41.27,22.933,14.71,3.261,0.021,0.224
+giantsteps-mtg-key,6087559.LOFI.wav,a# major	2,bb minor,0.2,parallel,ok,41.77,24.381,14.123,2.975,0.009,0.193
+giantsteps-mtg-key,6105589.LOFI.wav,c# major 	2,f minor,0.0,wrong,ok,40.13,24.078,13.347,2.381,0.01,0.228
+giantsteps-mtg-key,6107169.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.03,23.485,13.353,2.876,0.01,0.207
+giantsteps-mtg-key,611801.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.78,22.974,13.839,3.615,0.012,0.244
+giantsteps-mtg-key,611928.LOFI.wav,e minor	2,e minor,1.0,correct,ok,41.08,23.705,14.64,2.457,0.008,0.181
+giantsteps-mtg-key,6131590.LOFI.wav,f minor	2	frygian mode,f minor,1.0,correct,ok,40.2,24.107,13.45,2.348,0.008,0.194
+giantsteps-mtg-key,6144221.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.96,23.767,13.496,3.358,0.01,0.223
+giantsteps-mtg-key,6147973.LOFI.wav,a# major	2,c minor,0.0,wrong,ok,40.68,23.062,14.116,3.131,0.015,0.26
+giantsteps-mtg-key,6150686.LOFI.wav,d major	2,d minor,0.2,parallel,ok,40.47,23.631,13.957,2.491,0.009,0.284
+giantsteps-mtg-key,6160319.LOFI.wav,a# major	2,c minor,0.0,wrong,ok,40.8,24.506,13.448,2.548,0.009,0.197
+giantsteps-mtg-key,616128.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.98,23.053,13.893,2.696,0.011,0.219
+giantsteps-mtg-key,616415.LOFI.wav,d# major	2,c minor,0.3,relative,ok,41.86,23.033,14.165,4.347,0.01,0.198
+giantsteps-mtg-key,6165907.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,41.32,24.634,13.873,2.536,0.008,0.185
+giantsteps-mtg-key,6168356.LOFI.wav,b minor	2,b minor,1.0,correct,ok,40.13,23.826,13.574,2.444,0.009,0.188
+giantsteps-mtg-key,617609.LOFI.wav,c# major	2,eb minor,0.0,wrong,ok,40.9,24.138,13.67,2.595,0.009,0.394
+giantsteps-mtg-key,61846.LOFI.wav,d# minor	2,Eb major,0.2,parallel,ok,40.24,23.069,13.571,3.251,0.011,0.244
+giantsteps-mtg-key,6199830.LOFI.wav,d# minor	2,c minor,0.0,wrong,ok,42.06,24.612,14.356,2.645,0.01,0.289
+giantsteps-mtg-key,6218674.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.46,23.641,14.041,2.474,0.008,0.21
+giantsteps-mtg-key,6220367.LOFI.wav,d major	2,d minor,0.2,parallel,ok,41.05,23.83,14.273,2.604,0.011,0.232
+giantsteps-mtg-key,6220395.LOFI.wav,a# major	2,g minor,0.3,relative,ok,39.39,23.246,13.202,2.619,0.009,0.226
+giantsteps-mtg-key,6221323.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,41.95,25.06,13.796,2.794,0.01,0.196
+giantsteps-mtg-key,6222804.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.33,22.996,13.386,2.658,0.007,0.191
+giantsteps-mtg-key,6227783.LOFI.wav,g# major	2,f minor,0.3,relative,ok,40.05,23.684,13.225,2.814,0.009,0.217
+giantsteps-mtg-key,6230588.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.5,22.901,12.612,2.674,0.007,0.213
+giantsteps-mtg-key,6243629.LOFI.wav,f minor	2,d minor,0.0,wrong,ok,41.22,25.282,12.704,2.918,0.011,0.222
+giantsteps-mtg-key,6247002.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.71,22.774,13.456,3.145,0.012,0.213
+giantsteps-mtg-key,6275472.LOFI.wav,f minor	2,c# minor,0.0,wrong,ok,39.62,23.302,12.993,2.933,0.014,0.261
+giantsteps-mtg-key,6275984.LOFI.wav,e minor	2,g minor,0.0,wrong,ok,39.33,23.328,13.261,2.441,0.009,0.201
+giantsteps-mtg-key,6276803.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.18,23.037,12.911,2.919,0.008,0.217
+giantsteps-mtg-key,6282277.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.85,23.529,12.808,3.214,0.01,0.197
+giantsteps-mtg-key,6282761.LOFI.wav,f# major	2,eb minor,0.3,relative,ok,39.24,22.883,12.812,3.17,0.015,0.248
+giantsteps-mtg-key,628368.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.36,22.796,13.253,2.927,0.042,0.188
+giantsteps-mtg-key,6283681.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.37,23.443,12.613,3.021,0.007,0.19
+giantsteps-mtg-key,628617.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.87,23.81,13.137,2.648,0.006,0.189
+giantsteps-mtg-key,6289424.LOFI.wav,b minor	2,f minor,0.0,wrong,ok,40.2,23.033,12.997,3.409,0.025,0.478
+giantsteps-mtg-key,6290068.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.2,23.047,13.393,2.42,0.012,0.248
+giantsteps-mtg-key,6294281.LOFI.wav,f# minor	2,a minor,0.0,wrong,ok,40.39,23.004,13.16,3.899,0.013,0.219
+giantsteps-mtg-key,63014.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,40.33,23.579,13.69,2.725,0.01,0.221
+giantsteps-mtg-key,6308736.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,39.85,23.472,12.943,3.076,0.014,0.23
+giantsteps-mtg-key,6313807.LOFI.wav,g minor	2,c minor,0.5,fifth,ok,39.58,23.96,12.913,2.411,0.008,0.187
+giantsteps-mtg-key,6316062.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.0,23.482,13.015,3.218,0.008,0.194
+giantsteps-mtg-key,6317186.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.99,24.67,13.221,2.778,0.008,0.214
+giantsteps-mtg-key,6320574.LOFI.wav,f minor	2,f minor,1.0,correct,ok,40.6,23.804,13.213,3.243,0.01,0.228
+giantsteps-mtg-key,6327674.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.75,24.607,13.304,2.547,0.007,0.202
+giantsteps-mtg-key,6332784.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.19,23.945,12.779,3.107,0.06,0.204
+giantsteps-mtg-key,633283.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.33,23.705,13.536,2.788,0.008,0.21
+giantsteps-mtg-key,6346876.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,39.84,23.118,13.277,3.05,0.017,0.239
+giantsteps-mtg-key,635716.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.82,23.836,13.216,2.454,0.009,0.206
+giantsteps-mtg-key,6359688.LOFI.wav,c minor	2,c minor,1.0,correct,ok,41.46,23.065,15.575,2.511,0.009,0.206
+giantsteps-mtg-key,63618.LOFI.wav,g# major	2,Ab major,1.0,correct,ok,40.25,23.38,13.413,3.142,0.008,0.217
+giantsteps-mtg-key,6379893.LOFI.wav,"a# major	2	arriving to the end, d minor appears in the background",bb minor,0.2,parallel,ok,40.67,24.027,13.109,3.203,0.011,0.221
+giantsteps-mtg-key,638337.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.81,24.635,12.906,2.938,0.009,0.223
+giantsteps-mtg-key,638879.LOFI.wav,a minor	2,e minor,0.5,fifth,ok,39.04,23.295,12.625,2.825,0.012,0.202
+giantsteps-mtg-key,6390202.LOFI.wav,g# minor	2	key tone pitch is between g# and a,c# minor,0.5,fifth,ok,39.79,23.138,13.657,2.686,0.008,0.205
+giantsteps-mtg-key,6394765.LOFI.wav,a minor	2,a minor,1.0,correct,ok,38.92,22.631,12.726,3.152,0.016,0.265
+giantsteps-mtg-key,6420899.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.02,23.773,13.537,2.43,0.008,0.18
+giantsteps-mtg-key,643172.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.33,23.391,12.495,3.149,0.007,0.204
+giantsteps-mtg-key,6435742.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.6,23.555,13.441,3.305,0.009,0.198
+giantsteps-mtg-key,6439567.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.63,23.31,13.027,2.923,0.015,0.244
+giantsteps-mtg-key,645959.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.21,22.988,13.339,2.601,0.007,0.191
+giantsteps-mtg-key,6461913.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,42.44,23.155,16.593,2.39,0.01,0.199
+giantsteps-mtg-key,6462754.LOFI.wav,g minor	2,bb minor,0.0,wrong,ok,39.56,23.073,12.849,3.352,0.008,0.19
+giantsteps-mtg-key,6469727.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.23,22.802,13.131,2.886,0.02,0.266
+giantsteps-mtg-key,6476511.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,39.42,22.8,13.652,2.604,0.008,0.25
+giantsteps-mtg-key,6487073.LOFI.wav,f# minor	2,d minor,0.0,wrong,ok,39.57,23.355,13.176,2.753,0.008,0.192
+giantsteps-mtg-key,650341.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.69,23.401,12.537,3.369,0.011,0.251
+giantsteps-mtg-key,650371.LOFI.wav,a minor	2,a minor,1.0,correct,ok,38.73,22.959,12.965,2.472,0.016,0.224
+giantsteps-mtg-key,650505.LOFI.wav,a minor	2,a minor,1.0,correct,ok,39.49,22.98,13.621,2.585,0.006,0.225
+giantsteps-mtg-key,6529435.LOFI.wav,c minor	2,bb minor,0.0,wrong,ok,39.9,23.796,13.48,2.343,0.007,0.191
+giantsteps-mtg-key,6535130.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.84,24.03,12.893,3.602,0.008,0.216
+giantsteps-mtg-key,6537998.LOFI.wav,e major	2,e minor,0.2,parallel,ok,39.51,23.469,13.308,2.428,0.02,0.199
+giantsteps-mtg-key,6563157.LOFI.wav,b minor	2,e minor,0.5,fifth,ok,40.39,24.014,13.096,2.98,0.008,0.194
+giantsteps-mtg-key,656533.LOFI.wav,e minor	2,e minor,1.0,correct,ok,40.02,23.457,13.837,2.392,0.008,0.236
+giantsteps-mtg-key,657010.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.58,22.835,14.343,3.093,0.007,0.199
+giantsteps-mtg-key,6574410.LOFI.wav,a major	2,f# minor,0.3,relative,ok,40.0,24.26,12.858,2.522,0.008,0.221
+giantsteps-mtg-key,65778.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.39,22.892,13.358,2.827,0.009,0.21
+giantsteps-mtg-key,66070.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.01,23.705,12.652,2.36,0.01,0.194
+giantsteps-mtg-key,673637.LOFI.wav,a# minor	2,Db major,0.3,relative,ok,38.02,22.717,11.924,3.028,0.015,0.224
+giantsteps-mtg-key,675299.LOFI.wav,e major	2,c# minor,0.3,relative,ok,39.78,24.431,12.663,2.425,0.008,0.18
+giantsteps-mtg-key,680345.LOFI.wav,e major	2,e minor,0.2,parallel,ok,40.11,23.249,13.535,3.011,0.008,0.208
+giantsteps-mtg-key,681908.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.42,23.229,13.392,2.5,0.008,0.204
+giantsteps-mtg-key,682387.LOFI.wav,c# minor	2,f# minor,0.5,fifth,ok,39.84,23.417,12.667,3.468,0.008,0.196
+giantsteps-mtg-key,68370.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.61,23.009,12.883,2.447,0.007,0.183
+giantsteps-mtg-key,685481.LOFI.wav,a minor	2,d minor,0.5,fifth,ok,39.38,22.632,13.321,2.991,0.007,0.342
+giantsteps-mtg-key,686686.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.61,23.369,13.22,2.695,0.009,0.208
+giantsteps-mtg-key,687183.LOFI.wav,c minor	2,g minor,0.5,fifth,ok,39.38,22.95,12.639,3.451,0.013,0.212
+giantsteps-mtg-key,69040.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,40.14,24.33,12.6,2.925,0.009,0.186
+giantsteps-mtg-key,691545.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,38.83,22.311,13.576,2.662,0.006,0.19
+giantsteps-mtg-key,691843.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,40.25,23.596,13.888,2.364,0.009,0.29
+giantsteps-mtg-key,694157.LOFI.wav,d minor	2,d minor,1.0,correct,ok,40.21,23.462,12.748,3.699,0.009,0.201
+giantsteps-mtg-key,695589.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.1,22.867,13.499,2.442,0.007,0.191
+giantsteps-mtg-key,696806.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.53,22.965,13.436,2.838,0.007,0.189
+giantsteps-mtg-key,697443.LOFI.wav,d# major	2,g minor,0.0,wrong,ok,40.86,24.076,14.096,2.408,0.007,0.192
+giantsteps-mtg-key,700076.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,38.97,22.882,12.648,3.046,0.011,0.272
+giantsteps-mtg-key,707425.LOFI.wav,b minor	2,b minor,1.0,correct,ok,42.19,25.714,12.848,3.315,0.009,0.206
+giantsteps-mtg-key,707851.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.53,23.391,13.175,2.687,0.012,0.186
+giantsteps-mtg-key,712848.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.48,23.618,13.164,2.395,0.008,0.202
+giantsteps-mtg-key,712853.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.68,22.467,13.932,3.923,0.009,0.202
+giantsteps-mtg-key,715745.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.91,24.092,13.467,3.033,0.011,0.209
+giantsteps-mtg-key,718543.LOFI.wav,f# major	2,f# minor,0.2,parallel,ok,40.8,24.561,13.349,2.573,0.012,0.22
+giantsteps-mtg-key,7217.LOFI.wav,f minor	2,c minor,0.5,fifth,ok,39.41,23.426,12.937,2.747,0.008,0.203
+giantsteps-mtg-key,722892.LOFI.wav,c minor	2,Eb major,0.3,relative,ok,39.71,23.218,13.253,2.951,0.008,0.2
+giantsteps-mtg-key,723438.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.55,23.188,12.968,3.04,0.012,0.242
+giantsteps-mtg-key,734930.LOFI.wav,a minor	2,a minor,1.0,correct,ok,41.97,24.771,14.154,2.716,0.008,0.215
+giantsteps-mtg-key,742215.LOFI.wav,c major	2,c minor,0.2,parallel,ok,39.65,23.687,12.686,2.984,0.008,0.198
+giantsteps-mtg-key,74680.LOFI.wav,a minor	2,a minor,1.0,correct,ok,40.09,23.347,13.347,3.032,0.015,0.227
+giantsteps-mtg-key,753241.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.57,22.613,13.135,2.523,0.008,0.213
+giantsteps-mtg-key,754389.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.43,23.254,13.159,2.706,0.008,0.21
+giantsteps-mtg-key,755905.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.48,23.572,12.913,2.71,0.007,0.188
+giantsteps-mtg-key,760778.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,40.05,23.697,12.733,3.309,0.007,0.198
+giantsteps-mtg-key,760891.LOFI.wav,d# major	2	possible confusion with c minor,c minor,0.3,relative,ok,38.7,22.54,13.41,2.489,0.007,0.179
+giantsteps-mtg-key,76914.LOFI.wav,g minor	2,g minor,1.0,correct,ok,40.26,23.218,13.125,3.591,0.011,0.215
+giantsteps-mtg-key,77806.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.44,22.865,13.538,2.752,0.007,0.191
+giantsteps-mtg-key,780216.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,40.03,23.466,13.278,2.927,0.013,0.242
+giantsteps-mtg-key,780236.LOFI.wav,c minor	2,g minor,0.5,fifth,ok,40.97,24.232,13.787,2.671,0.01,0.183
+giantsteps-mtg-key,787388.LOFI.wav,f# major	2,f# minor,0.2,parallel,ok,39.83,23.261,13.668,2.586,0.009,0.211
+giantsteps-mtg-key,793946.LOFI.wav,d# major	2,eb minor,0.2,parallel,ok,39.75,23.004,13.316,3.113,0.008,0.191
+giantsteps-mtg-key,794309.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.78,22.964,12.959,3.515,0.011,0.213
+giantsteps-mtg-key,798594.LOFI.wav,f minor	2,d minor,0.0,wrong,ok,39.21,23.409,13.127,2.379,0.008,0.185
+giantsteps-mtg-key,805746.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.46,23.313,13.324,2.506,0.01,0.213
+giantsteps-mtg-key,808116.LOFI.wav,c minor	2,bb minor,0.0,wrong,ok,39.46,23.151,13.106,2.875,0.008,0.234
+giantsteps-mtg-key,808982.LOFI.wav,g major	2,g minor,0.2,parallel,ok,39.65,23.049,13.33,2.983,0.008,0.19
+giantsteps-mtg-key,818686.LOFI.wav,f# minor	2,e minor,0.0,wrong,ok,39.24,23.621,12.867,2.465,0.007,0.189
+giantsteps-mtg-key,821091.LOFI.wav,d minor	2,d minor,1.0,correct,ok,38.38,22.701,12.841,2.552,0.007,0.186
+giantsteps-mtg-key,823951.LOFI.wav,g major	2,d minor,0.0,wrong,ok,38.78,22.338,13.319,2.793,0.007,0.19
+giantsteps-mtg-key,828061.LOFI.wav,f# major	2,c minor,0.0,wrong,ok,39.63,23.324,13.148,2.848,0.008,0.205
+giantsteps-mtg-key,830719.LOFI.wav,f# minor	2,f# minor,1.0,correct,ok,39.66,23.917,12.684,2.735,0.01,0.212
+giantsteps-mtg-key,836000.LOFI.wav,c# major	2,bb minor,0.3,relative,ok,38.87,22.736,12.731,3.117,0.007,0.197
+giantsteps-mtg-key,837795.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.83,23.149,13.675,2.688,0.014,0.222
+giantsteps-mtg-key,84098.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.31,22.953,12.313,2.744,0.008,0.195
+giantsteps-mtg-key,841676.LOFI.wav,a# major	2,g minor,0.3,relative,ok,41.5,24.457,13.921,2.812,0.01,0.197
+giantsteps-mtg-key,842552.LOFI.wav,c minor	2,c minor,1.0,correct,ok,38.84,22.697,12.865,2.999,0.007,0.188
+giantsteps-mtg-key,84522.LOFI.wav,f minor	2,f minor,1.0,correct,ok,39.54,23.622,12.51,3.103,0.008,0.199
+giantsteps-mtg-key,852917.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.27,22.841,13.397,2.714,0.009,0.217
+giantsteps-mtg-key,857189.LOFI.wav,d major	2,d minor,0.2,parallel,ok,39.66,23.041,12.786,3.04,0.026,0.505
+giantsteps-mtg-key,861422.LOFI.wav,c minor	2,c minor,1.0,correct,ok,40.9,25.089,13.062,2.453,0.009,0.209
+giantsteps-mtg-key,864300.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.92,22.982,12.586,4.057,0.008,0.198
+giantsteps-mtg-key,868240.LOFI.wav,b minor	2,f# minor,0.5,fifth,ok,39.39,22.912,13.389,2.787,0.009,0.201
+giantsteps-mtg-key,870280.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.8,23.026,13.274,3.126,0.02,0.235
+giantsteps-mtg-key,871246.LOFI.wav,a minor	2,c# minor,0.0,wrong,ok,40.04,23.715,13.453,2.462,0.009,0.312
+giantsteps-mtg-key,889391.LOFI.wav,g minor	2,g minor,1.0,correct,ok,39.25,23.043,12.981,2.929,0.011,0.19
+giantsteps-mtg-key,897094.LOFI.wav,d# minor	2,eb minor,1.0,correct,ok,39.61,23.023,13.369,2.901,0.008,0.214
+giantsteps-mtg-key,898664.LOFI.wav,b minor	2,b minor,1.0,correct,ok,39.01,22.476,13.172,2.966,0.018,0.253
+giantsteps-mtg-key,905046.LOFI.wav,b minor	2,e minor,0.5,fifth,ok,39.35,23.134,13.129,2.8,0.008,0.206
+giantsteps-mtg-key,906851.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.15,23.625,12.264,2.961,0.008,0.211
+giantsteps-mtg-key,90839.LOFI.wav,d minor	2,d minor,1.0,correct,ok,39.07,22.876,13.281,2.626,0.008,0.194
+giantsteps-mtg-key,908868.LOFI.wav,g# major	2,ab minor,0.2,parallel,ok,38.6,22.593,12.849,2.795,0.011,0.241
+giantsteps-mtg-key,909102.LOFI.wav,a# minor	2,bb minor,1.0,correct,ok,39.61,23.35,13.56,2.416,0.008,0.187
+giantsteps-mtg-key,920509.LOFI.wav,g# major	2,Ab major,1.0,correct,ok,39.31,22.989,12.967,3.055,0.008,0.21
+giantsteps-mtg-key,920615.LOFI.wav,e minor	2,e minor,1.0,correct,ok,39.95,23.432,12.869,3.246,0.007,0.183
+giantsteps-mtg-key,923491.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.61,22.938,12.833,2.514,0.01,0.228
+giantsteps-mtg-key,940966.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,38.36,22.723,12.673,2.666,0.01,0.205
+giantsteps-mtg-key,943181.LOFI.wav,g minor	2,d minor,0.5,fifth,ok,39.56,22.971,13.526,2.742,0.007,0.208
+giantsteps-mtg-key,944826.LOFI.wav,c# major	2,c# minor,0.2,parallel,ok,39.05,23.437,12.703,2.6,0.009,0.213
+giantsteps-mtg-key,950746.LOFI.wav,g major	2,a minor,0.0,wrong,ok,39.21,23.063,13.0,2.776,0.014,0.237
+giantsteps-mtg-key,953140.LOFI.wav,e minor	2,e minor,1.0,correct,ok,38.86,22.834,12.81,2.919,0.01,0.199
+giantsteps-mtg-key,95799.LOFI.wav,c# minor	2,c# minor,1.0,correct,ok,39.0,23.255,12.833,2.61,0.009,0.196
+giantsteps-mtg-key,967034.LOFI.wav,c minor	2,c minor,1.0,correct,ok,39.0,23.442,12.498,2.773,0.008,0.191
+giantsteps-mtg-key,987207.LOFI.wav,c# major	2,f minor,0.0,wrong,ok,39.11,23.336,12.454,2.948,0.011,0.244
+giantsteps-mtg-key,997069.LOFI.wav,c minor	2,f minor,0.5,fifth,ok,38.86,23.25,13.032,2.312,0.007,0.188
+giantsteps-mtg-key,99805.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,37.12,23.212,11.375,2.246,0.007,0.196
+giantsteps-mtg-key,99806.LOFI.wav,g# minor	2,ab minor,1.0,correct,ok,35.47,21.685,11.447,2.087,0.005,0.177

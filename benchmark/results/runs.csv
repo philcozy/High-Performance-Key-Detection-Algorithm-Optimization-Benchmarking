@@ -1,3 +1,3 @@
 timestamp,label,pipeline,workers,tracks,mirex_all,mirex_giantsteps-key,mirex_giantsteps-mtg-key,wall_s,median_ms,stage_median_ms
-2026-09-20_1530,keyfinder_linear,keyfinder_linear,4,1763,0.658,0.6914,0.6406,17.6,37.54,preprocess 23.03 | spectrum 13.10 | cqt 0.98 | fold 0.01 | classify 0.19
-2026-09-20_1530,keyfinder,keyfinder,4,1763,0.6708,0.7151,0.6477,18.3,39.39,preprocess 23.18 | spectrum 12.96 | cqt 2.79 | fold 0.01 | classify 0.21
+2026-09-20_1751,keyfinder_linear,keyfinder_linear,4,1763,0.658,0.6914,0.6406,18.8,39.12,preprocess 23.92 | spectrum 13.83 | cqt 1.02 | fold 0.01 | classify 0.19
+2026-09-20_1752,keyfinder,keyfinder,4,1763,0.6708,0.7151,0.6477,18.4,39.58,preprocess 23.25 | spectrum 13.01 | cqt 2.83 | fold 0.01 | classify 0.20
