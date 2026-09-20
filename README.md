@@ -59,7 +59,7 @@ MIREX weighted scheme:
 | non-deep-learning| 0.75        | ---------- |
 | deep-learning    | 0.80        | ---------- |
 
-### Key Improvements
+### Modern Improvements
 | Addons           | MIREX score |            |
 | ---------------- | ----------- | ---------- |
 | Baseline         | 0.6914      | -          |
