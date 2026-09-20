@@ -26,8 +26,8 @@ from pathlib import Path
 
 from evaluate import available_pipelines, init_worker, evaluate_track
 from report import (
-    summarize_accuracy, summarize_performance,
-    print_report, write_track_csv, append_run_history,
+    summarize_accuracy, summarize_keys, summarize_performance,
+    print_report, write_run_summary, write_track_csv, append_run_history,
 )
 from tracks import DATASET_NAMES, scan_dataset
 
@@ -157,13 +157,17 @@ def main():
     by_dataset = {name: summarize_accuracy([r for r in results if r.dataset == name])
                   for name in args.datasets}
     overall = summarize_accuracy(results)
+    keys = summarize_keys(results)
     perf = summarize_performance(results, wall_s)
 
     # 4. save and report
     out_csv = RESULTS_DIR / f'{timestamp}_{label}.csv'
+    out_md = RESULTS_DIR / f'{timestamp}_{label}.md'
     write_track_csv(results, out_csv)
+    write_run_summary(out_md, timestamp, label, args.pipeline, args.workers,
+                      by_dataset, overall, perf, keys, results, out_csv)
     append_run_history(RUN_HISTORY_CSV, timestamp, label, args.pipeline, args.workers, by_dataset, overall, perf)
-    print_report(by_dataset, overall, perf, args.pipeline, args.workers, results, out_csv)
+    print_report(by_dataset, overall, perf, keys, args.pipeline, args.workers, results, out_csv, out_md)
 
     logging.warning('done: evaluated=%d score=%.4f wall=%.1fs', overall.n, overall.score, wall_s)
 
