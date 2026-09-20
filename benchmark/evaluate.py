@@ -5,19 +5,18 @@ Everything here runs inside a worker process. Each worker calls init_worker()
 once, then evaluate_track() once per track it is given.
 """
 
+import importlib
 import sys
 import time
 import traceback
 from dataclasses import dataclass, field
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'prototype'))
-import keyfinder
 from mirex import parse_key, mirex_score
 from timing import StageTimer, peak_memory_mb
 
-# Functions of keyfinder.py to time. Keep in the order detect_key() calls them.
-PIPELINE_STAGES = ('preprocess', 'spectrum', 'cqt', 'fold', 'classify')
+PIPELINE_DIR = Path(__file__).resolve().parent.parent / 'prototype'
+sys.path.insert(0, str(PIPELINE_DIR))
 
 
 @dataclass
@@ -38,32 +37,42 @@ class TrackResult:
 
 # ---------- worker setup ----------
 
+_pipeline = None              # the pipeline module, loaded by init_worker()
 _stage_timer = None           # one per worker process, created by init_worker()
 
 
-def init_worker():
-    """Run once in each worker process: install the stage stopwatches."""
-    global _stage_timer
-    _stage_timer = StageTimer(keyfinder, PIPELINE_STAGES)
+def available_pipelines():
+    """
+    Import names of the pipeline files in prototype/ and its subfolders,
+    A pipeline is any .py file that defines STAGES.
+    """
+    names = []
+    for path in PIPELINE_DIR.rglob('*.py'):
+        if 'STAGES = ' in path.read_text():
+            relative = path.relative_to(PIPELINE_DIR).with_suffix('')
+            names.append('.'.join(relative.parts))
+    return sorted(names)
+
+
+def init_worker(pipeline_name):
+    """Run once in each worker process: load the pipeline and time the stages it lists in STAGES."""
+    global _pipeline, _stage_timer
+    _pipeline = importlib.import_module(pipeline_name)
+    _stage_timer = StageTimer(_pipeline, _pipeline.STAGES)
 
 
 # ---------- scoring ----------
 
-def normalize_tonic(tonic):
-    """Normalize a tonic string to standard capitalization, e.g. 'eb' -> 'Eb'."""
-    if not tonic:
-        return 'Unknown'
-    t = tonic.strip()
-    return (t[0].upper() + t[1:].lower()) if len(t) > 1 else t.upper()
-
-
 def score_prediction(true_key, pred_tonic, pred_mode):
-    """Normalize a raw (tonic, mode) prediction and score it against true_key."""
-    tonic_norm = normalize_tonic(pred_tonic)
-    mode_norm = pred_mode.strip().lower()
-    pred_key = parse_key(f'{tonic_norm} {mode_norm}')
-    score, category = mirex_score(true_key, pred_key)
-    return f'{tonic_norm} {mode_norm}', score, category
+    """
+    Score a pipeline's raw (tonic, mode) prediction against true_key.
+
+    Returns (prediction as written by the pipeline, score, category).
+    Capitalisation and spelling are handled by parse_key().
+    """
+    pred_str = f'{pred_tonic} {pred_mode}'
+    score, category = mirex_score(true_key, parse_key(pred_str))
+    return pred_str, score, category
 
 
 # ---------- one track ----------
@@ -76,7 +85,7 @@ def evaluate_track(track):
     _stage_timer.reset()
     start = time.perf_counter()
     try:
-        pred_tonic, pred_mode = keyfinder.detect_key(track.audio_path)
+        pred_tonic, pred_mode = _pipeline.detect_key(track.audio_path)
     except Exception:
         result.status = 'fail_detect'
         result.error = traceback.format_exc()

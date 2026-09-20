@@ -6,10 +6,10 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from evaluate import PIPELINE_STAGES
+from mirex import CATEGORY_SCORES
 from tracks import DATASET_NAMES
 
-MIREX_CATEGORIES = ['correct', 'fifth', 'relative', 'parallel', 'wrong']
+MIREX_CATEGORIES = list(CATEGORY_SCORES)   # best to worst, as defined in mirex.py
 BAR_WIDTH = 30                # width of the longest ASCII bar
 LINE_WIDTH = 56               # width of the ─── separators
 TAIL_PERCENTILE = 95          # "slow track" time reported next to the median
@@ -31,7 +31,7 @@ class Performance:
     tracks_per_s: float
     median_ms: float          # median detect_key() time per track
     tail_ms: float            # TAIL_PERCENTILE detect_key() time per track
-    stage_median_ms: dict     # {stage: median ms}
+    stage_median_ms: dict     # {stage: median ms}, in pipeline order
     stage_share: dict         # {stage: fraction of all detect_key() time}
     peak_mb: float            # largest memory use of any worker
 
@@ -52,7 +52,7 @@ def summarize_performance(results, wall_s):
     totals = np.array([r.total_ms for r in timed])
     stage_median_ms = {}
     stage_share = {}
-    for stage in PIPELINE_STAGES:
+    for stage in timed[0].stage_ms:
         stage_times = np.array([r.stage_ms[stage] for r in timed])
         stage_median_ms[stage] = float(np.median(stage_times))
         stage_share[stage] = float(stage_times.sum() / totals.sum())
@@ -89,8 +89,8 @@ def print_accuracy(by_dataset, overall):
         print(f'  {cat:9s}  {count:4d}  ({100 * fraction:5.1f}%)  {bar(fraction)}')
 
 
-def print_performance(perf, workers):
-    print(f'  PERFORMANCE   ({workers} workers)')
+def print_performance(perf, pipeline, workers):
+    print(f'  PERFORMANCE   ({pipeline}, {workers} workers)')
     if perf is None:
         print('  no track ran successfully')
         return
@@ -100,8 +100,7 @@ def print_performance(perf, workers):
     print(f'  peak memory:   {perf.peak_mb:7.0f} MB per worker')
     print()
     print(f'  {"stage":12s} {"median ms":>9s}   share of time')
-    for stage in PIPELINE_STAGES:
-        share = perf.stage_share[stage]
+    for stage, share in perf.stage_share.items():
         print(f'  {stage:12s} {perf.stage_median_ms[stage]:9.2f}   '
               f'{100 * share:5.1f}%  {bar(share)}')
 
@@ -116,13 +115,13 @@ def print_failures(results):
         print('─' * LINE_WIDTH)
 
 
-def print_report(by_dataset, overall, perf, workers, results, out_csv):
+def print_report(by_dataset, overall, perf, pipeline, workers, results, out_csv):
     """Print the full human-readable summary of a run."""
     print()
     print('─' * LINE_WIDTH)
     print_accuracy(by_dataset, overall)
     print('─' * LINE_WIDTH)
-    print_performance(perf, workers)
+    print_performance(perf, pipeline, workers)
     print('─' * LINE_WIDTH)
     print_failures(results)
     print(f'  Results: {out_csv}')
@@ -132,7 +131,8 @@ def print_report(by_dataset, overall, perf, workers, results, out_csv):
 
 def write_track_csv(results, out_csv):
     """One row per track: prediction, score and timing."""
-    stage_columns = [f'{stage}_ms' for stage in PIPELINE_STAGES]
+    stages = list(results[0].stage_ms) if results else []
+    stage_columns = [f'{stage}_ms' for stage in stages]
     fieldnames = ['dataset', 'track', 'true', 'pred', 'score', 'category',
                   'status', 'total_ms', *stage_columns]
 
@@ -145,22 +145,28 @@ def write_track_csv(results, out_csv):
                 'pred': r.pred, 'score': r.score, 'category': r.category,
                 'status': r.status, 'total_ms': round(r.total_ms, 2),
             }
-            for stage in PIPELINE_STAGES:
+            for stage in stages:
                 row[f'{stage}_ms'] = round(r.stage_ms.get(stage, 0.0), 3)
             writer.writerow(row)
 
 
-def append_run_history(history_csv, timestamp, label, workers, by_dataset, overall, perf):
-    """Add one summary line for this run, so runs can be compared side by side."""
-    row = {'timestamp': timestamp, 'label': label, 'workers': workers,
+def append_run_history(history_csv, timestamp, label, pipeline, workers, by_dataset, overall, perf):
+    """
+    Add one summary line for this run, so runs can be compared side by side.
+
+    Pipelines have different stages, so all stage times share one column,
+    e.g. 'preprocess 126.0 | spectrum 11.3 | cqt 0.9'.
+    """
+    row = {'timestamp': timestamp, 'label': label, 'pipeline': pipeline, 'workers': workers,
            'tracks': overall.n, 'mirex_all': round(overall.score, 4)}
     for name in DATASET_NAMES:
         acc = by_dataset.get(name)
         row[f'mirex_{name}'] = round(acc.score, 4) if acc else ''
     row['wall_s'] = round(perf.wall_s, 1) if perf else ''
     row['median_ms'] = round(perf.median_ms, 2) if perf else ''
-    for stage in PIPELINE_STAGES:
-        row[f'{stage}_ms'] = round(perf.stage_median_ms[stage], 3) if perf else ''
+    row['stage_median_ms'] = ' | '.join(
+        f'{stage} {ms:.2f}' for stage, ms in perf.stage_median_ms.items()
+    ) if perf else ''
 
     is_new_file = not history_csv.exists()
     with history_csv.open('a', newline='') as f:

@@ -30,7 +30,7 @@ class StageTimer:
         if not hasattr(module, name):
             raise AttributeError(
                 f'{module.__name__} has no stage function {name!r}; '
-                f'update PIPELINE_STAGES in run_benchmark.py'
+                f'update STAGES in the pipeline file'
             )
         original = getattr(module, name)
 

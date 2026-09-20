@@ -6,6 +6,7 @@ Usage (from the benchmark/ folder):
     python run_benchmark.py                              # all datasets, 4 workers
     python run_benchmark.py --datasets giantsteps-key    # one dataset
     python run_benchmark.py --workers 1                  # no worker processes (easy to debug)
+    python run_benchmark.py --pipeline libkeyfinder_port # another pipeline file in prototype/
     python run_benchmark.py --label cosine-v2            # name the run in results/runs.csv
 """
 
@@ -23,7 +24,7 @@ import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-from evaluate import init_worker, evaluate_track
+from evaluate import available_pipelines, init_worker, evaluate_track
 from report import (
     summarize_accuracy, summarize_performance,
     print_report, write_track_csv, append_run_history,
@@ -36,7 +37,7 @@ RUN_HISTORY_CSV = RESULTS_DIR / 'runs.csv'
 LOG_FILE = BASE_DIR / 'benchmark_debug.log'
 
 DEFAULT_WORKERS = 4           # = performance cores on this Mac; efficiency cores are slower and would blur the timings
-DEFAULT_LABEL = 'prototype'
+DEFAULT_PIPELINE = 'keyfinder'
 PROGRESS_INTERVAL = 200       # print a running score every N tracks
 
 
@@ -48,8 +49,10 @@ def parse_args():
                         help='datasets to evaluate (default: all)')
     parser.add_argument('--workers', type=int, default=DEFAULT_WORKERS,
                         help=f'worker processes (default: {DEFAULT_WORKERS}); 1 runs everything in this process')
-    parser.add_argument('--label', default=DEFAULT_LABEL,
-                        help=f'name for this run in the file names and runs.csv (default: {DEFAULT_LABEL})')
+    parser.add_argument('--pipeline', choices=available_pipelines(), default=DEFAULT_PIPELINE,
+                        help=f'pipeline file in prototype/ to benchmark (default: {DEFAULT_PIPELINE})')
+    parser.add_argument('--label', default=None,
+                        help='name for this run in the file names and runs.csv (default: the pipeline name)')
     return parser.parse_args()
 
 
@@ -91,16 +94,16 @@ def handle_result(result, done, total, results):
         print(f'  [{done:4d}/{total}] score so far: {mean_score:.4f}')
 
 
-def evaluate_in_this_process(tracks):
+def evaluate_in_this_process(tracks, pipeline):
     """Evaluate tracks one after another. Slow, but breakpoints and print() just work."""
-    init_worker()
+    init_worker(pipeline)
     results = []
     for done, track in enumerate(tracks, 1):
         handle_result(evaluate_track(track), done, len(tracks), results)
     return results
 
 
-def evaluate_in_parallel(tracks, workers):
+def evaluate_in_parallel(tracks, pipeline, workers):
     """
     Evaluate tracks in `workers` separate processes at the same time.
 
@@ -108,20 +111,20 @@ def evaluate_in_parallel(tracks, workers):
     Tracks finish in any order, so the results are sorted afterwards.
     """
     results = []
-    with ProcessPoolExecutor(max_workers=workers, initializer=init_worker) as pool:
+    with ProcessPoolExecutor(max_workers=workers, initializer=init_worker, initargs=(pipeline,)) as pool:
         futures = [pool.submit(evaluate_track, track) for track in tracks]
         for done, future in enumerate(as_completed(futures), 1):
             handle_result(future.result(), done, len(tracks), results)
     return results
 
 
-def evaluate_all(tracks, workers):
+def evaluate_all(tracks, pipeline, workers):
     """Evaluate every track; return (results in dataset/track order, wall-clock seconds)."""
     start = time.perf_counter()
     if workers == 1:
-        results = evaluate_in_this_process(tracks)
+        results = evaluate_in_this_process(tracks, pipeline)
     else:
-        results = evaluate_in_parallel(tracks, workers)
+        results = evaluate_in_parallel(tracks, pipeline, workers)
     wall_s = time.perf_counter() - start
 
     results.sort(key=lambda r: (r.dataset, r.track))
@@ -132,6 +135,7 @@ def evaluate_all(tracks, workers):
 
 def main():
     args = parse_args()
+    label = args.label or args.pipeline
     configure_logging()
     RESULTS_DIR.mkdir(exist_ok=True)
     timestamp = time.strftime('%Y-%m-%d_%H%M')
@@ -145,9 +149,9 @@ def main():
         return
 
     # 2. evaluate
-    print(f'\nevaluating {len(tracks)} tracks with {args.workers} workers...')
-    logging.warning('=== run %s (%s): %d tracks ===', timestamp, args.label, len(tracks))
-    results, wall_s = evaluate_all(tracks, args.workers)
+    print(f'\nevaluating {len(tracks)} tracks with {args.pipeline}, {args.workers} workers...')
+    logging.warning('=== run %s (%s, %s): %d tracks ===', timestamp, label, args.pipeline, len(tracks))
+    results, wall_s = evaluate_all(tracks, args.pipeline, args.workers)
 
     # 3. summarize
     by_dataset = {name: summarize_accuracy([r for r in results if r.dataset == name])
@@ -156,10 +160,10 @@ def main():
     perf = summarize_performance(results, wall_s)
 
     # 4. save and report
-    out_csv = RESULTS_DIR / f'{timestamp}_{args.label}.csv'
+    out_csv = RESULTS_DIR / f'{timestamp}_{label}.csv'
     write_track_csv(results, out_csv)
-    append_run_history(RUN_HISTORY_CSV, timestamp, args.label, args.workers, by_dataset, overall, perf)
-    print_report(by_dataset, overall, perf, args.workers, results, out_csv)
+    append_run_history(RUN_HISTORY_CSV, timestamp, label, args.pipeline, args.workers, by_dataset, overall, perf)
+    print_report(by_dataset, overall, perf, args.pipeline, args.workers, results, out_csv)
 
     logging.warning('done: evaluated=%d score=%.4f wall=%.1fs', overall.n, overall.score, wall_s)
 
